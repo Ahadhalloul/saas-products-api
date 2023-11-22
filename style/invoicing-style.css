@@ -246,7 +246,7 @@ nav .nav-list .nav-link {
   /* width: 54%; */
   height: 100%;
   position: relative;
-  z-index: -1;
+  z-index: 1;
   /* top: 0; */
   /* right: 0; */
 }
