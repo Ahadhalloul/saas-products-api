@@ -310,12 +310,12 @@ nav .nav-list .nav-link {
   gap: 40px;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 60px;
-  padding-top: 60px;
+  padding-bottom: 80px;
+  padding-top: 80px;
 }
 
 .about {
-  max-width: 725px;
+  width: 100%;
   display: flex;
   flex-flow: column nowrap;
   gap: 25px;
@@ -408,6 +408,8 @@ nav .nav-list .nav-link {
 }
 
 .about-container .hr-about-cards-container .card:nth-child(2) {
+  right: 70px;
+  top: -15px;
   border: 0.86px solid;
   border-image-source: linear-gradient(
     129.66deg,
@@ -416,16 +418,14 @@ nav .nav-list .nav-link {
   );
 
   box-shadow: 0px 4.324763298034668px 64.87145233154297px 0px #00000014;
-  max-width: 200px;
-  max-height: 200px;
-  right: 0;
-  top: 0;
+  max-width: 210px;
+  max-height: 190px;
 }
 .about-container .hr-about-cards-container .card:last-child {
-  bottom: 0;
-  right: 0;
-  max-width: 200px;
-  max-height: 200px;
+  bottom: -15px;
+  right: 70px;
+  max-width: 210px;
+  max-height: 190px;
   box-shadow: 0px 4.324763298034668px 64.87145233154297px 0px #00000014;
 }
 .icon-bg-blue {
@@ -439,6 +439,16 @@ nav .nav-list .nav-link {
 .icon-bg-blue img {
   width: 30px;
   margin-top: 7px;
+}
+
+@media screen and (min-width: 1457px) {
+  .about-container .hr-about-cards-container .card:nth-child(2) {
+    right: 70px;
+  }
+
+  .about-container .hr-about-cards-container .card:last-child {
+    right: 70px;
+  }
 }
 
 @media screen and (max-width: 1172px) {
@@ -993,6 +1003,6 @@ nav .nav-list .nav-link {
   }
 }
 
-.hide {
+.hide-invoicing {
   display: none;
 }
