@@ -964,6 +964,7 @@ nav .nav-list .nav-link {
 @media screen and (max-width: 1250px) {
   .padding {
     padding: 60px;
+    padding-top: 40px;
   }
   .about-container {
     gap: 70px;
