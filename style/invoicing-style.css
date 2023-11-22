@@ -113,7 +113,7 @@ nav .nav-list .nav-link {
 
 @media screen and (max-width: 1042px) {
   .user-menu-list .user-menu-item button {
-    padding: 10px 23px;
+    padding: 10px 15px;
   }
 }
 .user-menu-list .user-menu-item select {
