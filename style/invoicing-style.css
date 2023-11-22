@@ -240,17 +240,20 @@ nav .nav-list .nav-link {
 
 /* TODO: This line should be at end of the project */
 .hero .hero-img #shape {
-  width: 100%;
-  height: auto;
-  position: absolute;
+  /* width: 54%; */
+  height: 100%;
+  position: relative;
   z-index: 1;
-  top: -240px;
-  right: -30px;
+  /* top: 0; */
+  /* right: 0; */
 }
 
 .hero .hero-img #shape img {
-  min-width: 150%;
+  min-width: 160%;
   height: auto;
+  position: absolute;
+  top: -198px;
+  right: -335px;
 }
 
 /* ----------------------[ End Of Hero ]--------------------- */
