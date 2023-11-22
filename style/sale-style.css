@@ -1141,6 +1141,12 @@ nav .nav-list .nav-link {
     height: 150vh;
     right: -610px !important;
   }
+  .industry-business button {
+    padding: 16px 30px;
+  }
+  .industry-heading h2 {
+    font-size: 37px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
