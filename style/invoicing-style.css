@@ -198,6 +198,9 @@ nav .nav-list .nav-link {
   max-width: 400px;
   min-height: 165px;
   border-radius: 10px;
+  background: var(--third-color);
+  position: relative;
+  z-index: 2;
   padding: 25px;
   box-shadow: 0px 4px 25px 0px #0000000d;
 }
@@ -235,7 +238,7 @@ nav .nav-list .nav-link {
   display: flex;
   justify-content: flex-end;
   position: relative;
-  z-index: 1;
+  /* z-index: -1; */
 }
 
 /* TODO: This line should be at end of the project */
@@ -243,14 +246,14 @@ nav .nav-list .nav-link {
   /* width: 54%; */
   height: 100%;
   position: relative;
-  z-index: 1;
+  z-index: -1;
   /* top: 0; */
   /* right: 0; */
 }
 
 .hero .hero-img #shape img {
-  min-width: 160%;
-  height: auto;
+  min-width: auto;
+  /* height: 993px; */
   position: absolute;
   top: -198px;
   right: -335px;
@@ -266,6 +269,8 @@ nav .nav-list .nav-link {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  position: relative;
+  z-index: 2;
 }
 
 .statistics {
@@ -971,6 +976,12 @@ nav .nav-list .nav-link {
   .about-images > img {
     min-width: 50%;
     height: 300px;
+  }
+  #shape img{
+    /* min-width: 115%; */
+    top: -300px !important;
+    height: 150vh;
+    right: -610px !important;
   }
 }
 
