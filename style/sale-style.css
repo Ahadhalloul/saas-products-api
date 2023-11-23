@@ -1014,7 +1014,7 @@ nav .nav-list .nav-link {
 
 /* End our Parnters Section */
 /* --------------------------------------- */
-/* Start Footer Section */
+/* Start footer section */
 .footer-container {
   padding: 60px 120px 0px;
 
@@ -1025,16 +1025,30 @@ nav .nav-list .nav-link {
   list-style: url(../icons/list-style.svg);
 }
 .footer-container ul {
-  margin-left: 15px;
+  margin-left: 10px;
 }
 .footer-container a {
   text-decoration: none;
   color: #fff;
 }
+.row {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center;
+}
+.footer-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.gap-row {
+  gap: 40px;
+}
 .footer-content {
   font-size: 0.9rem;
   font-weight: 300;
   display: flex;
+  flex-direction: row !important;
   align-items: start;
   justify-content: space-between;
   padding: 20px 0px 40px;
