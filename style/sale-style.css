@@ -1171,3 +1171,7 @@ nav .nav-list .nav-link {
 
 @media screen and (max-width: 960px) {
 }
+
+.hide-from-sales {
+  display: none;
+}
