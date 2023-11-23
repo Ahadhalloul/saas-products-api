@@ -1118,6 +1118,11 @@ nav .nav-list .nav-link {
 
 /* End Footer Section */
 
+.fillter-icon {
+  filter: brightness(0) saturate(100%) invert(50%) sepia(71%) saturate(902%)
+    hue-rotate(323deg) brightness(88%) contrast(108%);
+}
+
 /* remove padding in smaller screen for all sections */
 @media screen and (max-width: 1107px) {
   .price-plan-container {
