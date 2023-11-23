@@ -9,6 +9,16 @@
  
   </head>
   <body>
+      <!------------- Search  bar -------------->
+      <div id="searchWrapper" class="search-wrapper">
+        <h2>Type your search keyword</h2>
+        <div id="searchBar" class="search-bar">
+          <input type="text">
+          <img src="/icons/search.svg"  width="32"
+          height="32">
+        </div>
+      </div>
+
     <!------------- Start  Header -------------->
     <header class="padding">
       <nav>
@@ -29,7 +39,7 @@
       </nav>
       <div class="user-area">
         <ul class="user-menu-list">
-          <li class="user-menu-item">
+          <li class="user-menu-item" id="searchButton">
             <img src="./icons/search.svg" alt="search icon" />
           </li>
           <li class="user-menu-item">
@@ -600,5 +610,6 @@
       </footer>
     <!-- End Footer Section -->
   <!------------- End Footer -------------->
+  <script src="/main.js"></script>
   </body>
 </html>

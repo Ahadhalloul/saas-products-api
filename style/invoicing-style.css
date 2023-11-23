@@ -26,6 +26,11 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   background: var(--secondary-color);
   overflow-x: hidden;
@@ -989,10 +994,13 @@ nav .nav-list .nav-link {
   display: none;
 }
 
+<<<<<<< HEAD
 .fillter-icon{
   filter: brightness(0) saturate(100%) invert(19%) sepia(80%) saturate(7493%) hue-rotate(249deg) brightness(100%) contrast(94%);
 }
 
+=======
+>>>>>>> main
 /* Search implementation */
 
 
@@ -1061,7 +1069,7 @@ nav .nav-list .nav-link {
   .hero-content {
     min-width: 100%;
   }
-  .statistics-container {{
+  .statistics-container {
 
   }
 }
