@@ -252,7 +252,7 @@ nav .nav-list .nav-link {
 }
 
 /* TODO: This line should be at end of the project */
-.hero .hero-img #shape {
+.hero .hero-img #shape-hr {
   /* width: 54%; */
   height: 100%;
   position: relative;
@@ -261,7 +261,7 @@ nav .nav-list .nav-link {
   /* right: 0; */
 }
 
-.hero .hero-img #shape img {
+.hero .hero-img #shape-hr img {
   min-width: auto;
   /* height: 993px; */
   position: absolute;
@@ -1003,6 +1003,6 @@ nav .nav-list .nav-link {
   }
 }
 
-.hide-invoicing {
+.hide-from-hr {
   display: none;
 }

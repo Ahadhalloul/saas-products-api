@@ -61,8 +61,8 @@ header {
 }
 
 .logo {
-  max-width: 100%;
-  height: 50px;
+  width: 70px;
+  /* height: 50px; */
 }
 
 nav {
@@ -246,7 +246,7 @@ nav .nav-list .nav-link {
   /* width: 54%; */
   height: 100%;
   position: relative;
-  z-index: -1;
+  z-index: 1;
   /* top: 0; */
   /* right: 0; */
 }
@@ -499,17 +499,17 @@ nav .nav-list .nav-link {
   flex-direction: column;
   align-items: center;
 }
-.row {
+.row-new {
   display: flex;
   align-items: center;
 }
-.features-container .row {
+.features-container .row-new {
   width: 100%;
   gap: 70px;
   margin: 10px 0px 70px;
   justify-content: space-between;
 }
-.features-container .row > div {
+.features-container .row-new > div {
   width: 100%;
 }
 .features-container .text {
@@ -545,23 +545,22 @@ nav .nav-list .nav-link {
   clear: both;
 }
 
-.features-container .row .cards-container {
+.features-container .row-new .cards-container {
   max-width: 500px;
   height: auto;
   background-color: red !important;
   position: relative;
 }
 
-.features-container .row h4 {
+.features-container .row-new h4 {
   padding-bottom: 20px;
 }
-.features-container .row h6 {
+.features-container .row-new h6 {
   font-size: 0.9rem;
 }
 .first-row .cards-container .card {
   height: 150px;
   max-width: 250px;
-  position: relative;
 }
 
 .first-row .cards-container .card1 {
@@ -978,7 +977,7 @@ nav .nav-list .nav-link {
     min-width: 50%;
     height: 300px;
   }
-  #shape img{
+  #shape img {
     /* min-width: 115%; */
     top: -300px !important;
     height: 150vh;
@@ -987,4 +986,7 @@ nav .nav-list .nav-link {
 }
 
 @media screen and (max-width: 960px) {
+}
+.hide-from-invoicing {
+  display: none;
 }
