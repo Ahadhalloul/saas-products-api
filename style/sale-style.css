@@ -1182,10 +1182,7 @@ nav .nav-list .nav-link {
   display: none !important;
 }
 
-
 /* Search implementation */
-
-
 
 .search-wrapper {
   width: 100%;
@@ -1205,7 +1202,7 @@ nav .nav-list .nav-link {
   flex-flow: column nowrap;
 }
 
-.search-wrapper.active{
+.search-wrapper.active {
   display: flex;
 }
 
@@ -1251,8 +1248,7 @@ nav .nav-list .nav-link {
   .hero-content {
     min-width: 100%;
   }
-  .statistics-container {{
-
+  .statistics-container {
   }
 }
 /* ---------End design for tablet---------- */
