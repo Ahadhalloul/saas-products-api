@@ -985,8 +985,27 @@ nav .nav-list .nav-link {
   }
 }
 
-@media screen and (max-width: 960px) {
-}
 .hide-from-invoicing {
   display: none;
 }
+
+.fillter-icon{
+  filter: brightness(0) saturate(100%) invert(19%) sepia(80%) saturate(7493%) hue-rotate(249deg) brightness(100%) contrast(94%);
+}
+/* ---------Start design for tablet---------- */
+@media screen and (min-width: 744px) and (max-width: 1023px) {
+  .padding {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .hero-img > img {
+    display: none;
+  }
+  .hero-content {
+    min-width: 100%;
+  }
+  .statistics-container {{
+
+  }
+}
+/* ---------End design for tablet---------- */

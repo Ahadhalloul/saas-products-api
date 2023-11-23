@@ -1003,6 +1003,10 @@ nav .nav-list .nav-link {
   }
 }
 
+.fillter-icon {
+  filter: brightness(0) saturate(100%) invert(63%) sepia(59%) saturate(6859%)
+    hue-rotate(175deg) brightness(99%) contrast(101%);
+}
 .hide-from-hr {
   display: none;
 }
