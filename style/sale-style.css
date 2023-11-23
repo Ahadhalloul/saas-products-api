@@ -823,9 +823,10 @@ nav .nav-list .nav-link {
   top: -20px;
 }
 .third-row .card {
-  max-width: 600px;
-  height: auto;
-  padding: 40px;
+  /* max-width: 600px; */
+  /* height: auto; */
+  margin: 5px;
+  padding: 20px;
   text-align: center;
 }
 
@@ -1173,5 +1174,5 @@ nav .nav-list .nav-link {
 }
 
 .hide-from-sales {
-  display: none;
+  display: none !important;
 }

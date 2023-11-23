@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Saas product api</title>
-    <link rel="stylesheet" href="/style/sale-style.css" />
+    <link rel="stylesheet" href="style/sale-style.css" />
+    <!-- <link rel="stylesheet" href="style/invoicing-style.css" /> -->
   </head>
   <body>
     <!------------- Start  Header -------------->
@@ -22,7 +23,7 @@
       </nav>
       <div class="user-area">
         <ul class="user-menu-list">
-          <li class="user-menu-item">
+          <li class="user-menu-item" id="searchButton">
             <img src="./icons/search.svg" alt="search icon" />
           </li>
           <li class="user-menu-item">
@@ -50,10 +51,7 @@
       <section class="hero padding">
         <div class="hero-content">
           <div class="hero-heading">
-            <h1>
-              Customisable POS system built for businesses of all shapes and
-              sizes
-            </h1>
+            <h1>Automated e-&nbsp;Invoicing Solutions for your Business</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
               commodo ligula eget dolor. Aenean massa. Cum sociis natoque
@@ -119,7 +117,13 @@
         </div>
         <div class="hero-img">
           <img
-            src="./images/man-on-counter.svg"
+            class="hide-from-sales"
+            src="./images/saudi-man.png"
+            alt="A man wearing thawb and shemagh"
+          />
+          <img 
+          class="hide-from-invoice"
+            src="./images/man-on-counter.png"
             alt="A man wearing thawb and shemagh"
           />
           <div id="shape">
@@ -130,7 +134,22 @@
       <!-- End Hero Section -->
 
       <!-- Start Statistics -->
-      <section class="statistics-container padding">
+      <section class="statistics-container padding hide-from-sales">
+        <div class="statistics hide-from-sales">
+          <span>99%</span>
+          <p>Lorem ipsum dolor sit amet</p>
+        </div>
+        <div class="statistics hide-from-sales">
+          <span>4,5</span>
+          <p>Lorem ipsum dolor sit amet</p>
+        </div>
+        <div class="statistics hide-from-sales">
+          <span>25</span>
+          <p>Lorem ipsum dolor sit amet</p>
+        </div>
+      </section>
+      <!-- POS VERSION -->
+      <section class="statistics-container hide-from-invoice">
         <div class="statistics-heading">
           <h6>SUCCESS STORIES</h6>
           <h3>Get to know about us</h3>
@@ -139,7 +158,7 @@
           <div class="statistics">
             <div>
               <span>22k+</span>
-              <p>User oders online</p>
+              <p>Use order online</p>
             </div>
           </div>
           <div class="statistics">
@@ -161,7 +180,18 @@
       <!-- Start About -->
       <section class="about-container padding">
         <div class="about-images">
-          <img src="./images/counter.svg" />
+          <!-- INVOICE VERSION -->
+          <div class="hide-from-sales">
+            <img src="./images/credit-card.png" />
+            <div>
+              <h1>Title Here</h1>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+            </div>
+          </div>
+          <!-- INVOICE VERSION -->
+          <img class="hide-from-sales" src="./images/riyadh-saudi-arabia.svg" />
+          <!-- SALES VERSION -->
+          <img class="hide-from-invoice" src="./images/counter.svg" />
         </div>
         <div class="about">
           <div class="about-content">
@@ -222,7 +252,7 @@
             </div>
           </div>
           <div class="service-video">
-            <img src="./images/Video.svg" />
+            <img src="./images/Video.png" />
           </div>
         </div>
         <div class="service-features">
@@ -237,7 +267,7 @@
             </p>
           </div>
           <div class="service-feature">
-            <div class="feature-icon">
+            <div class="feature-icon invoce-filter ">
               <img src="./icons/speaker.svg" width="30" height="30" />
             </div>
             <h3>Distribution</h3>
@@ -247,7 +277,7 @@
             </p>
           </div>
           <div class="service-feature">
-            <div class="feature-icon">
+            <div class="feature-icon invoce-filter ">
               <img src="./icons/headset.svg" width="30" height="30" />
             </div>
             <h3>24/7 Support</h3>
@@ -259,23 +289,6 @@
         </div>
       </section>
       <!-- End Service -->
-      <!-- Start Industry -->
-      <div class="industry-container">
-        <div class="industry-wrapper">
-          <div class="industry-heading">
-            <h6>Business Sector</h6>
-            <h2>Tell us more about your business</h2>
-          </div>
-          <div class="industry-business">
-            <button><img src="/icons/light-blub.png" /> Retail</button>
-
-            <button><img src="/icons/light-blub.png" /> Restaurant</button>
-
-            <button class="active"><img src="/icons/light-blub.png" /> Other</button>
-          </div>
-        </div>
-      </div>
-      <!-- End Industry -->
       <!-- Start features Section -->
       <section class="features-container padding">
         <!-- first row -->
@@ -297,16 +310,54 @@
             </p>
             <a href="#" class="blue-text">Explore More</a>
           </div>
-          <div class="cards-container">
-            <img src="./images/content.svg" width="100%"
-            height="100%">
+          <!-- INVOICE VERSION -->
+          <div class="cards-container hide-from-sales">
+            <div class="card card1">
+              <img src="./icons/Card-chart-2.svg" alt="" />
+              <img src="./icons/Content-chart.svg" alt="" />
+            </div>
+            <div class="card card2">
+              <h6 class="invoices-icon">
+                Invoices <img src="./icons/Small.svg" alt="" />
+              </h6>
+              <img src="./icons/Card-chart-1.svg" alt="" />
+              <div class="clearfix"></div>
+            </div>
+          </div>
+          <!-- SALES VERSION -->
+          <div class="card hide-from-invoice">
+            <img src="./images/content.png" />
           </div>
         </div>
         <!-- second row -->
         <div class="row second-row">
-          <div class="cards-container">
-            <img src="./images/content-2.svg" width="100%"
-            height="100%">
+          <div class="cards-container hide-from-sales">
+            <div class="card card1">
+              <div class="col">
+                <h6>New Invoices</h6>
+                <h3>3,729</h3>
+                <h6 class="green-text">7,00%</h6>
+              </div>
+              <img src="./icons/Vector 1-chart.svg" alt="" />
+            </div>
+            <div class="card card2 col">
+              <h4>3,729</h4>
+              <p>
+                We strongly believe that Automated Financial solutions shouldn’t
+                drive you.
+              </p>
+            </div>
+            <div class="card card3 col">
+              <h4>Simple</h4>
+              <p>
+                We strongly believe that Automated Financial solutions shouldn’t
+                drive you.
+              </p>
+            </div>
+          </div>
+          <!-- SALES VERSION -->
+          <div class="card hide-from-invoice">
+            <img src="./images/content-2.svg" />
           </div>
           <div class="text">
             <h4>Feature Title To be Written Here</h4>
@@ -345,9 +396,14 @@
             </p>
             <a href="#" class="blue-text">Get Started</a>
           </div>
-          <div class="card-container">
-            <img src="./images/content-3.svg" width="100%"
-            height="100%">
+          <div class="card hide-from-sales">
+            <h6>Earning By Invoicing Type</h6>
+            <img src="./icons/Ellipse 227.svg" alt="" />
+            <img src="./icons/Group 690.svg" alt="" />
+          </div>
+          <!-- SALES VERSION -->
+          <div class="card hide-from-invoice">
+            <img src="./images/content-3.svg" />
           </div>
         </div>
       </section>
@@ -438,22 +494,19 @@
                 />
               </td>
             </tr>
-
-            <tr>
-              <td class="table-header">Workflows</td>
-              <td>
-                <img src="./icons/circle-x-red.svg" alt="" />
-              </td>
-              <td>
-                <img src="./icons/circle-x-red.svg" alt="" />
-              </td>
-              <td>
-                <img
-                  src="./icons/akar-icons_circle-check-fill-green.svg"
-                  alt=""
-                />
-              </td>
-            </tr>
+            <td class="table-header">Workflows</td>
+            <td>
+              <img src="./icons/circle-x-red.svg" alt="" />
+            </td>
+            <td>
+              <img src="./icons/circle-x-red.svg" alt="" />
+            </td>
+            <td>
+              <img
+                src="./icons/akar-icons_circle-check-fill-green.svg"
+                alt=""
+              />
+            </td>
 
             <tr>
               <td class="table-header">Database Limit</td>
@@ -490,21 +543,24 @@
     </main>
     <!------------- End Main -------------->
     <footer class="footer-container">
-      <div class="footer-content footer-row">
-        <div class="">
+      <div class="footer-content row">
+        <div class="col">
           <div class="logo-text">
-              <h2>MLE</h2>
-          <h6>e-Invoicing</h6>
+            <h2>MLE</h2>
+            <h6>e-Invoicing</h6>
           </div>
-       
-          <p>Lorem ipsum dolor sit amet, consectetuer
-            adipiscing elit. Aenean commodo ligula
-            eget dolor. Aenean massa.</p>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa.
+          </p>
         </div>
         <div>
           <h4>Information</h4>
           <ul>
-            <li><a href="#">About<span>EML</span></a> </li>
+            <li>
+              <a href="#">About<span>EML</span></a>
+            </li>
             <li><a href="#">Features</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Pricing</a></li>
@@ -522,28 +578,31 @@
           <h4>Contact Us</h4>
           <h5 class="e-mail">E.support@eml.com</h5>
           <div class="social-links">
-            <a href=""><img src="./icons/akar-icons_facebook-fill.svg" alt=""></a>
-            <a href=""><img src="./icons/logos_twitter.svg" alt=""></a>
-            <a href=""><img src="./icons/logos_linkedin-icon.svg" alt=""></a>
+            <a href=""
+              ><img src="./icons/akar-icons_facebook-fill.svg" alt=""
+            /></a>
+            <a href=""><img src="./icons/logos_twitter.svg" alt="" /></a>
+            <a href=""><img src="./icons/logos_linkedin-icon.svg" alt="" /></a>
           </div>
         </div>
       </div>
-      <div class="footer-sec-row footer-row">
-        <div class="footer-row gap-row">
+      <div class="footer-sec-row row">
+        <div class="row">
           <h6>Terms & Condition</h6>
           <h6>Privacy & Policy</h6>
         </div>
-        <div class="footer-row company-row">
-          <img src="./images/images/ejada-logo.svg" alt="">
-          <p>EML is a subsidiary Solution Developed and owned by Ejada Systems LTD.</p>
+        <div class="row company-row">
+          <img src="./images/ejada-logo.svg" alt="" />
+          <p>
+            EML is a subsidiary Solution Developed and owned by Ejada Systems
+            LTD.
+          </p>
         </div>
       </div>
-      <div class="footer-copy-right">
-        © 2023 EML. All Rights Reserved
-      </div>
+      <div class="footer-copy-right">© 2023 EML. All Rights Reserved</div>
     </footer>
-  <!-- End Footer Section -->
-<!------------- End Footer -------------->
+    <!-- End Footer Section -->
     <!------------- End Footer -------------->
+    <script src="/main.js"></script>
   </body>
 </html>
