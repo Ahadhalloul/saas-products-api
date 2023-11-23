@@ -992,6 +992,63 @@ nav .nav-list .nav-link {
 .fillter-icon{
   filter: brightness(0) saturate(100%) invert(19%) sepia(80%) saturate(7493%) hue-rotate(249deg) brightness(100%) contrast(94%);
 }
+
+/* Search implementation */
+
+
+
+.search-wrapper {
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  backdrop-filter: blur(2px);
+  z-index: 99;
+  display: none;
+  align-items: center;
+  gap: 35px;
+  padding-top: 150px;
+  flex-flow: column nowrap;
+}
+
+.search-wrapper.active{
+  display: flex;
+}
+
+.search-wrapper h2 {
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 60px;
+  letter-spacing: 0em;
+  color: #a1a0a0;
+}
+
+.search-wrapper .search-bar {
+  width: 600px;
+  height: 68px;
+  background-color: var(--third-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  padding-right: 20px;
+}
+
+.search-wrapper .search-bar input {
+  height: 100%;
+  width: 100%;
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  background-color: transparent;
+  border-top-left-radius: inherit;
+  border-bottom-left-radius: inherit;
+}
 /* ---------Start design for tablet---------- */
 @media screen and (min-width: 744px) and (max-width: 1023px) {
   .padding {
