@@ -13,15 +13,23 @@
       <div id="searchWrapper" class="search-wrapper">
         <h2>Type your search keyword</h2>
         <div id="searchBar" class="search-bar">
-          <input type="text">
+          <input type="text" placeholder="Search">
           <img src="/icons/search.svg"  width="32"
           height="32">
         </div>
       </div>
+    <!-- ------------------------------ -->
+    
+    <!-- ------this div add background to body when nav sidebar open for small screen---------------------- -->
+      <div class="body-bg hide"></div>
+    <!-- ------------------------------ -->
 
     <!------------- Start  Header -------------->
     <header class="padding">
       <nav>
+        <div class="nav-menu-icon">
+          <img src="./icons/menu.svg" alt="">
+        </div>
         <div class="logo-container">
        <!--  invoicing logo -->
           <img
@@ -429,8 +437,12 @@
         <!-- -------------------------------------------- -->
         <!-- Start price plan Section -->
         <section class="price-plan-container">
-  
-          <div class="pricing-table">
+
+         <!-- add arrows images for small screen -->
+         <img onclick="scrollLft()" src="./icons/arrow back_ios.svg" alt="" class="arrow-back">
+         <img onclick="scrollRight()" src="./icons/arrow forward_ios.svg" alt="" class="arrow-forward">
+         
+         <div class="pricing-table">
             <table>
               <tr class="plans-header">
                 <td class="first-head"><h4>We Provide More Price List</h4></td>

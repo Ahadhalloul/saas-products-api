@@ -20,9 +20,17 @@
               height="32">
             </div>
           </div>
+          <!-- -------------------------------- -->
+         <!-- ------this div add background to body when nav sidebar open for small screen---------------------- -->
+          <div class="body-bg hide"></div>
+         <!-- ------------------------------ -->
+  
     <!------------- Start  Header -------------->
     <header class="padding">
       <nav>
+        <div class="nav-menu-icon">
+          <img src="./icons/menu.svg" alt="">
+        </div>
         <div class="logo-container">
         <!--  hr logo -->
           <img
@@ -41,7 +49,7 @@
       </nav>
       <div class="user-area">
         <ul class="user-menu-list">
-          <li class="user-menu-item">
+          <li class="user-menu-item" id="searchButton">
             <img src="./icons/search.svg" alt="search icon" />
           </li>
           <li class="user-menu-item">
@@ -462,7 +470,11 @@
         <!-- -------------------------------------------- -->
         <!-- Start price plan Section -->
         <section class="price-plan-container">
-  
+          
+          <!-- add arrows images for small screen -->
+           <img onclick="scrollLft()" src="./icons/arrow back_ios.svg" alt="" class="arrow-back">
+           <img onclick="scrollRight()" src="./icons/arrow forward_ios.svg" alt="" class="arrow-forward">
+           
           <div class="pricing-table">
             <table>
               <tr class="plans-header">

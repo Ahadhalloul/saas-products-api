@@ -28,12 +28,13 @@
 
 html,
 body {
+  overflow-x: hidden;
   height: 100%;
 }
 
 body {
   background: var(--secondary-color);
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 /* ----------------------[ Start Global Of Styling ]--------------------- */
@@ -70,6 +71,9 @@ header {
   /* height: 50px; */
 }
 
+.nav-menu-icon {
+  display: none;
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -553,7 +557,6 @@ nav .nav-list .nav-link {
 .features-container .row-new .cards-container {
   max-width: 500px;
   height: auto;
-  background-color: red !important;
   position: relative;
 }
 
@@ -825,6 +828,10 @@ nav .nav-list .nav-link {
   border: none;
   border-radius: 5px;
 }
+.arrow-forward,
+.arrow-back {
+  display: none;
+}
 @media screen and (max-width: 1024px) {
   .plans-header h5 {
     font-size: 1.3rem;
@@ -862,6 +869,11 @@ nav .nav-list .nav-link {
 /* End our Parnters Section */
 /* --------------------------------------- */
 /* Start Footer Section */
+.footer-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 .footer-container {
   padding: 60px 120px 0px;
 
@@ -994,13 +1006,12 @@ nav .nav-list .nav-link {
   display: none;
 }
 
-.fillter-icon{
-  filter: brightness(0) saturate(100%) invert(19%) sepia(80%) saturate(7493%) hue-rotate(249deg) brightness(100%) contrast(94%);
+.fillter-icon {
+  filter: brightness(0) saturate(100%) invert(19%) sepia(80%) saturate(7493%)
+    hue-rotate(249deg) brightness(100%) contrast(94%);
 }
 
 /* Search implementation */
-
-
 
 .search-wrapper {
   width: 100%;
@@ -1020,7 +1031,7 @@ nav .nav-list .nav-link {
   flex-flow: column nowrap;
 }
 
-.search-wrapper.active{
+.search-wrapper.active {
   display: flex;
 }
 
@@ -1054,11 +1065,84 @@ nav .nav-list .nav-link {
   border-top-left-radius: inherit;
   border-bottom-left-radius: inherit;
 }
+
 /* ---------Start design for tablet---------- */
 @media screen and (min-width: 744px) and (max-width: 1023px) {
+  .hero {
+    z-index: 1;
+  }
+  header {
+    z-index: 2;
+  }
+  /*ADD IT TO BODY WHEN NAV-LIST DISPLY BLOCK */
+  .body-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(2px);
+    /* display: none; */
+    z-index: 3;
+  }
+  .hide {
+    display: none;
+  }
+  nav .nav-list {
+    flex-direction: column;
+    background-color: #fff;
+    padding: 150px 0px 0px 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 30%;
+    z-index: 1 !important;
+    min-height: 100%;
+    display: none;
+  }
+  .show-flex {
+    display: flex !important;
+  }
+  .stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+  }
+  .statistics-container {
+    z-index: 0;
+  }
+  .logo {
+    margin-left: 60px;
+  }
+  /* to add logo im menu "ADD THIS CLASS  TO LOGO ELEMENT" */
+  .logo-inside-menu {
+    position: absolute;
+    left: -19px;
+    top: 0;
+    z-index: 6;
+    margin-top: 50px;
+  }
+  .nav-menu-icon {
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  /* -------edit hero shape------  */
+  #shape img {
+    height: 850px;
+  }
+  /* ----------- */
+
+  .search-wrapper h2 {
+    font-size: 32px;
+  }
   .padding {
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
   .hero-img > img {
     display: none;
@@ -1066,8 +1150,269 @@ nav .nav-list .nav-link {
   .hero-content {
     min-width: 100%;
   }
-  .statistics-container {
+  /* ---------------------------- */
+  .statistics-container div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .statistics p {
+    width: 90%;
+  }
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about {
+    min-width: 80%;
+  }
+  .about h1 {
+    max-width: 600px;
+  }
+  .about-images {
+    justify-content: center;
+  }
+  .service-content .service-about {
+    min-width: 100%;
+  }
+  .about-images > img {
+    max-width: 90%;
+    height: auto;
+    padding-top: 0;
+  }
+  /* .about-content {
+    min-width: 80%;
+  } */
+  .service-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .service-features {
+    flex-direction: column;
+    width: 100%;
+  }
+  .service-feature {
+    width: 100%;
+  }
+  .statistics {
+    align-items: baseline;
+  }
+  .statistics p {
+    text-align: center;
+  }
+  .service-video {
+    width: 100%;
+  }
+  /* -----------features section-------------------- */
+  .features-container .row-new {
+    flex-direction: column;
+    min-width: 100%;
+    gap: 20px;
+  }
+  .features-container .row-new.second-row {
+    flex-direction: column-reverse;
+  }
 
+  .features-container .row-new > div {
+    width: 100%;
+  }
+  .features-container .text {
+    min-width: 100%;
+  }
+  .features-container .second-row .cards-container {
+    min-width: 550px;
+    min-height: 350px;
+  }
+  .features-container .first-row .cards-container {
+    min-width: 550px;
+    min-height: 250px;
+  }
+  .first-row .cards-container .card1 {
+    top: 80px;
+  }
+  .first-row .cards-container .card2 {
+    top: 0;
+  }
+  .second-row .cards-container .card1 {
+    top: 0px;
+    left: 0px;
+  }
+  .second-row .cards-container .card2 {
+    top: 70px;
+    right: 0px;
+  }
+  .second-row .cards-container .card3 {
+    top: 200px;
+    left: 0;
+  }
+
+  /* ---------pricing table design -------------- */
+  .price-plan-container {
+    position: relative;
+    padding-top: 150px;
+  }
+  .pricing-table {
+    overflow-x: scroll;
+    max-width: 605px;
+    margin: 0 auto;
+    padding-top: 200px;
+  }
+  .pricing-table::-webkit-scrollbar {
+    width: 0;
+  }
+
+  .pricing-table table tr:nth-child(2) td {
+    border-top: 1px solid #e2e2e2;
+  }
+  .pricing-table table tr:first-child td:first-child {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-bottom: none;
+    width: 100%;
+  }
+
+  /* make first column in table sticky */
+  .pricing-table table tr td:first-child {
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 4;
+    background-color: #fafafa;
+    border-right: 1px solid #e2e2e2;
+  }
+  /* hide the text above first column  & after last col*/
+  .pricing-table tr:nth-child(2) td:first-child::before {
+    content: "";
+    position: absolute;
+    width: 170px;
+    height: 220px;
+    background-color: #fafafa;
+    top: -230px;
+    left: 0px;
+    /* background-color: #4aaf05; */
+    /* z-index: 8; */
+  }
+  .pricing-table tr:nth-child(2) td:first-child::after {
+    content: "";
+    position: absolute;
+    width: 145px;
+    height: 220px;
+    background-color: #fafafa;
+    top: -230px;
+    right: -300px;
+    /* background-color: #4aaf05; */
+    /* z-index: 8; */
+  }
+
+  .pricing-table tr:last-child td:first-child::before {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    background-color: #fafafa;
+    top: 5px;
+    left: 0px;
+    /* background-color: #4aaf05; */
+    z-index: 8;
+  }
+  .pricing-table tr:last-child td:first-child::after {
+    content: "";
+    position: absolute;
+    width: 140px;
+    height: 100px;
+    background-color: #fafafa;
+    top: 5px;
+    right: -300px;
+    /* background-color: #4aaf05; */
+    z-index: 8;
+  }
+
+  .pricing-table table tr td {
+    min-width: 310px;
+    text-align: center !important;
+    border-left: none;
+  }
+  .pricing-table table tr:first-child td {
+    border-bottom: none;
+    position: relative;
+  }
+  .pricing-table table tr:first-child td .col {
+    position: absolute;
+    left: -70px;
+    top: -170px;
+    /* background-color: #4aaf05; */
+  }
+  .pricing-table table tr:last-child td:not(:first-child) {
+    position: relative;
+    /* background-color: #4535f6; */
+  }
+  .pricing-table {
+    padding-bottom: 80px;
+  }
+  .pricing-table tr:last-child td .pricing-btn {
+    position: absolute;
+    left: -110px;
+    bottom: -50px;
+    width: 240px;
+  }
+
+  .pricing-table table h5 {
+    font-size: 30px;
+  }
+  .arrow-forward,
+  .arrow-back {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+  }
+  .arrow-back {
+    left: 30px;
+    top: 30%;
+  }
+  .arrow-forward {
+    right: 30px;
+    top: 30%;
+  }
+
+  .plans-header h4 {
+    width: 100%;
+    text-align: center;
+  }
+  .plans-header h4::after {
+    left: 45%;
+  }
+  /*-----------our-parnters------------  */
+  .our-parnters {
+    flex-direction: column;
+    gap: 40px;
+  }
+  /* -----------footer---------------- */
+  .footer-content {
+    position: relative;
+    padding-top: 150px;
+    justify-content: space-between;
+  }
+  .footer-content > div:first-child {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  .footer-content > div:first-child p {
+    min-width: 100%;
+  }
+  .footer-sec-row {
+    flex-direction: column;
+    min-width: 100%;
+    gap: 40px;
+    align-items: flex-start;
+  }
+  .footer-sec-row > div:first-child {
+    gap: 30px;
+  }
+  .footer-sec-row > div:last-child {
+    width: 100%;
   }
 }
 /* ---------End design for tablet---------- */
