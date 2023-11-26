@@ -16,3 +16,14 @@ searchWrapper.addEventListener("click", function (e) {
     searchWrapper.classList.remove("active");
   }
 });
+
+const faqs = document.querySelectorAll(".faq.pricing");
+
+const faqButton = document.querySelectorAll(".faq-button");
+
+faqButton.forEach((element, index) => {
+  element.addEventListener("click", (e) => {
+    faqButton[index].classList.toggle('toggle')
+    faqs[index].classList.toggle("toggle");
+  });
+});
