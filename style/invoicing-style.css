@@ -29,11 +29,11 @@
 html,
 body {
   height: 100%;
+  overflow-x: hidden;
 }
 
 body {
   background: var(--secondary-color);
-  overflow-x: hidden;
 }
 
 /* ----------------------[ Start Global Of Styling ]--------------------- */
@@ -61,6 +61,7 @@ header {
   min-height: 50px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   z-index: 2;
   position: relative;
 }
@@ -329,8 +330,8 @@ nav .nav-list .nav-link {
 }
 
 /* ! PRICING PAGE HERO  */
-.hero.pricing{
-  min-height: auto; 
+.hero.pricing {
+  min-height: auto;
 }
 
 /* ----------------------[ End Of Hero ]--------------------- */
