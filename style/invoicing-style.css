@@ -130,6 +130,33 @@ nav .nav-list .nav-link {
   outline: none;
 }
 
+.current-path {
+  min-width: 100%;
+  min-height: auto;
+  padding: 15px 120px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: var(--third-color);
+}
+
+.current-path span {
+  display: flex;
+  color: var(--secondary-text-color);
+  gap: 15px;
+  font-size: 14px;
+  align-items: center;
+}
+
+.current-path span a {
+  text-decoration: none;
+  color: var(--secondary-text-color);
+}
+
+.current-path span .current {
+  font-weight: 600;
+  color: var(--accent-text-color);
+}
 /* ----------------------[ End Of Header ]--------------------- */
 
 /* ----------------------[ Start Of Hero ]--------------------- */
@@ -246,7 +273,6 @@ nav .nav-list .nav-link {
   /* z-index: -1; */
 }
 
-/* TODO: This line should be at end of the project */
 .hero .hero-img #shape {
   /* width: 54%; */
   height: 100%;
@@ -262,6 +288,40 @@ nav .nav-list .nav-link {
   position: absolute;
   top: -198px;
   right: -335px;
+}
+
+/* ? [ABOUT-PAGE HERO] */
+.hero.about {
+  min-width: 100%;
+  min-height: auto;
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: var(--primary-color);
+}
+
+.hero.about .hero-heading h1,
+.hero.about .hero-heading p {
+  color: var(--secondary-color);
+}
+
+.hero.about .hero-buttons button {
+  background-color: var(--secondary-color);
+  color: var(--accent-text-color);
+}
+
+.hero.about .hero-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero.about .hero-img #shape img {
+  height: 620px;
+  position: absolute;
+  float: right;
+  top: -310px;
+  bottom: 0;
+  right: -200px;
 }
 
 /* ----------------------[ End Of Hero ]--------------------- */
@@ -711,6 +771,18 @@ nav .nav-list .nav-link {
     left: -20px;
   }
 }
+
+.features-container.about .card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.features-container.about .card {
+  box-shadow: none;
+  max-width: 600px;
+  padding: 0 !important;
+}
 /* end of features section */
 /* -------------------------------- */
 /* start price plan section */
@@ -861,6 +933,112 @@ nav .nav-list .nav-link {
 }
 
 /* End our Parnters Section */
+
+/* Start of trusted clients */
+.trusted-clients-container {
+  min-width: 100%;
+  min-height: 75dvh;
+  display: grid;
+  gap: 25px;
+  place-items: center;
+}
+
+.trusted-clients-container .trusted-clients-heading {
+  text-align: center;
+  display: grid;
+  gap: 25px;
+  place-items: center;
+}
+
+.trusted-clients-container .trusted-clients-heading h1 {
+  color: var(--accent-text-color);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: -0.4000000059604645px;
+  text-align: center;
+}
+
+.trusted-clients-container .trusted-clients-heading p {
+  width: 55%;
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.trusted-clients-container .trusted-clients {
+  display: grid;
+  place-items: center;
+  gap: 25px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "a b c d"
+    "e f g h";
+}
+
+.trusted-clients-container .trusted-clients .client {
+  min-width: 270px;
+  height: 160px;
+  display: grid;
+  place-items: center;
+  background: #ebeaed;
+  position: relative;
+}
+
+.trusted-clients-container .trusted-clients .client img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.trusted-clients-container .trusted-clients .client:nth-child(1) {
+  grid-area: a;
+}
+
+.trusted-clients-container .trusted-clients .client:nth-child(2) {
+  grid-area: b;
+}
+
+.trusted-clients-container .trusted-clients .client:nth-child(3) {
+  grid-area: c;
+}
+
+.trusted-clients-container .trusted-clients .client:nth-child(4) {
+  grid-area: d;
+}
+
+.trusted-clients-container .trusted-clients .client:nth-child(5) {
+  grid-area: e;
+}
+
+.trusted-clients-container .trusted-clients .client:nth-child(6) {
+  grid-area: f;
+}
+
+.trusted-clients-container .trusted-clients .client:nth-child(7) {
+  grid-area: g;
+}
+
+.trusted-clients-container .trusted-clients .client:nth-child(8) {
+  grid-area: h;
+}
+
+@media screen and (max-width: 1300px){
+  .trusted-clients-container .trusted-clients {
+    grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "a b"
+    "c d"
+    "e f"
+    "g h";
+  }
+}
+
 /* --------------------------------------- */
 /* Start Footer Section */
 .footer-container {
@@ -995,9 +1173,6 @@ nav .nav-list .nav-link {
 }
 
 /* Search implementation */
-
-
-
 .search-wrapper {
   width: 100%;
   left: 0;
@@ -1016,7 +1191,7 @@ nav .nav-list .nav-link {
   flex-flow: column nowrap;
 }
 
-.search-wrapper.active{
+.search-wrapper.active {
   display: flex;
 }
 
