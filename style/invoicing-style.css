@@ -58,6 +58,7 @@ button {
 /* ----------------------[ Start Of Header ]--------------------- */
 
 header {
+  align-items: center;
   min-width: 100%;
   min-height: 50px;
   display: flex;
@@ -1066,10 +1067,15 @@ nav .nav-list .nav-link {
   border-bottom-left-radius: inherit;
 }
 
+.hide {
+  display: none;
+}
+
 /* ---------Start design for tablet---------- */
 @media screen and (min-width: 744px) and (max-width: 1023px) {
   .hero {
     z-index: 1;
+    min-height: auto !important;
   }
   header {
     z-index: 2;
@@ -1079,13 +1085,13 @@ nav .nav-list .nav-link {
     position: fixed;
     top: 0;
     right: 0;
-    width: 70%;
+    width: 40%;
     height: 100%;
     background: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(2px);
-    /* display: none; */
     z-index: 3;
   }
+  /* --------------------- */
   .hide {
     display: none;
   }
@@ -1096,11 +1102,77 @@ nav .nav-list .nav-link {
     position: fixed;
     top: 0;
     left: 0;
-    width: 30%;
+    width: 60%;
     z-index: 1 !important;
     min-height: 100%;
     display: none;
   }
+  /* the second list appear in sidebar small screens */
+  .user-area2 .user-menu-list2 {
+    position: fixed;
+    flex-direction: column;
+    bottom: 0px;
+    left: 0px;
+    padding: 50px 0px 80px 40px;
+    z-index: 1 !important;
+    align-items: normal;
+    width: 60%;
+    display: flex;
+    list-style: none;
+    gap: 10px;
+  }
+  .user-area2 .user-menu-list2 li:not(:nth-child(5)) {
+    padding: 5px 0px;
+  }
+  .user-menu-list2 .user-menu-item .user-menu-link {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--secondary-text-color);
+  }
+
+  .user-menu-list2 .user-menu-item:nth-child(4) .user-menu-link {
+    color: var(--accent-text-color);
+    font-weight: 600;
+  }
+
+  .user-menu-list2 .user-menu-item img {
+    max-width: 100%;
+    height: 30px;
+  }
+
+  .user-menu-list2 .user-menu-item button {
+    padding: 10px 32px;
+  }
+
+  .user-area2 .user-menu-list2 .user-menu-item:first-child {
+    border-top: 1px solid #a1a0a080;
+    width: 50%;
+    padding-top: 30px;
+  }
+  .user-area2 .user-menu-list2 .user-menu-item button {
+    width: 80%;
+    margin-top: 10px;
+  }
+  .user-menu-list2 .user-menu-item select {
+    background: transparent;
+    border: none;
+    color: var(--secondary-text-color);
+    font-size: 100%;
+    outline: none;
+    margin-left: -5px;
+  }
+  .user-area2 .search-icon {
+    display: none;
+  }
+  .user-area2 .search-text {
+    display: block;
+  }
+  .user-area2 .user-menu-list .user-menu-item .language {
+    position: absolute;
+    bottom: 60px;
+    left: 25px;
+  }
+
   .show-flex {
     display: flex !important;
   }
