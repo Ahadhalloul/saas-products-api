@@ -509,17 +509,17 @@ nav .nav-list .nav-link {
   flex-direction: column;
   align-items: center;
 }
-.row-new {
+.new-row {
   display: flex;
   align-items: center;
 }
-.features-container .row-new {
+.features-container .new-row {
   width: 100%;
   gap: 70px;
   margin: 10px 0px 70px;
   justify-content: space-between;
 }
-.features-container .row-new > div {
+.features-container .new-row > div {
   width: 100%;
 }
 .features-container .text {
@@ -555,16 +555,16 @@ nav .nav-list .nav-link {
   clear: both;
 }
 
-.features-container .row-new .cards-container {
+.features-container .new-row .cards-container {
   max-width: 500px;
   height: auto;
   position: relative;
 }
 
-.features-container .row-new h4 {
+.features-container .new-row h4 {
   padding-bottom: 20px;
 }
-.features-container .row-new h6 {
+.features-container .new-row h6 {
   font-size: 0.9rem;
 }
 .first-row .cards-container .card {
@@ -1080,6 +1080,15 @@ nav .nav-list .nav-link {
   header {
     z-index: 2;
   }
+  .user-info {
+    gap: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    margin-top: 140px;
+    margin-left: 40px;
+  }
   /*ADD IT TO BODY WHEN NAV-LIST DISPLY BLOCK */
   .body-bg {
     position: fixed;
@@ -1098,7 +1107,7 @@ nav .nav-list .nav-link {
   nav .nav-list {
     flex-direction: column;
     background-color: #fff;
-    padding: 150px 0px 0px 40px;
+    padding: 220px 0px 0px 40px;
     position: fixed;
     top: 0;
     left: 0;
@@ -1276,16 +1285,16 @@ nav .nav-list .nav-link {
     width: 100%;
   }
   /* -----------features section-------------------- */
-  .features-container .row-new {
+  .features-container .new-row {
     flex-direction: column;
     min-width: 100%;
     gap: 20px;
   }
-  .features-container .row-new.second-row {
+  .features-container .new-row.second-row {
     flex-direction: column-reverse;
   }
 
-  .features-container .row-new > div {
+  .features-container .new-row > div {
     width: 100%;
   }
   .features-container .text {
