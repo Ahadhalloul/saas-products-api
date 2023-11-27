@@ -9,7 +9,7 @@
   <body>
     <main class="login-page">
       <section class="login-container">
-        <div class="logo-contanier">
+        <div class="logo-container">
           <img src="./images/logo.svg" />
         </div>
         <form class="login-form">
@@ -22,12 +22,21 @@
           <div class="input-container">
             <label for="credintals">Password <span>*</span></label>
             <div class="input">
-              <input type="password" placeholder="Ikramy@company.com" />
-              <img src="./icons/eye.svg" />
+              <input
+                id="passwordInput"
+                type="password"
+                placeholder="********"
+              />
+              <img src="./icons/eye.svg" id="hidePwd" />
             </div>
           </div>
           <div class="options-container">
-            <button></button>remember me
+            <div>
+              <div id="toggleContainer" class="toggle-container">
+                <div id="toggle" class="toggle"></div>
+              </div>
+              <p>Remember Me</p>
+            </div>
             <a href="#">Forgot Password?</a>
           </div>
           <button type="submit">Login</button>
@@ -35,5 +44,26 @@
         </form>
       </section>
     </main>
+    <script>
+      let toggle = document.getElementById("toggle");
+      let toggleContainer = document.getElementById("toggleContainer");
+
+      toggleContainer.addEventListener("click", (e) => {
+        e.preventDefault();
+        toggleContainer.classList.toggle("active");
+        toggle.classList.toggle("active");
+      });
+
+      let passwordInput = document.getElementById("passwordInput");
+      let hidePwd = document.getElementById("hidePwd");
+
+      hidePwd.onclick = (event) => {
+        if (passwordInput.type === "password") {
+          passwordInput.type = "text";
+        } else {
+          passwordInput.type = "password";
+        }
+      };
+    </script>
   </body>
 </html>

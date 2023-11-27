@@ -23,7 +23,8 @@ const faqButton = document.querySelectorAll(".faq-button");
 
 faqButton.forEach((element, index) => {
   element.addEventListener("click", (e) => {
-    faqButton[index].classList.toggle('toggle')
+    faqButton[index].classList.toggle("toggle");
     faqs[index].classList.toggle("toggle");
   });
 });
+
