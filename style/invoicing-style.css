@@ -262,10 +262,10 @@ nav .nav-list .nav-link {
 }
 
 .hero .hero-img #shape img {
-  height: 993px;
+  height: 906px;
   min-width: auto;
   position: absolute;
-  top: -198px;
+  top: -207px;
   right: -335px;
 }
 
@@ -358,6 +358,60 @@ nav .nav-list .nav-link {
   font-weight: 300;
 }
 
+/* ---------faq list design -----------*/
+/* .about-faq-container .faq-list {
+  padding: 20px 0px;
+}
+.about-faq-container .faq-list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.about-faq-container .faq-list ul li {
+  list-style: none;
+  box-shadow: 0px 5px 16px 0px #080f340f;
+  padding: 20px;
+  border-radius: 10px;
+}
+.about-faq-container .faq-list ul li a {
+  text-decoration: none;
+  color: #170f49;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.about-faq-container .faq-list ul li a div {
+  min-width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0px 5px 16px 0px #080f340f;
+  text-align: center;
+}
+.about-faq-container .faq-list ul li a div img {
+  margin-top: 10px;
+} */
+
+.faq-answer-block {
+  padding: 20px;
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  margin: 20px 0px;
+}
+.faq-answer-block div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.faq-answer-block h4 {
+  color: var(--accent-text-color);
+  font-size: 20px;
+  font-weight: 500;
+}
+.faq-answer-block p {
+  color: #6f6c90;
+}
 .about-images {
   display: flex;
   width: 100%;
@@ -766,32 +820,38 @@ nav .nav-list .nav-link {
   left: 0;
 }
 
-.plans-header h5 {
+.plans-header h5,
+.plan-card h5 {
   font-size: 1.5rem;
   font-weight: 300;
   padding-bottom: 5px;
   text-align: center;
 }
-.plans-header h6 {
+.plans-header h6,
+.plan-card h6 {
   font-weight: 400;
   padding-bottom: 5px;
 }
-.plans-header .price-value {
+.plans-header .price-value,
+.plan-card .price-value {
   font-size: 1.4rem;
   padding-left: 2px;
 }
-.plans-header p {
+.plans-header p,
+.plan-card p {
   width: 150px;
   font-size: 0.77rem;
   color: #8a8a8a;
   text-align: center;
 }
-.plans-header .col {
+.plans-header .col,
+.plan-card .col {
   align-items: center;
   justify-content: center;
   align-items: center;
 }
-.plans-header .icon-bg {
+.plans-header .icon-bg,
+.plan-card .icon-bg {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -799,10 +859,40 @@ nav .nav-list .nav-link {
   text-align: center;
   margin-bottom: 10px;
 }
-.plans-header .icon-bg img {
-  margin-top: 8.5px;
+.plans-header .icon-bg img,
+.plan-card .icon-bg img {
+  margin-top: 10px;
+  width: 20px;
 }
-
+/* ------------cards table------------------------- */
+.price-plan-cards-container h4 {
+  font-weight: 300;
+  font-size: 34px;
+  position: relative;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.plan-card .plan-cards-table {
+  width: 80%;
+  padding-top: 30px;
+  margin: 0 auto;
+}
+.plan-card .plan-cards-table tr td {
+  border-top: 1px solid #e2e2e2;
+  text-align: center;
+  padding: 20px 0px;
+  min-width: 118px;
+}
+.plan-card .plan-cards-table tr:last-child td {
+  border-bottom: 1px solid #e2e2e2;
+}
+.plan-card .plan-cards-table tr td:last-child {
+  border-left: 1px solid #e2e2e2;
+}
+/* ---------------------------------------- */
+.price-plan-cards-container {
+  display: none;
+}
 .pricing-table table {
   text-align: center;
   width: 100%;
@@ -1004,12 +1094,11 @@ nav .nav-list .nav-link {
     min-width: 50%;
     height: 300px;
   }
-  #shape img {
-    /* min-width: 115%; */
+  /* #shape img {
     top: -300px !important;
     height: 150vh;
     right: -610px !important;
-  }
+  } */
 }
 
 .hide-from-invoicing {
@@ -1082,6 +1171,12 @@ nav .nav-list .nav-link {
 
 /* ---------Start design for tablet---------- */
 @media screen and (max-width: 1023px) {
+  .price-plan-cards-container {
+    display: block;
+  }
+  .pricing-table {
+    display: none;
+  }
   .hero {
     z-index: 1;
     min-height: auto !important;
@@ -1223,7 +1318,7 @@ nav .nav-list .nav-link {
   }
   /* -------edit hero shape------  */
   #shape img {
-    height: 850px;
+    height: 700px !important;
   }
   /* ----------- */
 
@@ -1339,118 +1434,9 @@ nav .nav-list .nav-link {
   /* ---------pricing table design -------------- */
   .price-plan-container {
     position: relative;
-    padding-top: 150px;
+    padding-top: 60px;
   }
-  .pricing-table {
-    overflow-x: scroll;
-    max-width: 605px;
-    margin: 0 auto;
-    padding-top: 200px;
-  }
-  .pricing-table::-webkit-scrollbar {
-    width: 0;
-  }
-
-  .pricing-table table tr:nth-child(2) td {
-    border-top: 1px solid #e2e2e2;
-  }
-  .pricing-table table tr:first-child td:first-child {
-    position: absolute;
-    top: 60px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    border-bottom: none;
-    width: 100%;
-  }
-
-  /* make first column in table sticky */
-  .pricing-table table tr td:first-child {
-    position: sticky;
-    left: 0;
-    top: 0;
-    z-index: 4;
-    background-color: #fafafa;
-    border-right: 1px solid #e2e2e2;
-  }
-  /* hide the text above first column  & after last col*/
-  .pricing-table tr:nth-child(2) td:first-child::before {
-    content: "";
-    position: absolute;
-    width: 170px;
-    height: 220px;
-    background-color: #fafafa;
-    top: -230px;
-    left: 0px;
-    /* background-color: #4aaf05; */
-    /* z-index: 8; */
-  }
-  .pricing-table tr:nth-child(2) td:first-child::after {
-    content: "";
-    position: absolute;
-    width: 145px;
-    height: 220px;
-    background-color: #fafafa;
-    top: -230px;
-    right: -300px;
-    /* background-color: #4aaf05; */
-    /* z-index: 8; */
-  }
-
-  .pricing-table tr:last-child td:first-child::before {
-    content: "";
-    position: absolute;
-    width: 150px;
-    height: 100px;
-    background-color: #fafafa;
-    top: 5px;
-    left: 0px;
-    /* background-color: #4aaf05; */
-    z-index: 8;
-  }
-  .pricing-table tr:last-child td:first-child::after {
-    content: "";
-    position: absolute;
-    width: 140px;
-    height: 100px;
-    background-color: #fafafa;
-    top: 5px;
-    right: -300px;
-    /* background-color: #4aaf05; */
-    z-index: 8;
-  }
-
-  .pricing-table table tr td {
-    min-width: 310px;
-    text-align: center !important;
-    border-left: none;
-  }
-  .pricing-table table tr:first-child td {
-    border-bottom: none;
-    position: relative;
-  }
-  .pricing-table table tr:first-child td .col {
-    position: absolute;
-    left: -70px;
-    top: -170px;
-    /* background-color: #4aaf05; */
-  }
-  .pricing-table table tr:last-child td:not(:first-child) {
-    position: relative;
-    /* background-color: #4535f6; */
-  }
-  .pricing-table {
-    padding-bottom: 80px;
-  }
-  .pricing-table tr:last-child td .pricing-btn {
-    position: absolute;
-    left: -110px;
-    bottom: -50px;
-    width: 240px;
-  }
-
-  .pricing-table table h5 {
-    font-size: 30px;
-  }
+  /* ---------------------------------------------- */
   .arrow-forward,
   .arrow-back {
     display: block;
@@ -1523,9 +1509,7 @@ nav .nav-list .nav-link {
   .nav-menu-icon {
     left: 20px;
   }
-  #shape img {
-    height: 700px;
-  }
+
   .hero .hero-content .hero-heading h1 {
     font-size: 24px;
     line-height: 1;
@@ -1539,7 +1523,8 @@ nav .nav-list .nav-link {
   }
   .hero .hero-content .hero-buttons button {
     min-width: 150px;
-    padding: 20px 10px;
+    padding: 10px 5px;
+    font-size: 14px;
   }
   .hero .hero-rating {
     padding: 5px;
@@ -1720,11 +1705,24 @@ nav .nav-list .nav-link {
     margin-top: 30px;
   }
   .hero .hero-img #shape img {
-    height: 700px;
+    height: 560px !important;
+  }
+  .footer-sec-row p {
+    text-align: center;
+  }
+  .price-plan-cards-container h4 {
+    font-size: 20px;
+  }
+  .plan-card h5 {
+    font-size: 22px;
   }
 }
 
 @media screen and (max-width: 450px) {
+  .plan-card td {
+    font-size: 14px;
+  }
+
   .features-container .second-row .cards-container .card {
     width: 160px;
     height: 130px;
@@ -1733,5 +1731,15 @@ nav .nav-list .nav-link {
     width: 160px;
     height: 110px;
   }
+  .hero .hero-content .hero-buttons button {
+    min-width: 120px;
+  }
+  .hero .hero-img #shape img {
+    height: 423px !important;
+  }
 }
 /* ------------ End mobile design ------------- */
+
+.hide {
+  display: none !important;
+}

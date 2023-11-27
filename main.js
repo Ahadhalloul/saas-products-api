@@ -87,3 +87,38 @@ function statisticBack() {
     behavior: "smooth",
   });
 }
+
+// --------price plan swipper---------------------------------
+// ----------------------------------------
+var swiper = new Swiper(".planSwiper", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  slidesPerGroup: 1,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".arrow-forward",
+    prevEl: ".arrow-back",
+  },
+  speed: 1200,
+});
+
+// -----------show & hide about list "faq"-----------------------------------------------
+// -------------------------------------------------------------
+
+let faqList = document.querySelector("#faqList");
+let faqBlock = document.querySelector("#faqAnswerBlock");
+
+faqList.addEventListener("click", () => {
+  faqBlock.classList.toggle("hide");
+  faqList.classList.toggle("hide");
+});
+
+faqBlock.addEventListener("click", () => {
+  faqBlock.classList.toggle("hide");
+  faqList.classList.toggle("hide");
+});
