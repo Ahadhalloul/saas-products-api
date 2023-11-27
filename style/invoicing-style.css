@@ -1128,30 +1128,32 @@ nav .nav-list .nav-link {
 
 .faq.pricing {
   width: 100%;
-  height: auto;
+  max-height: 105px;
   padding: 25px;
   display: flex;
   flex-flow: column nowrap;
   gap: 40px;
   overflow: hidden;
   border: none;
-
+  transition: visibility 250ms ease-in-out,  max-height 200ms ease-in-out;
   border-radius: 14px;
   background: var(--secondary-color);
   /* Buttons/ Color - Default */
-  box-shadow: 0px 6px 16px 0px rgba(74, 58, 255, 0.19);
+  box-shadow: 0px 6px 16px 0px rgba(78, 78, 78, 0.19);
 }
 
 .faq.pricing.toggle {
   outline: 2px solid var(--primary-color);
+  max-height: 300px;
 }
 
 .faq.pricing.toggle .faq-content {
-  display: block;
+  visibility: visible ;
+
 }
 
 .faq-content {
-  display: none;
+  visibility: hidden;
 }
 
 .faq-heading {
