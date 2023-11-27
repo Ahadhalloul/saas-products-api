@@ -10,10 +10,28 @@
     <main class="login-page">
       <section class="login-container">
         <div class="logo-contanier">
-          <img src="./images/logo.svg"/>
+          <img src="./images/logo.svg" />
         </div>
         <form class="login-form">
-          <div class="input-container"></div>
+          <div class="input-container">
+            <label for="credintals">Email or username <span>*</span></label>
+            <div class="input">
+              <input type="text" placeholder="Ikramy@company.com" />
+            </div>
+          </div>
+          <div class="input-container">
+            <label for="credintals">Password <span>*</span></label>
+            <div class="input">
+              <input type="password" placeholder="Ikramy@company.com" />
+              <img src="./icons/eye.svg" />
+            </div>
+          </div>
+          <div class="options-container">
+            <button></button>remember me
+            <a href="#">Forgot Password?</a>
+          </div>
+          <button type="submit">Login</button>
+          <span>Don't have an account? <a href="#">Sign Up</a></span>
         </form>
       </section>
     </main>

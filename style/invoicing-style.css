@@ -1225,12 +1225,12 @@ nav .nav-list .nav-link {
   line-height: 72px; /* 150% */
 }
 
-.hq-container img:first-of-type {
-  grid-area: b;
+.hq-container > img:first-of-type {
+  grid-area: c;
 }
 
-.hq-container img:last-child {
-  grid-area: c;
+.hq-container > img:last-of-type {
+  grid-area: b;
 }
 
 .hq-contact {
@@ -1245,12 +1245,12 @@ nav .nav-list .nav-link {
   gap: 10px;
 }
 
-.hq-contact:first-of-type {
-  grid-area: a;
+.hq-container > .hq-contact:first-of-type {
+  grid-area: b;
 }
 
-.hq-contact:last-of-type {
-  grid-area: d;
+.hq-container > .hq-contact:last-of-type {
+  grid-area: a;
 }
 
 @media screen and (max-width: 1110px) {
@@ -1356,12 +1356,12 @@ nav .nav-list .nav-link {
   text-align: left;
 }
 
-.contact-input label span {
+label span {
   color: red;
   font-size: 13px;
 }
 
-.contact-input .input,
+.input,
 .contact-input select {
   min-width: 100%;
   min-height: auto;
@@ -1380,7 +1380,7 @@ nav .nav-list .nav-link {
   padding: 15px;
 }
 
-.contact-input .input input {
+.input input {
   width: 100%;
   outline: none;
   border: none;
@@ -1985,10 +1985,36 @@ nav .nav-list .nav-link {
   padding: 40px;
   border-radius: 26px;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-flow: column nowrap;
-  gap: 44px;
+  gap: 50px;
   background: var(--secondary-color);
   z-index: 2;
+}
+
+.login-form {
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-flow: column nowrap;
+  gap: 25px;
+}
+
+.login-page .login-container img {
+  width: 100%;
+  height: 75px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  flex-flow: column nowrap;
+}
+
+.input-container .input {
+  align-items: center;
+}
+
+.input-container .input img {
+  height: 30px;
 }
