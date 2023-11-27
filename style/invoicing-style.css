@@ -1222,11 +1222,11 @@ nav .nav-list .nav-link {
   }
   /* the second list appear in sidebar small screens */
   .user-area2 .user-menu-list2 {
+    padding: 50px 0px 30px 40px;
     position: fixed;
     flex-direction: column;
     bottom: 0px;
     left: 0px;
-    padding: 50px 0px 80px 40px;
     z-index: 1 !important;
     align-items: normal;
     width: 60%;
@@ -1277,9 +1277,9 @@ nav .nav-list .nav-link {
   .user-area2 .search-icon {
     display: none;
   }
-  .user-area2 .search-text {
+  /* .user-area2 .search-text {
     display: block;
-  }
+  } */
   .user-area2 .user-menu-list .user-menu-item .language {
     position: absolute;
     bottom: 60px;
@@ -1738,6 +1738,7 @@ nav .nav-list .nav-link {
     height: 423px !important;
   }
 }
+
 /* ------------ End mobile design ------------- */
 
 .hide {
