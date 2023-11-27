@@ -1250,7 +1250,7 @@ nav .nav-list .nav-link {
 
 @media screen and (max-width: 1110px) {
   .hq-container {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, auto);
     grid-template-rows: repeat(5, 1fr);
     grid-template-areas:
       "h"
@@ -1356,16 +1356,30 @@ nav .nav-list .nav-link {
   font-size: 13px;
 }
 
-.contact-input input,
+.contact-input .input,
 .contact-input select {
-  min-width: 320px;
-  min-height: 48px;
+  min-width: 100%;
+  min-height: auto;
   padding: 12px, 16px, 12px, 16px;
   border-radius: 8px;
   border: 1px solid var(--accent-color);
   outline: none;
-  padding: 10px 15px;
+  padding: 0 15px;
   opacity: 0.5px;
+  display: flex;
+  gap: 15px;
+  overflow: hidden;
+}
+
+.contact-input select {
+  padding: 15px;
+}
+
+.contact-input .input input {
+  width: 100%;
+  outline: none;
+  border: none;
+  min-height: 50px;
 }
 
 .contact-input span {
@@ -1390,6 +1404,12 @@ nav .nav-list .nav-link {
   justify-content: center;
   align-items: flex-start;
   align-self: stretch;
+}
+
+@media screen and (max-width: 1105px) {
+  .contact-form {
+    grid-template-columns: repeat(2, auto);
+  }
 }
 
 /* --------------------------------------- */
