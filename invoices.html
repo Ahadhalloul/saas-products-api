@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejada EIM / E-invoicing Middleware</title>
+    <link rel="stylesheet" href="style/invoicing-style.css" />
+  </head>
+  <body>
+    <!------------- Search  bar -------------->
+    <div id="searchWrapper" class="search-wrapper">
+      <h2>Type your search keyword</h2>
+      <div id="searchBar" class="search-bar">
+        <input type="text" />
+        <img src="/icons/search.svg" width="32" height="32" />
+      </div>
+    </div>
+
+    <!------------- Start  Header -------------->
+    <header class="padding">
+      <nav>
+        <div class="logo-container">
+          <a href="/">
+            <img src="../images/logo.svg" alt="e-invoicing logo" class="logo" />
+          </a>
+        </div>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="/products.html">products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pricing.html">pricing </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html">about</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/resources.html">resources</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="user-area">
+        <ul class="user-menu-list">
+          <li class="user-menu-item" id="searchButton">
+            <img src="./icons/search.svg" alt="search icon" />
+          </li>
+          <li class="user-menu-item">
+            <a href="/contact.html" class="user-menu-link">contact</a>
+          </li>
+          <li class="user-menu-item">
+            <span><img src="./images/avatar.png" /></span>
+            <span>Ikramy Ismail</span>
+          </li>
+          <li class="user-menu-item">
+            <select class="language">
+              <option value="english">EN</option>
+              <option value="arabic">AR</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!------------- End Header -------------->
+    <!------------- Start Main -------------->
+    <main>
+      <!-- Start Current path -->
+      <div class="current-path">
+        <span>
+          <img src="./icons/home.svg" width="16" height="16" />
+          <a href="/"> Home</a>
+        </span>
+        <span> / </span>
+        <span><a class="current" href="/invoices.html">Account</a></span>
+      </div>
+      <!-- End Current path -->
+      <section class="invoices-container padding">
+        <div class="invoices-heading">
+          <h2>My Invoices</h2>
+          <button>View All Invoices</button>
+        </div>
+        <div class="invoices-filters">
+          <div class="invoices-select-filter">
+            <span>Show</span>
+            <select>
+              <option value="10">10</option>
+              <option value="15">15</option>
+              <option value="20">20</option>
+              <option value="25">25</option>
+            </select>
+            <span>entries</span>
+          </div>
+          <div class="invoices-search-filter">
+            <img src="./icons/search.svg" />
+            <input type="text" placeholder="Search Invoice #, date, or etc." />
+          </div>
+        </div>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr class="first-table-row">
+                <th>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  Name
+                </th>
+                <th>Invoice #</th>
+                <th>Date</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <span>
+                    Albert Flores <br />
+                    <p>Flores</p>
+                  </span>
+                </td>
+                <td>IV2344</td>
+                <td>23 SEP, 2023</td>
+                <td><span class="active-invoice">Active</span></td>
+                <td><img src="./icons/visibility.svg" /></td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <span>
+                    Albert Flores <br />
+                    <p>Flores</p>
+                  </span>
+                </td>
+                <td>IV2344</td>
+                <td>23 NOV, 2023</td>
+                <td><span class="active-invoice">Active</span></td>
+                <td><img src="./icons/visibility.svg" /></td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <span>
+                    Albert Flores <br />
+                    <p>Flores</p>
+                  </span>
+                </td>
+                <td>IV2344</td>
+                <td>23 JAN, 2023</td>
+                <td><span class="pending-invoice">Pending</span></td>
+                <td><img src="./icons/visibility.svg" /></td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <span>
+                    Albert Flores <br />
+                    <p>Flores</p>
+                  </span>
+                </td>
+                <td>IV2344</td>
+                <td>23 MAR, 2023</td>
+                <td><span class="inactive-invoice">Inactive</span></td>
+                <td><img src="./icons/visibility.svg" /></td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <span>
+                    Albert Flores <br />
+                    <p>Flores</p>
+                  </span>
+                </td>
+                <td>IV2344</td>
+                <td>23 OCT, 2023</td>
+                <td><span class="active-invoice">Active</span></td>
+                <td><img src="./icons/visibility.svg" /></td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <span>
+                    Albert Flores <br />
+                    <p>Flores</p>
+                  </span>
+                </td>
+                <td>IV2344</td>
+                <td>23 SEP, 2023</td>
+                <td><span class="active-invoice">Active</span></td>
+                <td><img src="./icons/visibility.svg" /></td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <span>
+                    Albert Flores <br />
+                    <p>Flores</p>
+                  </span>
+                </td>
+                <td>IV2344</td>
+                <td>23 AUG, 2023</td>
+                <td><span class="active-invoice">Active</span></td>
+                <td><img src="./icons/visibility.svg" /></td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <span>
+                    Albert Flores <br />
+                    <p>Flores</p>
+                  </span>
+                </td>
+                <td>IV2344</td>
+                <td>23 MAR, 2023</td>
+                <td><span class="pending-invoice">Pending</span></td>
+                <td><img src="./icons/visibility.svg" /></td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <span>
+                    Albert Flores <br />
+                    <p>Flores</p>
+                  </span>
+                </td>
+                <td>IV2344</td>
+                <td>23 FEB, 2023</td>
+                <td><span class="active-invoice">Active</span></td>
+                <td><img src="./icons/visibility.svg" /></td>
+              </tr>
+              <tr>
+                <td>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <span>
+                    Albert Flores <br />
+                    <p>Flores</p>
+                  </span>
+                </td>
+                <td>IV2344</td>
+                <td>23 SEP, 2023</td>
+                <td><span class="inactive-invoice">Inactive</span></td>
+                <td><img src="./icons/visibility.svg" /></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagination">
+          <div class="pagination-result">
+            <p>Showing 1 to 10 of 43 entries</p>
+          </div>
+
+          <ul class="pagination-pages">
+            <li>
+              <a href="#" class="prev"><i data-feather="chevron-left"></i></a>
+            </li>
+            <li><a href="#" class="page active">1</a></li>
+            <li><a href="#" class="page">2</a></li>
+            <li><a href="#" class="page">3</a></li>
+            <li><a href="#" class="page">...</a></li>
+            <li><a href="#" class="page">5</a></li>
+            <li>
+              <a href="#" class="next"><i data-feather="chevron-right"></i></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!------------- End Main ---------------->
+    <footer class="footer-container">
+      <div class="footer-content row">
+        <div class="col">
+          <div class="logo-text">
+            <h2>MLE</h2>
+            <h6>e-Invoicing</h6>
+          </div>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa.
+          </p>
+        </div>
+        <div>
+          <h4>Information</h4>
+          <ul>
+            <li>
+              <a href="#">About<span>EML</span></a>
+            </li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Pricing</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Reasources</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact Us</h4>
+          <h5 class="e-mail">E.support@eml.com</h5>
+          <div class="social-links">
+            <a href=""
+              ><img src="./icons/akar-icons_facebook-fill.svg" alt=""
+            /></a>
+            <a href=""><img src="./icons/logos_twitter.svg" alt="" /></a>
+            <a href=""><img src="./icons/logos_linkedin-icon.svg" alt="" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-sec-row new-row">
+        <div class="new-row">
+          <h6>Terms & Condition</h6>
+          <h6>Privacy & Policy</h6>
+        </div>
+        <div class="new-row company-row">
+          <img src="./images/ejada-logo.svg" alt="" />
+          <p>
+            EML is a subsidiary Solution Developed and owned by Ejada Systems
+            LTD.
+          </p>
+        </div>
+      </div>
+      <div class="footer-copy-right">© 2023 EML. All Rights Reserved</div>
+    </footer>
+    <!-- End Footer Section -->
+    <!------------- End Footer -------------->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>

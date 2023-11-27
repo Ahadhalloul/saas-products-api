@@ -2001,7 +2001,7 @@ label span {
   gap: 25px;
 }
 
-.login-container  .logo-container > img {
+.login-container .logo-container > img {
   width: 100%;
   height: 100px;
 }
@@ -2089,3 +2089,282 @@ label span {
 .toggle-container.active {
   background: #4535f6;
 }
+
+/* ------------------ Start Invoices pages----------------- */
+
+/* Account avatar */
+.user-menu-item:has(span) {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.user-menu-item > span > img {
+  width: 100%;
+  height: 50px !important;
+}
+
+/* Account avatar */
+
+.invoices-container {
+  min-width: 100%;
+  display: flex;
+  gap: 25px;
+  flex-flow: column nowrap;
+}
+
+.invoices-heading,
+.invoices-filters {
+  display: flex;
+  justify-content: space-between;
+}
+
+.invoices-heading h2 {
+  font-size: 36px;
+  font-weight: 300;
+}
+
+.invoices-heading button {
+  padding: 5px 32px;
+}
+
+.invoices-select-filter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.invoices-select-filter select {
+  width: 72px;
+  height: 36px;
+  outline: none;
+  padding: 0 10px;
+  border-radius: 8px;
+  border: 1px solid #e0e7ed;
+}
+
+.invoices-select-filter span {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.invoices-search-filter {
+  min-width: 250px;
+  min-height: 35px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #e0e7ed;
+  border-radius: 10px;
+  padding: 0 10px;
+  gap: 5px;
+}
+
+.invoices-search-filter input {
+  width: 100%;
+  padding: 0 5px;
+  outline: none;
+  border: none;
+  min-height: inherit;
+}
+
+.invoices-search-filter img {
+  max-width: 100%;
+  height: 20px;
+}
+
+.table-container {
+  border-radius: 8px !important;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e7ed;
+}
+
+.table-container table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  border-radius: 30px;
+}
+
+.table-container th,
+.table-container td {
+  padding: 14px;
+  text-align: left;
+}
+
+.table-container tr > td:nth-child(1),
+.table-container tr > th:nth-child(1) {
+  display: flex;
+  gap: 20px;
+}
+
+.table-container tr > td:nth-child(1) p {
+  font-size: 12px;
+  color: var(--secondary-text-color);
+}
+
+.table-container th {
+  border: none;
+}
+
+.table-container th {
+  background-color: #f9f9f9;
+}
+
+.table-container tr,
+.table-container thead {
+  border-bottom: 1px solid #e0e7ed;
+}
+
+.table-container thead th {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 20px 12px;
+}
+
+.table-container thead th:nth-child(4),
+.table-container thead th:nth-child(5),
+.table-container tbody tr td:nth-child(4),
+.table-container tbody tr td:nth-child(5) {
+  text-align: center;
+}
+
+.table-container tbody tr td:nth-child(2),
+.table-container tbody tr td:nth-child(3) {
+  color: #828282;
+}
+
+.table-container tr td {
+  font-size: 14px;
+}
+
+.table-container tr:last-of-type {
+  border: none;
+}
+
+.table-container tr:hover {
+  background-color: #f5f5f5;
+}
+
+/* Hide the default checkbox */
+.custom-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+/* Style the custom checkbox container */
+.custom-checkbox {
+  display: inline-block;
+  position: relative;
+  padding-left: 2em; /* Adjust the space for the checkbox */
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Style the checkbox itself */
+.custom-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Style the checkmark */
+.checkmark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border: 2px solid #bec8d0;
+  border-radius: 4px;
+}
+
+/* Style the checkmark when the checkbox is checked */
+.custom-checkbox input:checked + .checkmark {
+  background-color: #4535f6;
+  border: 2px solid #4535f6;
+}
+
+/* Style the checkmark icon */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 4.5px;
+  top: 1px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* Show the checkmark icon when the checkbox is checked */
+.custom-checkbox input:checked + .checkmark:after {
+  display: block;
+}
+
+.active-invoice {
+  color: #18ab56;
+  background: #f0fff8;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-weight: 600;
+}
+
+.inactive-invoice {
+  color: #eb5757;
+  background: #fff0f0;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-weight: 600;
+}
+
+.pending-invoice {
+  color: #ffbc10;
+  background: #feffe5;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-weight: 600;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagination-pages {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.pagination-pages li {
+  margin-right: 10px;
+}
+
+.pagination-pages a {
+  text-decoration: none;
+  padding: 8px 12px;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+  color: #111;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.pagination-pages li:first-of-type a,
+.pagination-pages li:last-of-type a{
+  color: #828282;
+}
+
+.pagination-pages a.active {
+  background-color: #4535f6;
+  color: #fff;
+}
+/* ------------------ End Invoices pages----------------- */
