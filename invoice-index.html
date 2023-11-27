@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Saas product api</title>
     <!----- incoiving style ------------->
-    <link rel="stylesheet" href="style/invoicing-style.css" />
+    <!-- <link rel="stylesheet" href="style/invoicing-style.css" /> -->
+        <!----- ARABIC style ------------->
+    <link rel="stylesheet" href="style/invoicing-style-arabic.css" />
      <!-- Link Swiper's CSS -->
      <link
      rel="stylesheet"
@@ -27,20 +29,60 @@
     <!-- ------this div add background to body when nav sidebar open for small screen---------------------- -->
       <div class="body-bg hide"></div>
     <!-- ------------------------------ -->
-
-    <!------------- Start  Header -------------->
-    <header class="padding">
-      <nav>
-        <div class="nav-menu-icon">
-          <img src="./icons/menu.svg" alt="">
-        </div>
-        <div class="user-info new-row hide">
+      <!-- small screen side bar -->
+      <div id="side-bar" class="sidebar hide">
+        <div>
+          <img class="logo" src="./images/ejadaeim 1.png" alt="">
+          <div class="user-informatin new-row ">
           <img src="./images/Image-user.png" alt="">
           <div>
             <h4>Ikramy Ismail</h4>
             <p>Ikramy@company.com</p>
           </div>
         </div>
+        <ul class="side-bar-nav-list">
+          <li class="nav-item"><a class="nav-link" href="#">products</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">pricing </a></li>
+          <li class="nav-item"><a class="nav-link" href="#">about</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">resources</a></li>
+        </ul>
+        </div>
+
+        <div>
+          <ul class="side-bar-user-menu-list ">
+            <li class="user-menu-item" id="searchButton">
+              <a href="#" class="user-menu-link search-text ">Search</a>
+            </li>
+            <li class="user-menu-item">
+              <a href="#" class="user-menu-link">contact</a>
+            </li>
+            <li class="user-menu-item">
+              <select class="language">
+                <option value="english">English</option>
+                <option value="arabic">Arabic</option>
+              </select>
+            </li>
+            <li class="user-menu-item">
+              <a href="#" class="user-menu-link">login</a>
+            </li>
+            <li class="user-menu-item">
+              <button class="user-menu-button">get started</button>
+            </li>
+          </ul>
+        </div>
+  
+        
+      </div>
+
+      <!-- end small screen side bar -->
+      <!-- ------------------------------------------- -->
+    <!------------- Start  Header -------------->
+    <header class="padding">
+      <nav>
+        <div class="nav-menu-icon">
+          <img src="./icons/menu.svg" alt="">
+        </div>
+        
         <div class="logo-container">
        <!--  invoicing logo -->
           <img
@@ -60,7 +102,6 @@
         <ul class="user-menu-list">
           <li class="user-menu-item" id="searchButton">
             <img src="./icons/search.svg" alt="search icon" class="search-icon" />
-            <a href="#" class="user-menu-link search-text hide">Search</a>
           </li>
           <li class="user-menu-item">
             <a href="#" class="user-menu-link">contact</a>
@@ -79,30 +120,7 @@
           </li>
         </ul>
       </div>
-      <!-- duplicated list for small screen side bar-->
-      <div class="user-area2  hide">
-        <ul class="user-menu-list2 ">
-          <li class="user-menu-item" id="searchButton">
-            <img src="./icons/search.svg" alt="search icon" class="search-icon" />
-            <a href="#" class="user-menu-link search-text ">Search</a>
-          </li>
-          <li class="user-menu-item">
-            <a href="#" class="user-menu-link">contact</a>
-          </li>
-          <li class="user-menu-item">
-            <select class="language">
-              <option value="english">English</option>
-              <option value="arabic">Arabic</option>
-            </select>
-          </li>
-          <li class="user-menu-item">
-            <a href="#" class="user-menu-link">login</a>
-          </li>
-          <li class="user-menu-item">
-            <button class="user-menu-button">get started</button>
-          </li>
-        </ul>
-      </div>
+
     </header>
     <!------------- End Header -------------->
     <!------------- Start Main -------------->
@@ -725,7 +743,6 @@
             <img src="./images/denodo 1.png" alt="">
             <img src="./images/denodo 1.png" alt="">
             <img src="./icons/right Arrow.svg" alt="">
-  
           </div>
         </section>
         <!-- End our Parnters Section -->
