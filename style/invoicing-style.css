@@ -1389,6 +1389,9 @@ nav .nav-list .nav-link {
   line-height: 20px;
   letter-spacing: 0em;
   text-align: left;
+}
+
+.contact-input > span {
   margin-left: 16px;
 }
 
@@ -1404,6 +1407,7 @@ nav .nav-list .nav-link {
   justify-content: center;
   align-items: flex-start;
   align-self: stretch;
+  outline: none;
 }
 
 @media screen and (max-width: 1105px) {
