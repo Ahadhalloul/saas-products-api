@@ -1128,7 +1128,7 @@ nav .nav-list .nav-link {
 
 .faq.pricing {
   width: 100%;
-  max-height: 105px;
+  max-height: 105px !important;
   padding: 25px;
   display: flex;
   flex-flow: column nowrap;
@@ -1144,7 +1144,7 @@ nav .nav-list .nav-link {
 
 .faq.pricing.toggle {
   outline: 2px solid var(--primary-color);
-  max-height: 300px;
+  max-height: 300px !important;
 }
 
 .faq.pricing.toggle .faq-content {
@@ -2061,7 +2061,7 @@ label span {
   bottom: 50px;
 }
 
-.toggle-container {
+.options-container .toggle-container {
   width: 55px;
   height: auto;
   background: #9098a1;
@@ -2073,7 +2073,7 @@ label span {
   container-type: inline-size;
 }
 
-.toggle {
+.options-container .toggle {
   width: 20px;
   height: 20px;
   background: #fff;
@@ -2082,11 +2082,11 @@ label span {
   transition: transform 200ms ease-in-out;
 }
 
-.toggle.active {
+.options-container .toggle.active {
   transform: translateX(calc(100cqw - 100%));
 }
 
-.toggle-container.active {
+.options-container .toggle-container.active {
   background: #4535f6;
 }
 
@@ -2331,6 +2331,7 @@ label span {
 
 .pagination {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -2359,7 +2360,7 @@ label span {
 }
 
 .pagination-pages li:first-of-type a,
-.pagination-pages li:last-of-type a{
+.pagination-pages li:last-of-type a {
   color: #828282;
 }
 
