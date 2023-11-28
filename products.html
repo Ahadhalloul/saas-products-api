@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejada EIM / E-invoicing Middleware</title>
+    <link rel="stylesheet" href="style/invoicing-style.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!------------- Search  bar -------------->
+    <div id="searchWrapper" class="search-wrapper">
+      <h2>Type your search keyword</h2>
+      <div id="searchBar" class="search-bar">
+        <input type="text" />
+        <img src="/icons/search.svg" width="32" height="32" />
+      </div>
+    </div>
+    <!-- ----------------------------------------- -->
+    <!-- ------this div add background to body when nav sidebar open for small screen---------------------- -->
+    <div class="body-bg hide"></div>
+    <!-- ------------------------------ -->
+    <!-- small screen side bar -->
+    <div id="side-bar" class="sidebar hide">
+      <div>
+        <img class="logo" src="./images/ejadaeim 1.png" alt="" />
+        <div class="user-informatin new-row">
+          <img src="./images/Image-user.png" alt="" />
+          <div>
+            <h4>Ikramy Ismail</h4>
+            <p>Ikramy@company.com</p>
+          </div>
+        </div>
+        <ul class="side-bar-nav-list">
+          <li class="nav-item"><a class="nav-link" href="#">products</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pricing.html">pricing </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">about</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">resources</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <ul class="side-bar-user-menu-list">
+          <li class="user-menu-item" id="searchButton">
+            <a href="#" class="user-menu-link search-text">Search</a>
+          </li>
+          <li class="user-menu-item">
+            <a href="./contact.html" class="user-menu-link">contact</a>
+          </li>
+          <li class="user-menu-item">
+            <select class="language">
+              <option value="english">English</option>
+              <option value="arabic">Arabic</option>
+            </select>
+          </li>
+          <li class="user-menu-item">
+            <a href="./login.html" class="user-menu-link">login</a>
+          </li>
+          <li class="user-menu-item">
+            <button class="user-menu-button">get started</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- end small screen side bar -->
+    <!------------- Start  Header -------------->
+    <header class="padding">
+      <nav>
+        <div class="nav-menu-icon">
+          <img src="./icons/menu.svg" alt="" />
+        </div>
+        <div class="logo-container">
+          <a href="/">
+            <img src="../images/logo.svg" alt="e-invoicing logo" class="logo" />
+          </a>
+        </div>
+        <ul class="nav-list">
+          <li class="nav-item"><a class="nav-link" href="#">products</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">pricing </a></li>
+          <li class="nav-item"><a class="nav-link" href="#">about</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">resources</a></li>
+        </ul>
+      </nav>
+      <div class="user-area">
+        <ul class="user-menu-list">
+          <li class="user-menu-item" id="searchButton">
+            <img src="./icons/search.svg" alt="search icon" />
+          </li>
+          <li class="user-menu-item">
+            <a href="#" class="user-menu-link">contact</a>
+          </li>
+          <li class="user-menu-item">
+            <a href="#" class="user-menu-link">login</a>
+          </li>
+          <li class="user-menu-item">
+            <button class="user-menu-button">get started</button>
+          </li>
+          <li class="user-menu-item">
+            <select class="language">
+              <option value="english">EN</option>
+              <option value="arabic">AR</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!------------- End Header -------------->
+    <!------------- Start Main -------------->
+    <main>
+      <div class="current-path">
+        <img src="./icons/arrow back_ios.svg" alt="" class="back-arrow" />
+        <span>
+          <img src="./icons/home.svg" width="16" height="16" />
+          <a href="/"> Home</a>
+        </span>
+        <span> / </span>
+        <span><a class="current" href="/products.html">Products</a></span>
+      </div>
+      <!-- Start Hero Section -->
+      <section class="hero padding product">
+        <div class="hero-content">
+          <div class="hero-heading">
+            <h1>Automated e&#x2011;Invoicing Solutions for your Business</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+              penatibus et magnis dis parturient montes.
+            </p>
+          </div>
+          <div class="hero-buttons">
+            <button>get started</button>
+          </div>
+        </div>
+        <div class="hero-img">
+          <img
+            src="./images/product-hero.png"
+            alt="A man wearing thawb and shemagh"
+          />
+          <div id="shape">
+            <img src="./images/product-shape.svg" />
+          </div>
+        </div>
+      </section>
+      <!-- End Hero Section -->
+
+      <section class="features-container product">
+        <!-- first row -->
+        <div class="new-row first-row">
+          <div class="text">
+            <h4>Bulk Generation of E&#x2011;Invoices</h4>
+            <p>
+              We provide bulk e&#x2011;invoice generation for both standard &
+              simplified invoices with the generation of B2B and B2C.
+            </p>
+
+            <a href="#" class="blue-text">Get Started</a>
+          </div>
+
+          <div class="">
+            <img src="./images/Frame 280.png" />
+          </div>
+        </div>
+        <!-- second row -->
+        <div class="new-row second-row">
+          <div class="">
+            <img src="./images/Frame 281.png" />
+          </div>
+          <div class="text">
+            <h4>Duplicate E&#x2011;Invoice Protection</h4>
+            <p>
+              You can avoid duplicate e&#x2011;invoices with the feature of
+              duplicate e&#x2011;invoice protection in our advanced
+              e&#x2011;invoicing software.
+            </p>
+
+            <a href="#" class="blue-text">Contact an Expert</a>
+          </div>
+        </div>
+        <!-- third row -->
+        <div class="new-row third-row">
+          <div class="text">
+            <h4>Single Dashboard to Manage E&#x2011;Invoices</h4>
+            <p>
+              With EJADA's KSA e&#x2011;invoicing solution, you get a single
+              dashboard to manage all your old & new invoice data in one place.
+            </p>
+            <a href="#" class="blue-text">Get Started</a>
+          </div>
+          <div class="">
+            <img src="./images/Frame 282.png" />
+          </div>
+        </div>
+        <!-- fourth row -->
+        <div class="new-row second-row">
+          <div class="">
+            <img src="./images/Frame 284.png" />
+          </div>
+          <div class="text">
+            <h4>Large Archiving in Saudi Premises</h4>
+            <p>
+              We host the e&#x2011;invoice data on client's server or cloud
+              server, and we limit archiving of that data to Saudi premises.
+            </p>
+
+            <a href="#" class="blue-text">Contact an Expert</a>
+          </div>
+        </div>
+        <!-- fifth row -->
+        <div class="new-row third-row">
+          <div class="text">
+            <h4>Generate PDF With Embedded XML Invoices</h4>
+            <p>
+              A3 PDFs with embedded XML e&#x2011;invoices are automatically
+              generated during the process of e&#x2011;Invoice generation.
+            </p>
+            <a href="#" class="blue-text">Get Started</a>
+          </div>
+          <div class="">
+            <img src="./images/Frame 285.png" />
+          </div>
+        </div>
+        <!-- sixth row -->
+        <div class="new-row second-row">
+          <div class="">
+            <img src="./images/Frame 286.png" />
+          </div>
+          <div class="text">
+            <h4>Invoices in Arabic and English</h4>
+            <p>
+              E&#x2011;Invoices are generated in both Arabic & English language.
+            </p>
+
+            <a href="#" class="blue-text">Contact an Expert</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- start  detailed guidline section -->
+      <section class="detailed-guildlines-container padding">
+        <img
+          src="./icons/arrow forward_ios2.svg"
+          alt=""
+          class="guide-arrow-forward"
+        />
+        <img
+          src="./icons/arrow back_ios2.svg"
+          alt=""
+          class="guide-arrow-back"
+        />
+        <div class="guidlines-head">
+          <h4>Detailed Guidelines for E&#x2011;Invoicing</h4>
+          <button>Get Started</button>
+        </div>
+        <!-- guieds grid in big screen -->
+        <div class="guidlines-cards">
+          <div class="guide-card">
+            <img src="./icons/warning.svg" alt="" />
+            <div>
+              <h5>Data Validation to Avoid Penalty</h5>
+              <p>
+                Smart data validations to ensure invoice data is as per ZATCA
+                regulations therefore rendering error-free invoices.
+              </p>
+            </div>
+          </div>
+
+          <div class="guide-card">
+            <img src="./icons/archive.svg" alt="" />
+            <div>
+              <h5>ZATCA Compilant XML Generation</h5>
+              <p>
+                Generates UUID, Invoice Hash, Invoice Counter Value, QR code &
+                converts invoice into UBL 2.1 XML format.
+              </p>
+            </div>
+          </div>
+
+          <div class="guide-card">
+            <img src="./icons/insert drive_file.svg" alt="" />
+            <div>
+              <h5>Reporting Through ZATCA Integration</h5>
+              <p>
+                Integrates with ZATCA to get clearance/report XML invoice &
+                receives certified XML back from ZATCA.
+              </p>
+            </div>
+          </div>
+
+          <div class="guide-card">
+            <img src="./icons/picture as_pdf.svg" alt="" />
+            <div>
+              <h5>PDF A/3 Invoice with XML</h5>
+              <p>
+                Adds Phase II QR code & certified XML into existing invoice to
+                generate final PDF A/3 invoice.
+              </p>
+            </div>
+          </div>
+
+          <div class="guide-card">
+            <img src="./icons/compare arrows.svg" alt="" />
+            <div>
+              <h5>Electronic Exchange of Invoice</h5>
+              <p>
+                Share final PDF A/3 invoice with your customer through automatic
+                email APIs.
+              </p>
+            </div>
+          </div>
+
+          <div class="guide-card">
+            <img src="./icons/cloud done.svg" alt="" />
+            <div>
+              <h5>Auto Data Validation</h5>
+              <p>
+                You can auto validate your e&#x2011;invoice data to check
+                whether it is according to ZATCA norms or not.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- ------------------------- -->
+        <!-- guides card swipper  -->
+        <div class="guide-Swiper swiper">
+          <div class="guidlines-cards swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="guide-card">
+                <img src="./icons/warning.svg" alt="" />
+                <div>
+                  <h5>Data Validation to Avoid Penalty</h5>
+                  <p>
+                    Smart data validations to ensure invoice data is as per
+                    ZATCA regulations therefore rendering error-free invoices.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="guide-card">
+                <img src="./icons/archive.svg" alt="" />
+                <div>
+                  <h5>ZATCA Compilant XML Generation</h5>
+                  <p>
+                    Generates UUID, Invoice Hash, Invoice Counter Value, QR code
+                    & converts invoice into UBL 2.1 XML format.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="guide-card">
+                <img src="./icons/insert drive_file.svg" alt="" />
+                <div>
+                  <h5>Reporting Through ZATCA Integration</h5>
+                  <p>
+                    Integrates with ZATCA to get clearance/report XML invoice &
+                    receives certified XML back from ZATCA.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="guide-card">
+                <img src="./icons/picture as_pdf.svg" alt="" />
+                <div>
+                  <h5>PDF A/3 Invoice with XML</h5>
+                  <p>
+                    Adds Phase II QR code & certified XML into existing invoice
+                    to generate final PDF A/3 invoice.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="guide-card">
+                <img src="./icons/compare arrows.svg" alt="" />
+                <div>
+                  <h5>Electronic Exchange of Invoice</h5>
+                  <p>
+                    Share final PDF A/3 invoice with your customer through
+                    automatic email APIs.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="guide-card">
+                <img src="./icons/cloud done.svg" alt="" />
+                <div>
+                  <h5>Auto Data Validation</h5>
+                  <p>
+                    You can auto validate your e&#x2011;invoice data to check
+                    whether it is according to ZATCA norms or not.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- -------------------------------------------------- -->
+      </section>
+      <!-- end  detailed guidline section -->
+    </main>
+    <!------------- End Main -------------->
+    <footer class="footer-container">
+      <div class="footer-content new-row">
+        <div class="col">
+          <div class="logo-text">
+            <h2>MLE</h2>
+            <h6>e-Invoicing</h6>
+          </div>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa.
+          </p>
+        </div>
+        <div>
+          <h4>Information</h4>
+          <ul>
+            <li>
+              <a href="#">About<span>EML</span></a>
+            </li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Pricing</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Reasources</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact Us</h4>
+          <h5 class="e-mail">E.support@eml.com</h5>
+          <div class="social-links">
+            <a href=""
+              ><img src="./icons/akar-icons_facebook-fill.svg" alt=""
+            /></a>
+            <a href=""><img src="./icons/logos_twitter.svg" alt="" /></a>
+            <a href=""><img src="./icons/logos_linkedin-icon.svg" alt="" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-sec-row new-row">
+        <div class="new-row">
+          <h6>Terms & Condition</h6>
+          <h6>Privacy & Policy</h6>
+        </div>
+        <div class="new-row company-row">
+          <img src="./images/ejada-logo.svg" alt="" />
+          <p>
+            EML is a subsidiary Solution Developed and owned by Ejada Systems
+            LTD.
+          </p>
+        </div>
+      </div>
+      <div class="footer-copy-right">© 2023 EML. All Rights Reserved</div>
+    </footer>
+    <!-- End Footer Section -->
+    <!------------- End Footer -------------->
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="/main.js"></script>
+  </body>
+</html>

@@ -1,11 +1,18 @@
 // ---------------------------------
 // adding search wrapper
 let searchWrapper = document.getElementById("searchWrapper");
-let searchButton = document.getElementById("searchButton");
+let searchButton = document.querySelectorAll("#searchButton");
 let searchBar = document.getElementById("searchBar");
-searchButton.addEventListener("click", (e) => {
-  e.preventDefault();
-  searchWrapper.classList.add("active");
+
+// searchButton.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   searchWrapper.classList.add("active");
+// });
+
+searchButton.forEach((el) => {
+  el.addEventListener("click", (e) => {
+    searchWrapper.classList.add("active");
+  });
 });
 
 searchWrapper.addEventListener("click", function (e) {
@@ -24,7 +31,6 @@ faqButton.forEach((element, index) => {
     faqs[index].classList.toggle("toggle");
   });
 });
-
 
 // -----------------------------------------
 // show and hide sidebar div in small screen
@@ -103,18 +109,18 @@ var swiper = new Swiper(".planSwiper", {
   speed: 1200,
 });
 
-// -----------show & hide about list "faq"-----------------------------------------------
-// -------------------------------------------------------------
+// -----------------------------------------------------------
+// -------product page detailed guide swipper--------------------------------------------
+var swiper2 = new Swiper(".guide-Swiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  slidesPerGroup: 1,
+  loop: true,
+  loopFillGroupWithBlank: true,
 
-let faqList = document.querySelector("#faqList");
-let faqBlock = document.querySelector("#faqAnswerBlock");
-
-faqList.addEventListener("click", () => {
-  faqBlock.classList.toggle("hide");
-  faqList.classList.toggle("hide");
-});
-
-faqBlock.addEventListener("click", () => {
-  faqBlock.classList.toggle("hide");
-  faqList.classList.toggle("hide");
+  navigation: {
+    nextEl: ".guide-arrow-forward",
+    prevEl: ".guide-arrow-back",
+  },
+  speed: 1200,
 });
