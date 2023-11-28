@@ -94,15 +94,15 @@ var swiper = new Swiper(".planSwiper", {
 // -----------show & hide about list "faq"-----------------------------------------------
 // -------------------------------------------------------------
 
-let faqList = document.querySelector("#faqList");
-let faqBlock = document.querySelector("#faqAnswerBlock");
+// let faqList = document.querySelector("#faqList");
+// let faqBlock = document.querySelector("#faqAnswerBlock");
 
-faqList.addEventListener("click", () => {
-  faqBlock.classList.toggle("hide");
-  faqList.classList.toggle("hide");
-});
+// faqList.addEventListener("click", () => {
+//   faqBlock.classList.toggle("hide");
+//   faqList.classList.toggle("hide");
+// });
 
-faqBlock.addEventListener("click", () => {
-  faqBlock.classList.toggle("hide");
-  faqList.classList.toggle("hide");
-});
+// faqBlock.addEventListener("click", () => {
+//   faqBlock.classList.toggle("hide");
+//   faqList.classList.toggle("hide");
+// });
