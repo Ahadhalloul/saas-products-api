@@ -1687,6 +1687,18 @@ nav .nav-list .nav-link {
     font-size: 14px;
     width: 70%;
   }
+
+  .search-wrapper {
+    gap: 10px;
+  }
+  .search-wrapper h2 {
+    font-size: 20px;
+  }
+
+  .search-wrapper .search-bar {
+    width: 70%;
+    height: 50px;
+  }
 }
 
 @media screen and (max-width: 450px) {
