@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saas product api</title>
+    <!----- incoiving style ------------->
+    <link rel="stylesheet" href="style/invoicing-style.css" />
+        <!----- ARABIC style ------------->
+    <!-- <link rel="stylesheet" href="style/invoicing-style-arabic.css" /> -->
+     <!-- Link Swiper's CSS -->
+     <link
+     rel="stylesheet"
+     href="https://unpkg.com/swiper/swiper-bundle.min.css"
+   />
+  </head>
+  <body>
+      <!------------- Search  bar -------------->
+      <div id="searchWrapper" class="search-wrapper">
+        <h2>Type your search keyword</h2>
+        <div id="searchBar" class="search-bar">
+          <input type="text" placeholder="Search">
+          <img src="/icons/search.svg"  width="32"
+          height="32">
+        </div>
+      </div>
+    <!-- ------------------------------ -->
+    
+    <!-- ------this div add background to body when nav sidebar open for small screen---------------------- -->
+      <div class="body-bg hide"></div>
+    <!-- ------------------------------ -->
+      <!-- small screen side bar -->
+      <div id="side-bar" class="sidebar hide">
+        <div>
+          <img class="logo" src="./images/ejadaeim 1.png" alt="">
+          <div class="user-informatin new-row ">
+          <img src="./images/Image-user.png" alt="">
+          <div>
+            <h4>Ikramy Ismail</h4>
+            <p>Ikramy@company.com</p>
+          </div>
+        </div>
+        <ul class="side-bar-nav-list">
+          <li class="nav-item"><a class="nav-link" href="#">products</a></li>
+          <li class="nav-item"><a class="nav-link" href="./pricing.html">pricing </a></li>
+          <li class="nav-item"><a class="nav-link" href="./about.html">about</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">resources</a></li>
+        </ul>
+        </div>
+
+        <div>
+          <ul class="side-bar-user-menu-list ">
+            <li class="user-menu-item" id="searchButton">
+              <a href="#" class="user-menu-link search-text ">Search</a>
+            </li>
+            <li class="user-menu-item">
+              <a href="./contact.html" class="user-menu-link">contact</a>
+            </li>
+            <li class="user-menu-item">
+              <select class="language">
+                <option value="english">English</option>
+                <option value="arabic">Arabic</option>
+              </select>
+            </li>
+            <li class="user-menu-item">
+              <a href="./login.html" class="user-menu-link">login</a>
+            </li>
+            <li class="user-menu-item">
+              <button class="user-menu-button">get started</button>
+            </li>
+          </ul>
+        </div>
+  
+        
+      </div>
+
+      <!-- end small screen side bar -->
+      <!-- ------------------------------------------- -->
+    <!------------- Start  Header -------------->
+    <header class="padding">
+      <nav>
+        <div class="nav-menu-icon">
+          <img src="./icons/menu.svg" alt="">
+        </div>
+        
+        <div class="logo-container">
+       <!--  invoicing logo -->
+          <img
+            src="./images/ejadaeim 1.png"
+            alt="e-invoicing logo"
+            class="logo hide-from-hr "
+          />
+        </div>
+        <ul class="nav-list">
+          <li class="nav-item"><a class="nav-link" href="#">products</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">pricing </a></li>
+          <li class="nav-item"><a class="nav-link" href="#">about</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">resources</a></li>
+        </ul>
+      </nav>
+      <div class="user-area">
+        <ul class="user-menu-list">
+          <li class="user-menu-item" id="searchButton">
+            <img src="./icons/search.svg" alt="search icon" class="search-icon" />
+          </li>
+          <li class="user-menu-item">
+            <a href="#" class="user-menu-link">contact</a>
+          </li>
+          <li class="user-menu-item">
+            <a href="#" class="user-menu-link">login</a>
+          </li>
+          <li class="user-menu-item">
+            <button class="user-menu-button">get started</button>
+          </li>
+          <li class="user-menu-item">
+            <select class="language">
+              <option value="english">EN</option>
+              <option value="arabic">AR</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+
+    </header>
+    <!------------- End Header -------------->
+    <!------------- Start Main -------------->
+    <main>
+      <!-- Start Hero Section -->
+      <section class="hero padding">
+        <div class="hero-content">
+          <div class="hero-heading">
+            <h1 class="hide-from-invoicing">Master Data, Personal &
+                Timesheet Management
+                all in One HR System</h1>
+                  <h1  class="hide-from-hr">Automated e-&nbsp;Invoicing Solutions for your Business</h1>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+              penatibus et magnis dis parturient montes.
+            </p>
+          </div>
+          <div class="hero-buttons">
+            <button>get started</button>
+            <button>contact sales</button>
+          </div>
+          <div class="hero-rating">
+            <div class="rating-content">
+              <h1>Business who trust us</h1>
+              <span>
+                <div class="rating-stars">
+                  <img
+                    src="./icons/yellow-star.svg"
+                    alt="yellow star"
+                    width="15"
+                    height="15"
+                  />
+                  <img
+                    src="./icons/yellow-star.svg"
+                    alt="yellow star"
+                    width="15"
+                    height="15"
+                  />
+                  <img
+                    src="./icons/yellow-star.svg"
+                    alt="yellow star"
+                    width="15"
+                    height="15"
+                  />
+                  <img
+                    src="./icons/yellow-star.svg"
+                    alt="yellow star"
+                    width="15"
+                    height="15"
+                  />
+                  <img
+                    src="./icons/yellow-star.svg"
+                    alt="yellow star"
+                    width="15"
+                    height="15"
+                  />
+                </div>
+                <div class="rating-number">5.0</div>
+                <div class="number-ratings">Rates (9.999+)</div>
+              </span>
+            </div>
+            <div class="business">
+              <!-- This should have the logos of the business with width of 35px -->
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-img">
+
+          <!------ invoice hero image ------>
+          <img class="hide-from-hr"
+          src="./images/saudi-man.png"
+          alt="A man wearing thawb and shemagh"
+        />
+          <!----- design the hero section shape  ----->
+             <!----- invoicing shape ---->
+          <div class="hide-from-hr" id="shape">
+            <img  src="./images/shape.svg">
+          </div>
+
+        </div>
+      </section>
+      <!-- End Hero Section -->
+
+      <!-- Start Statistics -->
+
+  <section class="statistics-content-continer">
+        <img src="./icons/arrow back_ios.svg" alt="" class="statistics-left-arrow" onclick="statisticBack()">
+        <img src="./icons/arrow forward_ios.svg" alt="" class="statistics-right-arrow" onclick="statisticForward()">
+     
+    <div class="statistics-container padding">
+ <!-- <div class="statistic-content"> -->
+        <div class="statistics">
+        <span>99%</span>
+        <p>Lorem ipsum dolor sit amet</p>
+        </div>
+        <div class="statistics">
+          <span>4,5</span>
+          <p>Lorem ipsum dolor sit amet</p>
+        </div>
+        <div class="statistics">
+          <span>25K</span>
+          <p>Lorem ipsum dolor sit amet</p>
+        </div>
+      <!-- </div>  -->
+      </div>
+  </section>
+      <!-- End Statistics -->
+
+      <!-- Start About -->
+      <section class="about-container padding">
+        <div class="about-images ">
+          <div>
+            <div class="img-card"><img src="./images/SAP_2011_logo 2.svg" /></div> 
+            <div class="img-card"><img src="./images/Oracle_NetSuite_logo 2.png" /></div>
+            <div class="img-card"><img src="./images/Microsoft-Dynamics-365-modern-logo 1.svg" /></div>
+            <div>
+              <h1>We’re Certified by the Best in Business</h1>
+              <p>EJADA works effortlessly with all enterprise software and is a certified partner of many popular ERPs.</p>
+            </div>
+          </div>
+          <img src="./images/digital-invoice-document-payment-receipt 1.png" />
+        </div>
+
+        <div class="about">
+          <div class="about-content">
+            <h1>How can Ejada-ZATCA 
+              E-Invoicing Middleware Solution Help You? </h1>
+            <p>
+              EJADA's ZATCA e-Invoicing Middleware solution can
+               automatically create and send electronic invoices to 
+               the tax authority and trade partners. It exports e-invoices
+                to a local storage for mandatory archiving. Also can generate 
+                invoices in the required format by the tax authority.
+            </p>
+            <p>
+              EJADA's ZATCA e-Invoicing Middleware solution for SAP is an end-to-end 
+              solution, a single SAP add-on handles all major steps
+            </p>
+          </div>
+          <div class="about-list-container">
+            <div class="about-list">
+              <div class="heading ">
+                <span class="hide-from-hr"><img src="./icons/bi_check-lg.svg" /></span>
+                <h4>Extraction of accounting and transaction data from SAP modules</h4>
+              </div>
+            </div>
+            <div class="about-list">
+              <div class="heading">
+                <span class="hide-from-hr"><img src="./icons/bi_check-lg.svg" /></span>
+                <h4>Data mapping and processing</h4>
+              </div>
+            </div>
+            <div class="about-list">
+              <div class="heading">
+                <span class="hide-from-hr"><img src="./icons/bi_check-lg.svg" /></span>
+                <h4>Integration and document exchange with the Tax Authority</h4>
+              </div>
+            </div>
+            <a class="about-get-started hide-from-invoicing" href="">Get Started</a>
+          </div>
+        </div>
+      </section>
+      <!-- End About -->
+
+      <!-- Start Service -->
+      <section class="service-container padding">
+        <div class="service-content">
+          <div class="service-about">
+            <h1>Fast & Reliable ZATCA 
+              E-&nbsp;Invoicing Middleware</h1>
+            <p>
+              EJADA is an approved vendor of ZATCA where you get a fast & reliable
+               ZATCA e-Invoicing middleware that is compatible with every ERP and gives
+                you a hassle-free experience of e-Invoicing in KSA.
+            </p>
+            <div class="advantages">
+              <span>
+                <img
+                  src="./icons/check-mark.svg"
+                  width="15"
+                  height="15"
+                  class="hide-from-hr"
+                />
+                Seamless Integration with your ERP.
+              </span>
+              <span>
+                <img
+                  src="./icons/check-mark.svg"
+                  width="15"
+                  height="15"
+                  class="hide-from-hr"
+                />
+                Customizable as per client requirement.
+              </span>
+              <span>
+                <img
+                  src="./icons/check-mark.svg"
+                  width="15"
+                  height="15"
+                  class="hide-from-hr"
+                />
+                Advance e-Invoice Validation as per ZATCA.
+              </span>
+            </div>
+          </div>
+          <!-- <div class="service-video">
+            <img src="./images/video.png" />
+          </div> -->
+          <div class="service-cards">
+            <div class="img-card"><img src="./images/logo-neo 1.svg" alt=""></div>
+            <div class="img-card"><img src="./images/fatoora 1.svg" alt=""></div>
+          </div>
+        </div>
+        <div class="service-features">
+          <div class="service-feature active">
+            <div class="feature-icon">
+              <img
+                src="./icons/light-blob.svg"
+                width="30"
+                height="30"
+              />
+            </div>
+            <h3>Automation</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula.
+            </p>
+          </div>
+          <div class="service-feature">
+            <div class="feature-icon">
+              <!-- <img
+                src="./icons/nimbus_marketing.svg"
+                width="30"
+                height="30"
+              /> -->
+              <img
+              src="./icons/nimbus_marketing-inv.svg"
+              width="30"
+              height="30"
+              class="fillter-icon"
+            />
+            </div>
+            <h3>Distribution</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula.
+            </p>
+          </div>
+          <div class="service-feature">
+            <div class="feature-icon">
+              <img
+                src="./icons/ion_headset-outline.svg"
+                width="30"
+                height="30"
+                class="fillter-icon"
+              />
+            </div>
+            <h3>24/7 Support</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula.
+            </p>
+        </div>
+        </div>
+    </section>
+        <!-- End Service -->
+        <!-- Start features Section -->
+    <section class="features-container padding">
+        <!-------first row -->
+        <div class="new-row first-row">
+            <div class="text">
+            <h4>Feature Title To be Written Here</h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+                sem. Nulla consequat massa quis enim.
+            </p>
+            <p>
+                Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+                arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae,
+                justo. Nullam dictum felis eu pede mollis pretium. Integer
+                tincidunt. Cras dapibus.
+              </p>
+              <a href="#" class="blue-text">Explore More</a>
+            </div>
+            <!-- hide cards for invoicing product -->
+            <div class="cards-container hide-from-hr">
+              <div class="card card1">
+                <img src="./icons/Card-chart-2.svg" alt="" />
+                <img src="./icons/Content-chart.svg" alt="" />
+              </div>
+              <div class="card card2">
+                <h6 class="invoices-icon">
+                  Invoices <img src="./icons/Small.svg" alt="" />
+                </h6>
+                <img src="./icons/Card-chart-1.svg" alt="" />
+                <div class="clearfix"></div>
+              </div>
+             </div>
+        </div>
+          <!-- second row -->
+        <div class="new-row second-row">
+
+            <div class="cards-container ">
+              <div class="card card1">
+                <div class="col">
+                  <h6>New Invoices</h6>
+                  <h3>3,729</h3>
+                  <h6 class="green-text">7,00%</h6>
+                </div>
+                <img src="./icons/Vector 1-chart.svg" alt="" />
+              </div>
+              <div class="card card2 col">
+                <h4>3,729</h4>
+                <p>
+                  We strongly believe that Automated Financial solutions shouldn’t
+                  drive you.
+                </p>
+              </div>
+              <div class="card card3 col">
+                <h4>Simple</h4>
+                <p>
+                  We strongly believe that Automated Financial solutions shouldn’t
+                  drive you.
+                </p>
+              </div>
+            </div>
+
+            <div class="text">
+              <h4>Feature Title To be Written Here</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+                sem. Nulla consequat massa quis enim.
+              </p>
+              <p>
+                Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+                arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae,
+                justo. Nullam dictum felis eu pede mollis pretium. Integer
+                tincidunt. Cras dapibus.
+              </p>
+              <a href="#" class="blue-text">Contact an Expert</a>
+            </div>
+        </div>
+          <!-- third row -->
+        <div class="new-row third-row">
+            <div class="text">
+              <h4>Feature Title To be Written Here</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+                sem. Nulla consequat massa quis enim.
+              </p>
+              <p>
+                Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+                arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae,
+                justo. Nullam dictum felis eu pede mollis pretium. Integer
+                tincidunt. Cras dapibus.
+              </p>
+              <a href="#" class="blue-text">Get Started</a>
+            </div>
+           
+            <div class="card  ">
+              <h6>Earning By Invoicing Type</h6>
+              <img src="./icons/Ellipse 227.svg" alt="" />
+              <img src="./icons/Group 690.svg" alt="">
+            </div>
+
+        </div>
+     </section>
+    
+        </section>
+        <!-- End features Section -->
+        <!-- -------------------------------------------- -->
+        <!-- Start price plan Section -->
+        <section class="price-plan-container ">
+
+         <!-- add arrows images for small screen -->
+         <img onclick="scrollLft()" src="./icons/arrow back_ios.svg" alt="" class="arrow-back">
+         <img onclick="scrollRight()" src="./icons/arrow forward_ios.svg" alt="" class="arrow-forward">
+         <!-- start price plan table -->
+         <div class="pricing-table ">
+            <table>
+              <tr class="plans-header">
+                <td class="first-head"><h4>We Provide More Price List</h4></td>
+                <td> <div class="col">
+                  <div class="icon-bg">
+                    <img src="./icons/bxs_network-chart.svg" alt="" />
+                  </div>
+                  <h5>Basic Plan</h5>
+                  <h6>SAR<span class="price-value">199.99</span>/mo</h6>
+                  <p>Lorem ipsum dolor sit amet, consectetuer.</p>
+                </div></td>
+                <td><div class="col">
+                  <div class="icon-bg">
+                    <img src="./icons/fluent_premium-12-filled.svg" alt="" />
+                  </div>
+                  <h5>Premium Plan</h5>
+                  <h6>SAR<span class="price-value">399.99</span>/mo</h6>
+                  <p>Lorem ipsum dolor sit amet, consectetuer.</p>
+                </div></td>
+                <td> <div class="col">
+                  <div class="icon-bg">
+                    <img src="./icons/ci_doughnut-chart.svg" alt="" />
+                  </div>
+                  <h5>Business Plan</h5>
+                  <h6>SAR<span class="price-value">699.99</span>/mo</h6>
+                  <p>Lorem ipsum dolor sit amet, consectetuer.</p>
+                </div></td>
+              </tr>
+  
+              <tr>
+                <td class="table-header">Limit Users</td>
+                <td>100 Users</td>
+                <td>250 Users</td>
+                <td>500 Users</td>
+              </tr>
+  
+              <tr>
+                <td class="table-header">Support 24/7</td>
+                <td>
+                  <img
+                    src="./icons/akar-icons_circle-check-fill-green.svg"
+                    alt=""
+                  />
+                </td>
+                <td><img src="./icons/akar-icons_circle-check-fill-green.svg" alt="" /></td>
+                <td><img src="./icons/akar-icons_circle-check-fill-green.svg" alt="" /></td>
+              </tr>
+  
+              <tr>
+                <td class="table-header">Integrated</td>
+                <td>
+                  <img
+                    src="./icons/circle-x-red.svg"
+                    alt=""
+                  />
+                </td>
+                <td>
+                  <img
+                    src="./icons/akar-icons_circle-check-fill-green.svg"
+                    alt=""
+                  />
+                </td>
+                <td><img src="./icons/akar-icons_circle-check-fill-green.svg" alt="" /></td>
+              </tr>
+  
+              <tr>
+                <td class="table-header">Workflows</td>
+                <td>
+                  <img
+                    src="./icons/circle-x-red.svg"
+                    alt=""
+                  />
+                </td>
+                <td>
+                  <img
+                    src="./icons/circle-x-red.svg"
+                    alt=""
+                  />
+                </td>
+                <td>
+                  <img
+                    src="./icons/akar-icons_circle-check-fill-green.svg"
+                    alt=""
+                  />
+                </td>
+  
+                <tr>
+                  <td class="table-header">Database Limit</td>
+                  <td>100 GB</td>
+                  <td>500 GB</td>
+                  <td>900 GB</td>
+                </tr>
+              </tr>
+              <tr class="btns-row">
+                <td ></td>
+                <td><button class="pricing-btn">Get Started</button></td>
+                <td><button class="pricing-btn">Get Started</button></td>
+                <td><button class="pricing-btn">Get Started</button></td>
+              </tr>
+            </tr>
+            </table>
+          </div>
+          <!-- end price plan table -->
+          <!-- start price plan cards for small screen-->
+          <div class="price-plan-cards-container ">
+            <h4 class="first-head">We Provide More Price List</h4>
+            <div class="planSwiper swiper">
+              <div class="swiper-box swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="plan-card">
+                    <div class="col">
+                      <div class="icon-bg">
+                        <img src="./icons/bxs_network-chart.svg" alt="" />
+                      </div>
+                      <h5>Basic Plan</h5>
+                      <h6>SAR<span class="price-value">199.99</span>/mo</h6>
+                      <p>Lorem ipsum dolor sit amet, consectetuer.</p>
+                    </div>
+                    <table class="plan-cards-table">
+                      <tr>
+                        <td>Limit Users</td>
+                        <td>100 Users</td>
+                      </tr>
+                      <tr>
+                        <td>Support 24/7</td>
+                        <td><img src="./icons/akar-icons_circle-check-fill-green.svg" alt=""></td>
+                      </tr>
+                      <tr>
+                        <td>Integrated</td>
+                        <td><img src="./icons/circle-x-red.svg" alt=""></td>
+                      </tr>
+                      <tr>
+                        <td>Workflows</td>
+                        <td><img src="./icons/circle-x-red.svg" alt=""></td>
+                      </tr>
+                      <tr>
+                        <td>Database Limit</td>
+                        <td>100 GB</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="plan-card">
+                    <div class="col">
+                      <div class="icon-bg">
+                        <img src="./icons/fluent_premium-12-filled.svg" alt="" />                      </div>
+                      <h5>Premium Plan</h5>
+                      <h6>SAR<span class="price-value">399.99</span>/mo</h6>
+                      <p>Lorem ipsum dolor sit amet, consectetuer.</p>
+                    </div>
+                    <table class="plan-cards-table">
+                      <tr>
+                        <td>Limit Users</td>
+                        <td>250 Users</td>
+                      </tr>
+                      <tr>
+                        <td>Support 24/7</td>
+                        <td><img src="./icons/akar-icons_circle-check-fill-green.svg" alt=""></td>
+                      </tr>
+                      <tr>
+                        <td>Integrated</td>
+                        <td><img src="./icons/akar-icons_circle-check-fill-green.svg" alt=""></td>
+                      </tr>
+                      <tr>
+                        <td>Workflows</td>
+                        <td><img src="./icons/circle-x-red.svg" alt=""></td>
+                      </tr>
+                      <tr>
+                        <td>Database Limit</td>
+                        <td>500 GB</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="plan-card">
+                    <div class="col">
+                      <div class="icon-bg">
+                        <img src="./icons/ci_doughnut-chart.svg" alt="" />                      </div>
+                      <h5>Business Plan</h5>
+                      <h6>SAR<span class="price-value">699.99</span>/mo</h6>
+                      <p>Lorem ipsum dolor sit amet, consectetuer.</p>
+                    </div>
+                    <table class="plan-cards-table">
+                      <tr>
+                        <td>Limit Users</td>
+                        <td>500 Users</td>
+                      </tr>
+                      <tr>
+                        <td>Support 24/7</td>
+                        <td><img src="./icons/akar-icons_circle-check-fill-green.svg" alt=""></td>
+                      </tr>
+                      <tr>
+                        <td>Integrated</td>
+                        <td><img src="./icons/akar-icons_circle-check-fill-green.svg" alt=""></td>
+                      </tr>
+                      <tr>
+                        <td>Workflows</td>
+                        <td><img src="./icons/akar-icons_circle-check-fill-green.svg" alt=""></td>
+                      </tr>
+                      <tr>
+                        <td>Database Limit</td>
+                        <td>900 GB</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- end price plan cards for small screen -->
+
+        </section>
+        <!-- End price plan Section -->
+        <!-- -------------------------------------------- -->
+        <!-- Start our Parnters Section -->
+        <section class="our-parnters">
+          <h4>Our Parenters</h4>
+          <div class="new-row">
+            <img src="./icons/Left Arrow.svg" alt="">
+            <img src="./images/denodo 1.png" alt="">
+            <img src="./images/denodo 1.png" alt="">
+            <img src="./images/denodo 1.png" alt="">
+            <img src="./images/denodo 1.png" alt="">
+            <img src="./images/denodo 1.png" alt="">
+            <img src="./icons/right Arrow.svg" alt="">
+          </div>
+        </section>
+        <!-- End our Parnters Section -->
+    </main>
+    <!------------- End Main -------------->
+    <!-- --------------------start footer ---------------- -->
+    <footer class="footer-container">
+        <div class="footer-content footer-row">
+          <div class="">
+            <div class="logo-text">
+                <h2>MLE</h2>
+            <h6>e-Invoicing</h6>
+            </div>
+         
+            <p>Lorem ipsum dolor sit amet, consectetuer
+              adipiscing elit. Aenean commodo ligula
+              eget dolor. Aenean massa.</p>
+          </div>
+          <div>
+            <h4>Information</h4>
+            <ul>
+              <li><a href="#">About<span>EML</span></a> </li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Pricing</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="#">Login</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Reasources</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Contact Us</h4>
+            <h5 class="e-mail">E.support@eml.com</h5>
+            <div class="social-links">
+              <a href=""><img src="./icons/akar-icons_facebook-fill.svg" alt=""></a>
+              <a href=""><img src="./icons/logos_twitter.svg" alt=""></a>
+              <a href=""><img src="./icons/logos_linkedin-icon.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-sec-row footer-row">
+          <div class="footer-row gap-row">
+            <h6>Terms & Condition</h6>
+            <h6>Privacy & Policy</h6>
+          </div>
+          <div class="footer-row company-row">
+            <img src="./images/ejada-logo.svg" alt="">
+            <p>EML is a subsidiary Solution Developed and owned by Ejada Systems LTD.</p>
+          </div>
+        </div>
+        <div class="footer-copy-right">
+          © 2023 EML. All Rights Reserved
+        </div>
+      </footer>
+    <!-- End Footer Section -->
+  <!------------- End Footer -------------->
+
+      <!-- Swiper JS -->
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="/main.js"></script>
+  </body>
+</html>

@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ejada EIM / E-invoicing Middleware</title>
-    <link rel="stylesheet" href="style/invoicing-style.css" />
+    <title>Saas product api</title>
+    <link rel="stylesheet" href="style/sale-style.css" />
+    <!-- <link rel="stylesheet" href="style/invoicing-style.css" /> -->
   </head>
   <body>
     <!------------- Search  bar -------------->
@@ -15,28 +16,30 @@
         <img src="/icons/search.svg" width="32" height="32" />
       </div>
     </div>
+    <!-- ------------------------------ -->
+
+    <!-- ------this div add background to body when nav sidebar open for small screen---------------------- -->
+    <div class="body-bg hide"></div>
+    <!-- ------------------------------ -->
 
     <!------------- Start  Header -------------->
     <header class="padding">
       <nav>
+        <div class="nav-menu-icon">
+          <img src="./icons/menu.svg" alt="" />
+        </div>
         <div class="logo-container">
-          <a href="/">
-            <img src="../images/logo.svg" alt="e-invoicing logo" class="logo" />
-          </a>
+          <img
+            src="../images/logo-sale.svg"
+            alt="e-invoicing logo"
+            class="logo"
+          />
         </div>
         <ul class="nav-list">
-          <li class="nav-item">
-            <a class="nav-link" href="/products.html">products</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/pricing.html">pricing </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/about.html">about</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/resources.html">resources</a>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="#">products</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">pricing </a></li>
+          <li class="nav-item"><a class="nav-link" href="#">about</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">resources</a></li>
         </ul>
       </nav>
       <div class="user-area">
@@ -45,10 +48,10 @@
             <img src="./icons/search.svg" alt="search icon" />
           </li>
           <li class="user-menu-item">
-            <a href="/contact.html" class="user-menu-link">contact</a>
+            <a href="#" class="user-menu-link">contact</a>
           </li>
           <li class="user-menu-item">
-            <a href="/login.html" class="user-menu-link">login</a>
+            <a href="#" class="user-menu-link">login</a>
           </li>
           <li class="user-menu-item">
             <button class="user-menu-button">get started</button>
@@ -135,7 +138,8 @@
         </div>
         <div class="hero-img">
           <img
-            src="./images/saudi-man.png"
+            class="hide-from-invoice"
+            src="./images/Frame 693.png"
             alt="A man wearing thawb and shemagh"
           />
           <div id="shape">
@@ -146,18 +150,45 @@
       <!-- End Hero Section -->
 
       <!-- Start Statistics -->
-      <section class="statistics-container padding">
-        <div class="statistics">
+      <section class="statistics-container padding hide-from-sales">
+        <div class="statistics hide-from-sales">
           <span>99%</span>
           <p>Lorem ipsum dolor sit amet</p>
         </div>
-        <div class="statistics">
+        <div class="statistics hide-from-sales">
           <span>4,5</span>
           <p>Lorem ipsum dolor sit amet</p>
         </div>
-        <div class="statistics">
+        <div class="statistics hide-from-sales">
           <span>25</span>
           <p>Lorem ipsum dolor sit amet</p>
+        </div>
+      </section>
+      <!-- POS VERSION -->
+      <section class="statistics-container hide-from-invoice">
+        <div class="statistics-heading">
+          <h6>SUCCESS STORIES</h6>
+          <h3>Get to know about us</h3>
+        </div>
+        <div class="statistics-wrapper">
+          <div class="statistics">
+            <div>
+              <span>22k+</span>
+              <p>Use order online</p>
+            </div>
+          </div>
+          <div class="statistics">
+            <div>
+              <span>459</span>
+              <p>Trusted Clients</p>
+            </div>
+          </div>
+          <div class="statistics">
+            <div>
+              <span>12k</span>
+              <p>Use order online</p>
+            </div>
+          </div>
         </div>
       </section>
       <!-- End Statistics -->
@@ -165,14 +196,16 @@
       <!-- Start About -->
       <section class="about-container padding">
         <div class="about-images">
-          <div>
+          <!-- INVOICE VERSION -->
+          <div class="hide-from-sales">
             <img src="./images/credit-card.png" />
             <div>
               <h1>Title Here</h1>
               <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
             </div>
           </div>
-          <img src="./images/riyadh-saudi-arabia.svg" />
+          <!-- SALES VERSION img-->
+          <img class="hide-from-invoice" src="./images/Images22.png" />
         </div>
         <div class="about">
           <div class="about-content">
@@ -233,7 +266,7 @@
             </div>
           </div>
           <div class="service-video">
-            <img src="./images/Video.png" />
+            <img src="./images/Video-sale.png" />
           </div>
         </div>
         <div class="service-features">
@@ -248,7 +281,7 @@
             </p>
           </div>
           <div class="service-feature">
-            <div class="feature-icon">
+            <div class="feature-icon fillter-icon">
               <img src="./icons/speaker.svg" width="30" height="30" />
             </div>
             <h3>Distribution</h3>
@@ -258,7 +291,7 @@
             </p>
           </div>
           <div class="service-feature">
-            <div class="feature-icon">
+            <div class="feature-icon fillter-icon">
               <img src="./icons/headset.svg" width="30" height="30" />
             </div>
             <h3>24/7 Support</h3>
@@ -291,7 +324,8 @@
             </p>
             <a href="#" class="blue-text">Explore More</a>
           </div>
-          <div class="cards-container">
+          <!-- INVOICE VERSION -->
+          <div class="cards-container hide-from-sales">
             <div class="card card1">
               <img src="./icons/Card-chart-2.svg" alt="" />
               <img src="./icons/Content-chart.svg" alt="" />
@@ -304,10 +338,14 @@
               <div class="clearfix"></div>
             </div>
           </div>
+          <!-- SALES VERSION -->
+          <div class="card hide-from-invoice">
+            <img src="./images/content.png" />
+          </div>
         </div>
         <!-- second row -->
         <div class="new-row second-row">
-          <div class="cards-container">
+          <div class="cards-container hide-from-sales">
             <div class="card card1">
               <div class="col">
                 <h6>New Invoices</h6>
@@ -330,6 +368,10 @@
                 drive you.
               </p>
             </div>
+          </div>
+          <!-- SALES VERSION -->
+          <div class="card hide-from-invoice">
+            <img src="./images/Group 2471.png" />
           </div>
           <div class="text">
             <h4>Feature Title To be Written Here</h4>
@@ -368,10 +410,14 @@
             </p>
             <a href="#" class="blue-text">Get Started</a>
           </div>
-          <div class="card">
+          <div class="card hide-from-sales">
             <h6>Earning By Invoicing Type</h6>
             <img src="./icons/Ellipse 227.svg" alt="" />
             <img src="./icons/Group 690.svg" alt="" />
+          </div>
+          <!-- SALES VERSION -->
+          <div class="card hide-from-invoice">
+            <img src="./images/Group 247111.png" />
           </div>
         </div>
       </section>
@@ -379,6 +425,20 @@
       <!-- -------------------------------------------- -->
       <!-- Start price plan Section -->
       <section class="price-plan-container">
+        <!-- add arrows images for small screen -->
+        <img
+          onclick="scrollLft()"
+          src="./icons/arrow back_ios.svg"
+          alt=""
+          class="arrow-back"
+        />
+        <img
+          onclick="scrollRight()"
+          src="./icons/arrow forward_ios.svg"
+          alt=""
+          class="arrow-forward"
+        />
+
         <div class="pricing-table">
           <table>
             <tr class="plans-header">
@@ -462,7 +522,6 @@
                 />
               </td>
             </tr>
-
             <td class="table-header">Workflows</td>
             <td>
               <img src="./icons/circle-x-red.svg" alt="" />
@@ -498,7 +557,7 @@
       <!-- Start our Parnters Section -->
       <section class="our-parnters">
         <h4>Our Parenters</h4>
-        <div class="row">
+        <div class="new-row">
           <img src="./icons/Left Arrow.svg" alt="" />
           <img src="./images/denodo 1.png" alt="" />
           <img src="./images/denodo 1.png" alt="" />
@@ -512,7 +571,7 @@
     </main>
     <!------------- End Main -------------->
     <footer class="footer-container">
-      <div class="footer-content row">
+      <div class="footer-content new-row">
         <div class="col">
           <div class="logo-text">
             <h2>MLE</h2>
