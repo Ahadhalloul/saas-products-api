@@ -1062,7 +1062,9 @@ nav .nav-list .nav-link {
 .footer-content .e-mail {
   font-weight: 300;
 }
-
+.footer-content .e-mail {
+  font-size: 16px;
+}
 .footer-content .social-links {
   padding-top: 15px;
 }
@@ -1662,6 +1664,9 @@ nav .nav-list .nav-link {
     gap: 40px;
   }
   .footer-content p {
+    font-size: 14px;
+  }
+  .footer-content .e-mail {
     font-size: 14px;
   }
   .footer-content div:nth-child(2) {
