@@ -1,11 +1,18 @@
 // ---------------------------------
 // adding search wrapper
 let searchWrapper = document.getElementById("searchWrapper");
-let searchButton = document.getElementById("searchButton");
+let searchButton = document.querySelectorAll("#searchButton");
 let searchBar = document.getElementById("searchBar");
-searchButton.addEventListener("click", (e) => {
-  e.preventDefault();
-  searchWrapper.classList.add("active");
+
+// searchButton.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   searchWrapper.classList.add("active");
+// });
+
+searchButton.forEach((el) => {
+  el.addEventListener("click", (e) => {
+    searchWrapper.classList.add("active");
+  });
 });
 
 searchWrapper.addEventListener("click", function (e) {
