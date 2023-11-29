@@ -1870,11 +1870,11 @@ label span {
   font-weight: 300;
 }
 .guidlines-cards {
-  /* display: grid;
+  display: grid;
   width: 100%;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 50px 30px; */
+  gap: 50px 30px;
 }
 .guidlines-cards .guide-card {
   display: flex;
@@ -2452,6 +2452,8 @@ label span {
     padding: 20px;
     border: 1px solid var(--accent-color);
     border-radius: 10px;
+    max-width: 300px;
+    margin: 0 auto;
   }
   /* hide guides grid from small screen and show swipper*/
   .guidlines-cards {
