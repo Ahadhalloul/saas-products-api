@@ -111,9 +111,9 @@ var swiper = new Swiper(".planSwiper", {
 
 // -----------------------------------------------------------
 // -------product page detailed guide swipper--------------------------------------------
-var swiper2 = new Swiper(".guide-Swiper", {
+var swiper2 = new Swiper(".guide-swiper", {
   slidesPerView: 1,
-  spaceBetween: 30,
+  spaceBetween: 50,
   slidesPerGroup: 1,
   loop: true,
   loopFillGroupWithBlank: true,

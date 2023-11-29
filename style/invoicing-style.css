@@ -1770,9 +1770,8 @@ label span {
 }
 
 /* ------------------------------------------------- */
-/* -------start products page------- */
-
-/* ! [Product-PAGE HERO] */
+/* ------- START products page------- */
+/* --------- Product hero----------*/
 .hero.product {
   position: relative;
   min-width: 100%;
@@ -1848,7 +1847,8 @@ label span {
   background-color: var(--primary-color);
   color: var(--accent-color);
 }
-.guide-Swiper.swiper {
+
+.guide-swiper.swiper {
   display: none;
 }
 .guidlines-head {
@@ -1870,12 +1870,11 @@ label span {
   font-weight: 300;
 }
 .guidlines-cards {
-  display: grid;
+  /* display: grid;
   width: 100%;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
-
-  gap: 50px 30px;
+  gap: 50px 30px; */
 }
 .guidlines-cards .guide-card {
   display: flex;
@@ -1903,8 +1902,6 @@ label span {
   display: none;
 }
 
-@media screen and (max-width: 744px) {
-}
 /* -------End products page------- */
 /* ---------------------------------------------------- */
 /* ---------Start design for tablet---------- */
@@ -2390,6 +2387,9 @@ label span {
   .footer-sec-row p {
     text-align: center;
   }
+  .footer-sec-row img {
+    width: 150px;
+  }
   .price-plan-cards-container h4 {
     font-size: 20px;
   }
@@ -2440,43 +2440,43 @@ label span {
   }
   .detailed-guildlines-container {
     position: relative;
-    padding-left: 70px;
-    padding-right: 70px;
+    padding-left: 65px;
+    padding-right: 65px;
+  }
+
+  /* for swiper design  */
+  .guidlines-cards-swiper .guide-card {
+    display: flex;
+    align-items: start;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid var(--accent-color);
+    border-radius: 10px;
   }
   /* hide guides grid from small screen and show swipper*/
   .guidlines-cards {
     display: none;
   }
-  .guide-Swiper.swiper {
+  .guide-swiper.swiper {
     display: block;
   }
   /* ------------- */
-  .guidlines-cards .guide-card div h5 {
+  .guidlines-cards-swiper .guide-card div h5 {
     font-size: 16px;
   }
-  .guidlines-cards .guide-card div p {
+  .guidlines-cards-swiper .guide-card div p {
     font-size: 14px;
   }
-  .guidlines-cards .guide-card img {
-    width: 40px;
+  .guidlines-cards-swiper .guide-card img {
+    width: 35px;
   }
-  .guidlines-cards {
-    /* grid-template-rows: 1fr;
-    grid-template-columns: auto; */
-    /* max-width: 250px; */
-    background-color: #18ab56;
-  }
-  .guidlines-cards .guide-card {
-    width: 2340px;
-    height: 210px;
-    /* margin: 0 auto; */
-  }
+
   .guide-arrow-back {
-    left: 40px;
+    left: 35px;
     top: 60%;
   }
   .guide-arrow-forward {
-    right: 40px;
+    right: 35px;
     top: 60%;
   }
 }
