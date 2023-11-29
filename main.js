@@ -90,14 +90,12 @@ function statisticBack() {
   });
 }
 
-// ----statistics nav in mobile screen----------------------------------------------
+// ----trusted clients nav in mobile screen----------------------------------------------
 // --------------------------------------------------
 
 let trustedClients = document.querySelector(".trusted-clients");
-const distance3 =
-  document.querySelector(".trusted-clients-container .trusted-clients")
-    .clientWidth * 1.3;
-    
+const distance3 = document.querySelector(".trusted-clients-container .trusted-clients").clientWidth * 1.3;
+
 function trustedClientsForward() {
   trustedClients.scrollBy({
     left: distance3,
@@ -108,6 +106,26 @@ function trustedClientsForward() {
 function trustedClientsBack() {
   trustedClients.scrollBy({
     left: -distance3,
+    behavior: "smooth",
+  });
+}
+
+// ----socials nav in mobile screen----------------------------------------------
+// --------------------------------------------------
+
+let socials = document.querySelector(".social-container");
+const distance4 = 300;
+
+function socialsClientsForward() {
+  socials.scrollBy({
+    left: distance4,
+    behavior: "smooth",
+  });
+}
+
+function socialsClientsBack() {
+  socials.scrollBy({
+    left: -distance4,
     behavior: "smooth",
   });
 }

@@ -1436,6 +1436,22 @@ nav .nav-list .nav-link {
   list-style: none;
 }
 
+.social-item > a {
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+
+.social-item > a > .column {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  font-size: 24px;
+}
+
+.social-item > a > .column img {
+  width: 64px;
+}
+
 /* contact form */
 .contact-container {
   min-width: 100%;
@@ -2230,23 +2246,36 @@ label span {
     height: auto;
   }
 
-  .contact-container h1{
+  .contact-container h1 {
     font-size: 40px;
   }
 
-  .contact-form{
+  .contact-form {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, auto);
-    grid-template-areas: 
-    "name"
-    "email"
-    "mobile"
-    "inquiry"
-    "message";
+    grid-template-areas:
+      "name"
+      "email"
+      "mobile"
+      "inquiry"
+      "message";
   }
 
-  .social-list{
+  .social-list {
     gap: 35px;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .social-container {
+    max-width: 100%;
+    /* background: red;
+    display: flex;
+    justify-content: space-between; */
+  }
+
+  .social-item > a > .column {
+    flex-flow: column nowrap;
   }
 }
 /* ---------End design for tablet---------- */
@@ -2610,7 +2639,7 @@ label span {
 
   /* HQ */
   .hq-title {
-    padding: 0 ;
+    padding: 0;
   }
 
   .hq-title h1 {
@@ -2625,27 +2654,76 @@ label span {
     font-size: 16px;
   }
 
-  .contact-container h1{
+  .contact-container h1 {
     font-size: 24px;
   }
 
-  .social-list{
-    max-width:360px;
+  .socials {
+    margin: 0 auto;
+    position: relative;
   }
 
-  .social-container{
-    max-width:360px;
-    overflow: scroll;
-    
+  .social-list {
+    min-width : 100% !important;
+    background: blue;
+    position: relative;
+    justify-content: flex-start;
+    gap: 50px;
+    padding: 25px;
   }
-  .column{
+
+  .social-item {
+    max-width: 200px;
+  }
+
+  .social-container {
+    width: 160px;
+    overflow: scroll;
+    background-color: red;
+  }
+
+  .social-container::-webkit-scrollbar{
+    width: 0;
+  }
+
+  .column {
     display: flex;
     flex-direction: column;
   }
-  .socials-link{
+  .socials-link {
     text-decoration: none;
   }
+
+  /* login */
+  .login-container{
+    min-width: 90% !important;
+    min-height: fit-content !important;
+    padding: 20px !important;
+  }
+
+  .login-container .logo-container > img {
+    height: 70px !important;
+  }
+
+  .login-form > span{
+    font-size: 14px;
+  }
+
+  .login-form a {
+    font-size: 14px;
+  }
+
+  
+  .toggle-container{
+    width: 40px !important;
+  }
+
+  .toggle{
+    width: 10px !important;
+    height: 10px !important;
+  }
 }
+
 
 @media screen and (max-width: 450px) {
   .plan-card td {
@@ -2801,10 +2879,7 @@ label span {
 }
 
 .login-form > span {
-  left: 50%;
-  position: absolute;
-  transform: translateX(-50%);
-  bottom: 50px;
+  margin: 0 auto;
 }
 
 .options-container .toggle-container {
@@ -3115,4 +3190,3 @@ label span {
   color: #fff;
 }
 /* ------------------ End Invoices pages----------------- */
-  
