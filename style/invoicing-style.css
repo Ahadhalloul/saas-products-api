@@ -1720,6 +1720,12 @@ nav .nav-list .nav-link {
   .hero .hero-img #shape img {
     height: 423px !important;
   }
+  .user-menu-list .user-menu-item button {
+    padding: 10px 10px;
+  }
+  .logo {
+    margin-left: 35px;
+  }
 }
 
 /* ------------ End mobile design ------------- */
