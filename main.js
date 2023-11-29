@@ -62,22 +62,22 @@ function scrollRight() {
 // ----statistics nav in mobile screen----------------------------------------------
 // --------------------------------------------------
 
-let statistic = document.querySelector(".statistics-container");
-const distance2 = 330;
+// let statistic = document.querySelector(".statistics-container");
+// const distance2 = 330;
 
-function statisticForward() {
-  statistic.scrollBy({
-    left: distance2,
-    behavior: "smooth",
-  });
-}
+// function statisticForward() {
+//   statistic.scrollBy({
+//     left: distance2,
+//     behavior: "smooth",
+//   });
+// }
 
-function statisticBack() {
-  statistic.scrollBy({
-    left: -distance2,
-    behavior: "smooth",
-  });
-}
+// function statisticBack() {
+//   statistic.scrollBy({
+//     left: -distance2,
+//     behavior: "smooth",
+//   });
+// }
 
 // --------price plan swipper---------------------------------
 // ----------------------------------------
