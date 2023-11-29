@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ejada EIM / E-invoicing Middleware</title>
     <link rel="stylesheet" href="style/invoicing-style.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <!------------- Search  bar -------------->
@@ -16,9 +21,64 @@
       </div>
     </div>
 
+    <!-- ------this div add background to body when nav sidebar open for small screen---------------------- -->
+    <div class="body-bg hide"></div>
+    <!-- ------------------------------ -->
+    <!-- small screen side bar -->
+    <div id="side-bar" class="sidebar hide">
+      <div>
+        <img class="logo" src="./images/ejadaeim 1.png" alt="" />
+        <div class="user-informatin new-row">
+          <img src="./images/Image-user.png" alt="" />
+          <div>
+            <h4>Ikramy Ismail</h4>
+            <p>Ikramy@company.com</p>
+          </div>
+        </div>
+        <ul class="side-bar-nav-list">
+          <li class="nav-item"><a class="nav-link" href="#">products</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pricing.html">pricing </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">about</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">resources</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <ul class="side-bar-user-menu-list">
+          <li class="user-menu-item" id="searchButton">
+            <a href="#" class="user-menu-link search-text">Search</a>
+          </li>
+          <li class="user-menu-item">
+            <a href="./contact.html" class="user-menu-link">contact</a>
+          </li>
+          <li class="user-menu-item">
+            <select class="language">
+              <option value="english">English</option>
+              <option value="arabic">Arabic</option>
+            </select>
+          </li>
+          <li class="user-menu-item">
+            <a href="./login.html" class="user-menu-link">login</a>
+          </li>
+          <li class="user-menu-item">
+            <button class="user-menu-button">get started</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- end small screen side bar -->
+
     <!------------- Start  Header -------------->
     <header class="padding">
       <nav>
+        <div class="nav-menu-icon">
+          <img src="./icons/menu.svg" alt="" />
+        </div>
         <div class="logo-container">
           <a href="/">
             <img src="../images/logo.svg" alt="e-invoicing logo" class="logo" />
@@ -66,6 +126,9 @@
     <!------------- Start Main -------------->
     <main>
       <div class="current-path">
+        <a href="./invoice-index.html"
+          ><img src="./icons/arrow back_ios.svg" alt="" class="back-arrow"
+        /></a>
         <span>
           <img src="./icons/home.svg" width="16" height="16" />
           <a href="/"> Home</a>
@@ -90,11 +153,17 @@
       <!-- End Hero Section -->
       <!-- -------------------------------------------- -->
       <!-- Start price plan Section -->
-      <section class="price-plan-container pricing padding">
+      <section class="price-plan-container">
+        <!-- add arrows images for small screen -->
+        <img src="./icons/arrow back_ios.svg" alt="" class="arrow-back" />
+        <img src="./icons/arrow forward_ios.svg" alt="" class="arrow-forward" />
+        <!-- start price plan table -->
         <div class="pricing-table">
           <table>
             <tr class="plans-header">
-              <td class="first-head"><h4>We Provide More Price List</h4></td>
+              <td class="first-head">
+                <h4>We Provide More Price List</h4>
+              </td>
               <td>
                 <div class="col">
                   <div class="icon-bg">
@@ -204,6 +273,150 @@
             </tr>
           </table>
         </div>
+        <!-- end price plan table -->
+        <!-- start price plan cards for small screen-->
+        <div class="price-plan-cards-container">
+          <h4 class="first-head">We Provide More Price List</h4>
+          <div class="planSwiper swiper">
+            <div class="swiper-box swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="plan-card">
+                  <div class="col">
+                    <div class="icon-bg">
+                      <img src="./icons/bxs_network-chart.svg" alt="" />
+                    </div>
+                    <h5>Basic Plan</h5>
+                    <h6>SAR<span class="price-value">199.99</span>/mo</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetuer.</p>
+                  </div>
+                  <table class="plan-cards-table">
+                    <tr>
+                      <td>Limit Users</td>
+                      <td>100 Users</td>
+                    </tr>
+                    <tr>
+                      <td>Support 24/7</td>
+                      <td>
+                        <img
+                          src="./icons/akar-icons_circle-check-fill-green.svg"
+                          alt=""
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Integrated</td>
+                      <td><img src="./icons/circle-x-red.svg" alt="" /></td>
+                    </tr>
+                    <tr>
+                      <td>Workflows</td>
+                      <td><img src="./icons/circle-x-red.svg" alt="" /></td>
+                    </tr>
+                    <tr>
+                      <td>Database Limit</td>
+                      <td>100 GB</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="plan-card">
+                  <div class="col">
+                    <div class="icon-bg">
+                      <img src="./icons/fluent_premium-12-filled.svg" alt="" />
+                    </div>
+                    <h5>Premium Plan</h5>
+                    <h6>SAR<span class="price-value">399.99</span>/mo</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetuer.</p>
+                  </div>
+                  <table class="plan-cards-table">
+                    <tr>
+                      <td>Limit Users</td>
+                      <td>250 Users</td>
+                    </tr>
+                    <tr>
+                      <td>Support 24/7</td>
+                      <td>
+                        <img
+                          src="./icons/akar-icons_circle-check-fill-green.svg"
+                          alt=""
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Integrated</td>
+                      <td>
+                        <img
+                          src="./icons/akar-icons_circle-check-fill-green.svg"
+                          alt=""
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Workflows</td>
+                      <td><img src="./icons/circle-x-red.svg" alt="" /></td>
+                    </tr>
+                    <tr>
+                      <td>Database Limit</td>
+                      <td>500 GB</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="plan-card">
+                  <div class="col">
+                    <div class="icon-bg">
+                      <img src="./icons/ci_doughnut-chart.svg" alt="" />
+                    </div>
+                    <h5>Business Plan</h5>
+                    <h6>SAR<span class="price-value">699.99</span>/mo</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetuer.</p>
+                  </div>
+                  <table class="plan-cards-table">
+                    <tr>
+                      <td>Limit Users</td>
+                      <td>500 Users</td>
+                    </tr>
+                    <tr>
+                      <td>Support 24/7</td>
+                      <td>
+                        <img
+                          src="./icons/akar-icons_circle-check-fill-green.svg"
+                          alt=""
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Integrated</td>
+                      <td>
+                        <img
+                          src="./icons/akar-icons_circle-check-fill-green.svg"
+                          alt=""
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Workflows</td>
+                      <td>
+                        <img
+                          src="./icons/akar-icons_circle-check-fill-green.svg"
+                          alt=""
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Database Limit</td>
+                      <td>900 GB</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end price plan cards for small screen -->
       </section>
       <!-- End price plan Section -->
 
@@ -356,12 +569,14 @@
     </footer>
     <!-- End Footer Section -->
     <!------------- End Footer -------------->
-    <script src="./main.js"></script>
     <!-- choose one -->
     <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <script>
       feather.replace();
     </script>
+    <script src="./main.js"></script>
   </body>
 </html>

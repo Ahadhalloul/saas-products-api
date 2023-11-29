@@ -53,22 +53,22 @@ bodyBg.addEventListener("click", function (e) {
 
 // ---------------------------------------
 // add scroll buttons of price table plan
-let priceTable = document.querySelector(".pricing-table");
-const distance = 340;
+// let priceTable = document.querySelector(".pricing-table");
+// const distance = 340;
 
-function scrollLft() {
-  priceTable.scrollBy({
-    left: -distance,
-    behavior: "smooth",
-  });
-}
+// function scrollLeft() {
+//   priceTable.scrollBy({
+//     left: -distance,
+//     behavior: "smooth",
+//   });
+// }
 
-function scrollRight() {
-  priceTable.scrollBy({
-    left: distance,
-    behavior: "smooth",
-  });
-}
+// function scrollRight() {
+//   priceTable.scrollBy({
+//     left: distance,
+//     behavior: "smooth",
+//   });
+// }
 
 // ----statistics nav in mobile screen----------------------------------------------
 // --------------------------------------------------
@@ -86,6 +86,28 @@ function statisticForward() {
 function statisticBack() {
   statistic.scrollBy({
     left: -distance2,
+    behavior: "smooth",
+  });
+}
+
+// ----statistics nav in mobile screen----------------------------------------------
+// --------------------------------------------------
+
+let trustedClients = document.querySelector(".trusted-clients");
+const distance3 =
+  document.querySelector(".trusted-clients-container .trusted-clients")
+    .clientWidth * 1.3;
+    
+function trustedClientsForward() {
+  trustedClients.scrollBy({
+    left: distance3,
+    behavior: "smooth",
+  });
+}
+
+function trustedClientsBack() {
+  trustedClients.scrollBy({
+    left: -distance3,
     behavior: "smooth",
   });
 }

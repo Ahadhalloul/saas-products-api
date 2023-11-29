@@ -364,6 +364,9 @@ nav .nav-list .nav-link {
   min-width: 100%;
   min-height: auto;
   display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
   flex-flow: row nowrap;
   background-color: var(--primary-color);
 }
@@ -382,15 +385,22 @@ nav .nav-list .nav-link {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex: 0;
+}
+
+.hero.about .hero-img #shape {
+  height: 620px;
+  width: 100%;
+  float: right;
+  top: 0px;
+  right: 0px;
 }
 
 .hero.about .hero-img #shape img {
-  height: 620px;
   position: absolute;
-  float: right;
-  top: -310px;
-  bottom: 0;
-  right: -200px;
+  top: -60px;
+  max-height: 771px;
+  left: -629px;
 }
 
 /* ! PRICING PAGE HERO  */
@@ -1277,7 +1287,7 @@ nav .nav-list .nav-link {
 
 .faq.pricing {
   width: 100%;
-  max-height: 105px !important;
+  height: auto !important;
   padding: 25px;
   display: flex;
   flex-flow: column nowrap;
@@ -1293,15 +1303,14 @@ nav .nav-list .nav-link {
 
 .faq.pricing.toggle {
   outline: 2px solid var(--primary-color);
-  max-height: 300px !important;
 }
 
 .faq.pricing.toggle .faq-content {
-  visibility: visible;
+  display: block;
 }
 
 .faq-content {
-  visibility: hidden;
+  display: none;
 }
 
 .faq-heading {
@@ -1374,6 +1383,12 @@ nav .nav-list .nav-link {
   line-height: 72px; /* 150% */
 }
 
+.hq-container img {
+  margin-bottom: 50px;
+  width: 100%;
+  height: auto;
+}
+
 .hq-container > img:first-of-type {
   grid-area: c;
 }
@@ -1400,19 +1415,6 @@ nav .nav-list .nav-link {
 
 .hq-container > .hq-contact:last-of-type {
   grid-area: a;
-}
-
-@media screen and (max-width: 1110px) {
-  .hq-container {
-    grid-template-columns: repeat(1, auto);
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-areas:
-      "h"
-      "a"
-      "b"
-      "d"
-      "c";
-  }
 }
 
 /* socials */
@@ -1455,6 +1457,7 @@ nav .nav-list .nav-link {
   padding: 20px 105px;
   font-size: 18px;
   font-weight: 600;
+  margin: 30px;
 }
 
 .contact-form {
@@ -1904,6 +1907,13 @@ label span {
 
 /* -------End products page------- */
 /* ---------------------------------------------------- */
+
+@media screen and (max-width: 1328px) {
+  .hq-container {
+    gap: 30px !important;
+  }
+}
+
 /* ---------Start design for tablet---------- */
 @media screen and (max-width: 1023px) {
   .price-plan-cards-container {
@@ -2176,6 +2186,67 @@ label span {
   }
   .current-path {
     padding: 15px 63px;
+  }
+
+  /* About */
+  .hero.about {
+    height: 500px;
+  }
+
+  .hero.about .hero-img #shape img {
+    top: 50px;
+    left: -465px !important;
+    max-height: 519px !important;
+  }
+
+  .trusted-clients-container .trusted-clients-left-arrow,
+  .trusted-clients-container .trusted-clients-right-arrow {
+    display: none;
+  }
+
+  /* Contact */
+  .hq-container {
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+      "h"
+      "a"
+      "b"
+      "d"
+      "c";
+    place-items: start;
+  }
+
+  .hq-title {
+    width: 100%;
+  }
+  .hq-contact {
+    min-height: 250px;
+  }
+
+  .hq-container img {
+    margin-bottom: 50px;
+    width: 100%;
+    height: auto;
+  }
+
+  .contact-container h1{
+    font-size: 40px;
+  }
+
+  .contact-form{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: 
+    "name"
+    "email"
+    "mobile"
+    "inquiry"
+    "message";
+  }
+
+  .social-list{
+    gap: 35px;
   }
 }
 /* ---------End design for tablet---------- */
@@ -2481,6 +2552,99 @@ label span {
     right: 35px;
     top: 60%;
   }
+
+  /* Pricing page */
+  .plan {
+    width: clamp(100%, 634px, 100%) !important;
+    height: 40px !important;
+  }
+
+  .plan p:nth-child(1) {
+    flex: 3;
+    font-size: clamp(12px, 20px, 12px) !important;
+  }
+
+  .plan p:nth-child(2) {
+    flex: 1;
+    font-size: clamp(12px, 20px, 12px) !important;
+  }
+
+  /* About page */
+  .hero.about .hero-img #shape img {
+    top: 50px;
+    left: -465px !important;
+    max-height: 519px !important;
+  }
+
+  .trusted-clients-container {
+    position: relative;
+  }
+
+  .trusted-clients-container .trusted-clients-left-arrow,
+  .trusted-clients-container .trusted-clients-right-arrow {
+    display: block;
+    position: absolute;
+    bottom: 150px;
+    z-index: 1;
+  }
+  .trusted-clients-container .trusted-clients-left-arrow {
+    left: 20px;
+  }
+  .trusted-clients-container .trusted-clients-right-arrow {
+    right: 20px;
+  }
+  .trusted-clients-container .trusted-clients {
+    display: flex;
+    overflow: scroll;
+    position: relative;
+    max-width: 200px;
+  }
+
+  .trusted-clients-container .trusted-clients::-webkit-scrollbar {
+    width: 0;
+  }
+
+  .trusted-clients-container .trusted-clients .client {
+    min-width: 100%;
+  }
+
+  /* HQ */
+  .hq-title {
+    padding: 0 ;
+  }
+
+  .hq-title h1 {
+    font-size: 30px;
+  }
+
+  .hq-contact h2 {
+    font-size: 20px;
+  }
+
+  .hq-contact > span {
+    font-size: 16px;
+  }
+
+  .contact-container h1{
+    font-size: 24px;
+  }
+
+  .social-list{
+    max-width:360px;
+  }
+
+  .social-container{
+    max-width:360px;
+    overflow: scroll;
+    
+  }
+  .column{
+    display: flex;
+    flex-direction: column;
+  }
+  .socials-link{
+    text-decoration: none;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -2499,9 +2663,9 @@ label span {
   .hero .hero-content .hero-buttons button {
     min-width: 120px;
   }
-  .hero .hero-img #shape img {
+  /* .hero .hero-img #shape img {
     height: 423px !important;
-  }
+  } */
   .hero.product {
     max-height: 400px;
   }
@@ -2511,12 +2675,29 @@ label span {
   .logo {
     margin-left: 35px;
   }
+
+  .hero.about .hero-img #shape img {
+    top: 50px;
+    left: -200px !important;
+    max-height: 419px !important;
+  }
+
+  /* HQ */
+  .hq-title h1 {
+    font-size: 24px;
+  }
 }
 
 /* ------------ End mobile design ------------- */
 @media screen and (max-height: 375px) {
   .stop-scrolling {
     overflow: auto !important;
+  }
+
+  .hero.about .hero-img #shape img {
+    top: 50px;
+    left: -200px !important;
+    max-height: 419px !important;
   }
 }
 
@@ -2934,3 +3115,4 @@ label span {
   color: #fff;
 }
 /* ------------------ End Invoices pages----------------- */
+  

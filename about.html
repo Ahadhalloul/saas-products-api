@@ -65,6 +65,9 @@
     <!------------- Start Main -------------->
     <main>
       <div class="current-path">
+        <a href="./invoice-index.html"
+          ><img src="./icons/arrow back_ios.svg" alt="" class="back-arrow"
+        /></a>
         <span>
           <img src="./icons/home.svg" width="16" height="16" />
           <a href="/"> Home</a>
@@ -88,10 +91,7 @@
           </div>
         </div>
         <div class="hero-img">
-          <img
-            src="./images/office.png"
-            alt="A man wearing thawb and shemagh"
-          />
+          <img src="./images/office.png" />
           <div id="shape">
             <img src="./images/shape.svg" />
           </div>
@@ -100,18 +100,35 @@
       <!-- End Hero Section -->
 
       <!-- Start Statistics -->
-      <section class="statistics-container padding">
-        <div class="statistics">
-          <span>99%</span>
-          <p>Lorem ipsum dolor sit amet</p>
-        </div>
-        <div class="statistics">
-          <span>4,5</span>
-          <p>Lorem ipsum dolor sit amet</p>
-        </div>
-        <div class="statistics">
-          <span>25k </span>
-          <p>Lorem ipsum dolor sit amet</p>
+      <section class="statistics-content-continer">
+        <img
+          src="./icons/arrow back_ios.svg"
+          alt=""
+          class="statistics-left-arrow"
+          onclick="statisticBack()"
+        />
+        <img
+          src="./icons/arrow forward_ios.svg"
+          alt=""
+          class="statistics-right-arrow"
+          onclick="statisticForward()"
+        />
+
+        <div class="statistics-container padding">
+          <!-- <div class="statistic-content"> -->
+          <div class="statistics">
+            <span>99%</span>
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+          <div class="statistics">
+            <span>4,5</span>
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+          <div class="statistics">
+            <span>25K</span>
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+          <!-- </div>  -->
         </div>
       </section>
       <!-- End Statistics -->
@@ -196,6 +213,20 @@
             commodo ligula eget dolor. Aenean massa. Cum sociis natoque
             penatibus et magnis dis parturient montes
           </p>
+        </div>
+        <div>
+          <img
+            src="./icons/arrow back_ios.svg"
+            alt=""
+            class="trusted-clients-left-arrow"
+            onclick="trustedClientsBack()"
+          />
+          <img
+            src="./icons/arrow forward_ios.svg"
+            alt=""
+            class="trusted-clients-right-arrow"
+            onclick="trustedClientsForward()"
+          />
         </div>
         <div class="trusted-clients">
           <div class="client">

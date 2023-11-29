@@ -19,7 +19,52 @@
     <!-- ------this div add background to body when nav sidebar open for small screen---------------------- -->
     <div class="body-bg hide"></div>
     <!-- ------------------------------ -->
+    <!-- small screen side bar -->
+    <div id="side-bar" class="sidebar hide">
+      <div>
+        <img class="logo" src="./images/ejadaeim 1.png" alt="" />
+        <div class="user-informatin new-row">
+          <img src="./images/Image-user.png" alt="" />
+          <div>
+            <h4>Ikramy Ismail</h4>
+            <p>Ikramy@company.com</p>
+          </div>
+        </div>
+        <ul class="side-bar-nav-list">
+          <li class="nav-item"><a class="nav-link" href="#">products</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pricing.html">pricing </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">about</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">resources</a></li>
+        </ul>
+      </div>
 
+      <div>
+        <ul class="side-bar-user-menu-list">
+          <li class="user-menu-item" id="searchButton">
+            <a href="#" class="user-menu-link search-text">Search</a>
+          </li>
+          <li class="user-menu-item">
+            <a href="./contact.html" class="user-menu-link">contact</a>
+          </li>
+          <li class="user-menu-item">
+            <select class="language">
+              <option value="english">English</option>
+              <option value="arabic">Arabic</option>
+            </select>
+          </li>
+          <li class="user-menu-item">
+            <a href="./login.html" class="user-menu-link">login</a>
+          </li>
+          <li class="user-menu-item">
+            <button class="user-menu-button">get started</button>
+          </li>
+        </ul>
+      </div>
+    </div>
     <!------------- Start  Header -------------->
     <header class="padding">
       <nav>
@@ -65,6 +110,9 @@
     <!------------- Start Main -------------->
     <main>
       <div class="current-path">
+        <a href="./invoice-index.html"
+          ><img src="./icons/arrow back_ios.svg" alt="" class="back-arrow"
+        /></a>
         <span>
           <img src="./icons/home.svg" width="16" height="16" />
           <a href="/"> Home</a>
@@ -115,23 +163,34 @@
       <!-- End hq -->
 
       <section class="socials">
-        <ul class="social-list">
-          <li class="social-item">
-            <a href="#" class="socials-link">
-              <img src="/icons/facebook.svg" />
-            </a>
-          </li>
-          <li class="social-item">
-            <a href="#" class="socials-link">
-              <img src="/icons/linkedin.svg" />
-            </a>
-          </li>
-          <li class="social-item">
-            <a href="#" class="socials-link">
-              <img src="/icons/twitter.svg" />
-            </a>
-          </li>
-        </ul>
+        <div class="social-container">
+          <ul class="social-list">
+            <li class="social-item">
+              <a href="#" class="socials-link">
+                <div class="column">
+                  <img src="/icons/facebook.svg" />
+                  <p>FaceBook</p>
+                </div>
+              </a> 
+            </li>
+            <li class="social-item">
+              <a href="#" class="socials-link">
+                <div class="column">
+                  <img src="/icons/facebook.svg" />
+                  <p>LinkedIn</p>
+                </div>
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="#" class="socials-link">
+                <div class="column">
+                  <img src="/icons/facebook.svg" />
+                  <p>Twitter X</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="contact-container padding">
