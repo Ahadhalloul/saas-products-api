@@ -1954,12 +1954,24 @@ label span {
 .sign-up-page {
   /* background-image: url("../images/sign-up-bg.jpg"); */
   /* background-color: #2a2a2a; */
-  min-height: 100%;
-  padding-top: 100px;
+  height: 100%;
+  position: relative;
 }
 
+.sign-up-container .logo-container {
+  width: 100%;
+  text-align: center;
+  height: auto;
+}
+.sign-up-container .logo-container img {
+  width: 104px;
+}
 .sign-up-page .sign-up-container {
-  max-width: 578px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 578px;
   padding: 40px;
   border-radius: 26px;
   display: flex;
@@ -1976,6 +1988,44 @@ label span {
   justify-content: center;
   flex-flow: column nowrap;
   gap: 25px;
+}
+.sign-up-form .agree-check {
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.sign-up-form .agree-check a {
+  color: var(--accent-text-color);
+}
+.sign-up-form .input-container {
+  display: flex;
+  justify-content: center;
+  flex-flow: column nowrap;
+}
+.sign-up-form .input-container .input img {
+  width: 24px;
+}
+.sign-up-form .input-container label {
+  font-weight: 600;
+}
+.sign-up-form button {
+  padding: 15px 0px;
+}
+.sign-up-container > span {
+  font-weight: 600;
+}
+.sign-up-container > span a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+.sign-up-footer {
+  position: absolute;
+  bottom: 35px;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
 }
 /* -------------- End sign up ( registration )------------------ */
 /* ---------------------------------------------------- */
