@@ -2318,6 +2318,7 @@ label span {
   }
 
   .invoices-filters {
+    min-width: 100%;
     align-items: flex-start;
     gap: 25px;
   }
