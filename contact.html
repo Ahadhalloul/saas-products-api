@@ -317,6 +317,27 @@
     </footer>
     <!-- End Footer Section -->
     <!------------- End Footer -------------->
-    <script src="/main.js"></script>
+    <script>
+      // ----socials nav in mobile screen variables decleration
+      const socials = document.querySelector(".social-container");
+      const distance4 = socials.clientWidth * 1.2;
+
+      // --------------------------------------------------
+      // ----socials nav in mobile screen (variables decleration to the top)
+
+      function socialsClientsForward() {
+        socials.scrollBy({
+          left: distance4,
+          behavior: "smooth",
+        });
+      }
+
+      function socialsClientsBack() {
+        socials.scrollBy({
+          left: -distance4,
+          behavior: "smooth",
+        });
+      }
+    </script>
   </body>
 </html>

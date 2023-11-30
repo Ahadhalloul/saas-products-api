@@ -1,7 +1,3 @@
-// ----socials nav in mobile screen variables decleration
-const socials = document.querySelector(".social-container");
-const distance4 = socials.clientWidth * 1.2;
-
 // ---------------------------------
 // adding search wrapper
 let searchWrapper = document.getElementById("searchWrapper");
@@ -65,44 +61,6 @@ function statisticForward() {
 function statisticBack() {
   statistic.scrollBy({
     left: -distance2,
-    behavior: "smooth",
-  });
-}
-// --------------------------------------------------
-// ----trusted clients nav in mobile screen
-
-let trustedClients = document.querySelector(".trusted-clients");
-const distance3 =
-  document.querySelector(".trusted-clients-container .trusted-clients")
-    .clientWidth * 1.3;
-
-function trustedClientsForward() {
-  trustedClients.scrollBy({
-    left: distance3,
-    behavior: "smooth",
-  });
-}
-
-function trustedClientsBack() {
-  trustedClients.scrollBy({
-    left: -distance3,
-    behavior: "smooth",
-  });
-}
-
-// --------------------------------------------------
-// ----socials nav in mobile screen (variables decleration to the top)
-
-function socialsClientsForward() {
-  socials.scrollBy({
-    left: distance4,
-    behavior: "smooth",
-  });
-}
-
-function socialsClientsBack() {
-  socials.scrollBy({
-    left: -distance4,
     behavior: "smooth",
   });
 }

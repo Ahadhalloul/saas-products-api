@@ -252,6 +252,7 @@ nav .nav-list .nav-link {
 }
 
 .hero .hero-content .hero-heading h1 {
+  max-width: 876px;
   font-weight: 300;
   font-size: 46px;
   line-height: 70px;
@@ -1255,6 +1256,12 @@ nav .nav-list .nav-link {
 .trusted-clients-container .trusted-clients .client:nth-child(8) {
   grid-area: h;
 }
+
+.trusted-clients-container .trusted-clients-left-arrow,
+  .trusted-clients-container .trusted-clients-right-arrow{
+    display: none;
+    
+  }
 
 @media screen and (max-width: 1300px) {
   .trusted-clients-container .trusted-clients {
@@ -2295,6 +2302,19 @@ label span {
 /* ---------End design for tablet---------- */
 /* ------------ Start mobile design ------------- */
 @media screen and (max-width: 744px) {
+
+  .search-wrapper {
+    gap: 10px;
+  }
+  .search-wrapper h2 {
+    font-size: 20px;
+  }
+ 
+  .search-wrapper .search-bar {
+    width: 300px;
+    height: 50px;
+  }
+
   .padding {
     padding-left: 30px;
     padding-right: 30px;
@@ -2621,6 +2641,7 @@ label span {
 
   .trusted-clients-container {
     position: relative;
+    min-height: auto;
   }
 
   .trusted-clients-container .trusted-clients-left-arrow,
@@ -2650,6 +2671,16 @@ label span {
   .trusted-clients-container .trusted-clients .client {
     min-width: 100%;
   }
+
+  .trusted-clients-heading h1{
+    font-size: 20px !important;
+  }
+
+  .trusted-clients-heading p{
+    font-size: 14px !important;
+    width: 100% !important;
+  }
+
 
   /* HQ */
   .hq-title {
@@ -2823,7 +2854,7 @@ label span {
 /* -------------------[ login page ]--------------------- */
 .login-page {
   min-width: 100%;
-  height: 100dvh;
+  min-height: 100%;
   background-color: #111;
   position: relative;
   display: grid;

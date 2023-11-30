@@ -319,5 +319,26 @@
     <!-- End Footer Section -->
     <!------------- End Footer -------------->
     <script src="/main.js"></script>
+    <script>
+      // --------------------------------------------------
+      // ----trusted clients nav in mobile screen
+
+      let trustedClients = document.querySelector(".trusted-clients");
+      const distance3 = trustedClients.clientWidth * 1.3;
+
+      function trustedClientsForward() {
+        trustedClients.scrollBy({
+          left: distance3,
+          behavior: "smooth",
+        });
+      }
+
+      function trustedClientsBack() {
+        trustedClients.scrollBy({
+          left: -distance3,
+          behavior: "smooth",
+        });
+      }
+    </script> 
   </body>
 </html>
