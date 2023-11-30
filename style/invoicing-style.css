@@ -1949,6 +1949,36 @@ label span {
   }
 }
 
+/* ------------------------------------------------ */
+/* -------------- Start sign up ( registration )------------------ */
+.sign-up-page {
+  /* background-image: url("../images/sign-up-bg.jpg"); */
+  /* background-color: #2a2a2a; */
+  min-height: 100%;
+  padding-top: 100px;
+}
+
+.sign-up-page .sign-up-container {
+  max-width: 578px;
+  padding: 40px;
+  border-radius: 26px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  background: var(--secondary-color);
+  margin: 0 auto;
+  box-shadow: 0px 4px 60px 0px #2726381f;
+}
+.sign-up-form {
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-flow: column nowrap;
+  gap: 25px;
+}
+/* -------------- End sign up ( registration )------------------ */
+/* ---------------------------------------------------- */
 /* ---------Start design for tablet---------- */
 @media screen and (max-width: 1023px) {
   .price-plan-cards-container {
@@ -2204,6 +2234,8 @@ label span {
   .footer-sec-row > div:last-child {
     width: 100%;
   }
+
+  /* ------- product page---------------------- */
   .hero.product {
     height: 500px;
   }
@@ -2323,11 +2355,11 @@ label span {
     gap: 25px;
   }
 
-  .invoices-heading h2{
+  .invoices-heading h2 {
     font-size: 30px !important;
   }
 
-  .pagination-result p{
+  .pagination-result p {
     font-size: 12px;
   }
 
@@ -2335,7 +2367,7 @@ label span {
     font-size: 12px;
   }
 
-  .pagination-pages li a svg{
+  .pagination-pages li a svg {
     width: 20px;
     height: 20px;
   }
@@ -2347,17 +2379,17 @@ label span {
     align-items: center;
   } */
 
-  .table-container{
+  .table-container {
     min-width: 100%;
     overflow: scroll !important;
   }
 
-  .pagination{
+  .pagination {
     flex-flow: column nowrap;
     align-items: flex-start !important;
   }
 
-  .user-area{
+  .user-area {
     display: none;
   }
 
@@ -2581,9 +2613,7 @@ label span {
   .footer-sec-row p {
     text-align: center;
   }
-  /* .footer-sec-row img {
-    width: 150px;
-  } */
+
   .price-plan-cards-container h4 {
     font-size: 20px;
   }
@@ -2598,6 +2628,8 @@ label span {
     font-size: 14px;
     width: 70%;
   }
+
+  /* ------- product page---------------------- */
   .hero.product {
     max-height: 360px;
   }
@@ -2675,7 +2707,7 @@ label span {
     right: 35px;
     top: 60%;
   }
-
+  /* -------------------- */
   /* Pricing page */
   .plan {
     width: clamp(100%, 634px, 100%) !important;
@@ -2869,9 +2901,7 @@ label span {
   /* .hero .hero-img #shape img {
     height: 423px !important;
   } */
-  .hero.product {
-    max-height: 400px;
-  }
+
   .user-menu-list .user-menu-item button {
     padding: 10px 10px;
   }
@@ -2883,6 +2913,11 @@ label span {
     top: 50px;
     left: -200px !important;
     max-height: 419px !important;
+  }
+
+  /* ------- product page---------------------- */
+  .hero.product {
+    max-height: 400px;
   }
 
   /* HQ */
