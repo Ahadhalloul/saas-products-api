@@ -1,16 +1,12 @@
-
+// ----socials nav in mobile screen variables decleration
 const socials = document.querySelector(".social-container");
 const distance4 = socials.clientWidth * 1.2;
+
 // ---------------------------------
 // adding search wrapper
 let searchWrapper = document.getElementById("searchWrapper");
 let searchButton = document.querySelectorAll("#searchButton");
 let searchBar = document.getElementById("searchBar");
-
-// searchButton.addEventListener("click", (e) => {
-//   e.preventDefault();
-//   searchWrapper.classList.add("active");
-// });
 
 searchButton.forEach((el) => {
   el.addEventListener("click", (e) => {
@@ -24,8 +20,9 @@ searchWrapper.addEventListener("click", function (e) {
   }
 });
 
+// ---------------------------------
+// faq pricing
 const faqs = document.querySelectorAll(".faq.pricing");
-
 const faqButton = document.querySelectorAll(".faq-button");
 
 faqButton.forEach((element, index) => {
@@ -37,7 +34,6 @@ faqButton.forEach((element, index) => {
 
 // -----------------------------------------
 // show and hide sidebar div in small screen
-
 let menuIcon = document.querySelector(".nav-menu-icon");
 let sidebar = document.querySelector("#side-bar");
 let body = document.querySelector("body");
@@ -54,30 +50,8 @@ bodyBg.addEventListener("click", function (e) {
   sidebar.classList.add("hide");
 });
 
-
-
-// ---------------------------------------
-// add scroll buttons of price table plan
-// let priceTable = document.querySelector(".pricing-table");
-// const distance = 340;
-
-// function scrollLeft() {
-//   priceTable.scrollBy({
-//     left: -distance,
-//     behavior: "smooth",
-//   });
-// }
-
-// function scrollRight() {
-//   priceTable.scrollBy({
-//     left: distance,
-//     behavior: "smooth",
-//   });
-// }
-
-// ----statistics nav in mobile screen----------------------------------------------
 // --------------------------------------------------
-
+// ----statistics nav in mobile screen
 let statistic = document.querySelector(".statistics-container");
 const distance2 = 330;
 
@@ -94,9 +68,8 @@ function statisticBack() {
     behavior: "smooth",
   });
 }
-
-// ----trusted clients nav in mobile screen----------------------------------------------
 // --------------------------------------------------
+// ----trusted clients nav in mobile screen
 
 let trustedClients = document.querySelector(".trusted-clients");
 const distance3 =
@@ -117,9 +90,8 @@ function trustedClientsBack() {
   });
 }
 
-// ----socials nav in mobile screen----------------------------------------------
 // --------------------------------------------------
-
+// ----socials nav in mobile screen (variables decleration to the top)
 
 function socialsClientsForward() {
   socials.scrollBy({
@@ -135,18 +107,14 @@ function socialsClientsBack() {
   });
 }
 
-// --------price plan swipper---------------------------------
 // ----------------------------------------
+// --------price plan swipper
 var swiper = new Swiper(".planSwiper", {
   slidesPerView: 1,
   spaceBetween: 20,
   slidesPerGroup: 1,
   loop: true,
   loopFillGroupWithBlank: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
   navigation: {
     nextEl: ".arrow-forward",
     prevEl: ".arrow-back",
@@ -155,14 +123,13 @@ var swiper = new Swiper(".planSwiper", {
 });
 
 // -----------------------------------------------------------
-// -------product page detailed guide swipper--------------------------------------------
+// -------product page detailed guide swipper
 var swiper2 = new Swiper(".guide-swiper", {
   slidesPerView: 1,
   spaceBetween: 50,
   slidesPerGroup: 1,
   loop: true,
   loopFillGroupWithBlank: true,
-
   navigation: {
     nextEl: ".guide-arrow-forward",
     prevEl: ".guide-arrow-back",
