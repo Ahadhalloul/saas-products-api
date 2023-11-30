@@ -1952,10 +1952,12 @@ label span {
 /* ------------------------------------------------ */
 /* -------------- Start sign up ( registration )------------------ */
 .sign-up-page {
-  /* background-image: url("../images/sign-up-bg.jpg"); */
-  /* background-color: #2a2a2a; */
-  height: 100%;
+  /* background-image: url(/images/bk.png); */
+  /* font-family: "Source Sans 3", sans-serif; */
+  background-color: #fff;
+  min-height: 100%;
   position: relative;
+  padding: 40px 0px;
 }
 
 .sign-up-container .logo-container {
@@ -1967,19 +1969,15 @@ label span {
   width: 104px;
 }
 .sign-up-page .sign-up-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin: 0 auto;
   width: 578px;
-  padding: 40px;
+  padding: 35px;
   border-radius: 26px;
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 50px;
   background: var(--secondary-color);
-  margin: 0 auto;
   box-shadow: 0px 4px 60px 0px #2726381f;
 }
 .sign-up-form {
@@ -1995,6 +1993,9 @@ label span {
   display: flex;
   gap: 15px;
   align-items: center;
+}
+.sign-up-form .agree-check p {
+  font-family: "Source Sans 3", sans-serif !important;
 }
 .sign-up-form .agree-check a {
   color: var(--accent-text-color);
@@ -2015,17 +2016,42 @@ label span {
 }
 .sign-up-container > span {
   font-weight: 600;
+  font-size: 14px;
 }
 .sign-up-container > span a {
   color: var(--primary-color);
   text-decoration: none;
 }
 .sign-up-footer {
-  position: absolute;
-  bottom: 35px;
   width: 100%;
+  margin-top: 40px;
   text-align: center;
   font-size: 14px;
+}
+.sign-up-container .captcha {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.sign-up-container .captcha div:first-child {
+  background-color: #f446461a;
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  color: #f44646;
+  font-size: 15px;
+}
+.sign-up-container .captcha div:first-child img {
+  width: 24px;
+}
+.sign-up-container .captcha .captcha-code {
+  font-size: 24px;
+  font-weight: 700;
+  color: #14c97a;
+  padding-left: 30px;
 }
 /* -------------- End sign up ( registration )------------------ */
 /* ---------------------------------------------------- */
