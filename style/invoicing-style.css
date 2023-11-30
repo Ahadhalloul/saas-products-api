@@ -1320,6 +1320,15 @@ nav .nav-list .nav-link {
   gap: 25px;
 }
 
+
+.faq.pricing .faq-heading h3{
+  font-weight: 500;
+}
+
+.faq.pricing.toggle .faq-heading h3{
+  color: var(--accent-text-color);
+}
+
 .arrow-container {
   min-width: 50px;
   min-height: 50px;
@@ -1450,6 +1459,11 @@ nav .nav-list .nav-link {
 
 .social-item > a > .column img {
   width: 64px;
+}
+
+.socials-right-arrow,
+.socials-left-arrow {
+  display: none;
 }
 
 /* contact form */
@@ -2665,21 +2679,30 @@ label span {
 
   .social-list {
     min-width : 100% !important;
-    background: blue;
+    min-height: 100%;
     position: relative;
-    justify-content: flex-start;
-    gap: 50px;
-    padding: 25px;
+    justify-content: start;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
   }
-
+/* 
   .social-item {
     max-width: 200px;
+  } 
+  */
+
+  .social-item > a > .column{
+    font-size: 16px;
   }
 
   .social-container {
-    width: 160px;
+    /* width: 160px; */
     overflow: scroll;
-    background-color: red;
+    padding: 25px 0;
+    scroll-snap-type: inline mandatory;
+
+    overscroll-behavior: contain;
   }
 
   .social-container::-webkit-scrollbar{
@@ -2692,6 +2715,20 @@ label span {
   }
   .socials-link {
     text-decoration: none;
+  }
+
+  .socials-right-arrow,
+  .socials-left-arrow {
+    display: block;
+    position: absolute;
+    top: 90px;
+    z-index: 1;
+  }
+  .socials-left-arrow {
+    left: 20px;
+  }
+  .socials-right-arrow {
+    right: 20px;
   }
 
   /* login */
@@ -2714,11 +2751,11 @@ label span {
   }
 
   
-  .toggle-container{
+  .options-container .toggle-container{
     width: 40px !important;
   }
 
-  .toggle{
+  .options-container .toggle{
     width: 10px !important;
     height: 10px !important;
   }

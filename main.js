@@ -1,3 +1,6 @@
+
+const socials = document.querySelector(".social-container");
+const distance4 = socials.clientWidth * 1.2;
 // ---------------------------------
 // adding search wrapper
 let searchWrapper = document.getElementById("searchWrapper");
@@ -51,6 +54,8 @@ bodyBg.addEventListener("click", function (e) {
   sidebar.classList.add("hide");
 });
 
+
+
 // ---------------------------------------
 // add scroll buttons of price table plan
 // let priceTable = document.querySelector(".pricing-table");
@@ -94,7 +99,9 @@ function statisticBack() {
 // --------------------------------------------------
 
 let trustedClients = document.querySelector(".trusted-clients");
-const distance3 = document.querySelector(".trusted-clients-container .trusted-clients").clientWidth * 1.3;
+const distance3 =
+  document.querySelector(".trusted-clients-container .trusted-clients")
+    .clientWidth * 1.3;
 
 function trustedClientsForward() {
   trustedClients.scrollBy({
@@ -113,8 +120,6 @@ function trustedClientsBack() {
 // ----socials nav in mobile screen----------------------------------------------
 // --------------------------------------------------
 
-let socials = document.querySelector(".social-container");
-const distance4 = 300;
 
 function socialsClientsForward() {
   socials.scrollBy({
