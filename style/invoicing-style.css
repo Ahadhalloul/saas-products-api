@@ -2322,6 +2322,23 @@ label span {
     gap: 25px;
   }
 
+  .invoices-heading h2{
+    font-size: 30px !important;
+  }
+
+  .pagination-result p{
+    font-size: 12px;
+  }
+
+  .pagination-pages li a {
+    font-size: 12px;
+  }
+
+  .pagination-pages li a svg{
+    width: 20px;
+    height: 20px;
+  }
+
   /* .table-container tr,
   .table-container thead {
     border-bottom: 1px solid #e0e7ed;
