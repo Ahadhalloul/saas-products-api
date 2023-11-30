@@ -15,10 +15,60 @@
         <img src="/icons/search.svg" width="32" height="32" />
       </div>
     </div>
+    <div class="body-bg hide"></div>
+    <!-- ------------------------------ -->
+    <!-- small screen side bar -->
+    <div id="side-bar" class="sidebar hide">
+      <div>
+        <img class="logo" src="./images/ejadaeim 1.png" alt="" />
+        <div class="user-informatin new-row">
+          <img src="./images/Image-user.png" alt="" />
+          <div>
+            <h4>Ikramy Ismail</h4>
+            <p>Ikramy@company.com</p>
+          </div>
+        </div>
+        <ul class="side-bar-nav-list">
+          <li class="nav-item"><a class="nav-link" href="#">products</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pricing.html">pricing </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">about</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">resources</a></li>
+        </ul>
+      </div>
 
+      <div>
+        <ul class="side-bar-user-menu-list">
+          <li class="user-menu-item" id="searchButton">
+            <a href="#" class="user-menu-link search-text">Search</a>
+          </li>
+          <li class="user-menu-item">
+            <a href="./contact.html" class="user-menu-link">contact</a>
+          </li>
+          <li class="user-menu-item">
+            <select class="language">
+              <option value="english">English</option>
+              <option value="arabic">Arabic</option>
+            </select>
+          </li>
+          <li class="user-menu-item">
+            <a href="./login.html" class="user-menu-link">login</a>
+          </li>
+          <li class="user-menu-item">
+            <button class="user-menu-button">get started</button>
+          </li>
+        </ul>
+      </div>
+    </div>
     <!------------- Start  Header -------------->
     <header class="padding">
       <nav>
+        <div class="nav-menu-icon">
+          <img src="./icons/menu.svg" alt="" />
+        </div>
         <div class="logo-container">
           <a href="/">
             <img src="../images/logo.svg" alt="e-invoicing logo" class="logo" />
@@ -65,12 +115,15 @@
     <main>
       <!-- Start Current path -->
       <div class="current-path">
+        <a href="./invoice-index.html"
+          ><img src="./icons/arrow back_ios.svg" alt="" class="back-arrow"
+        /></a>
         <span>
           <img src="./icons/home.svg" width="16" height="16" />
           <a href="/"> Home</a>
         </span>
         <span> / </span>
-        <span><a class="current" href="/invoices.html">Account</a></span>
+        <span><a class="current" href="/pricing.html">Pricing</a></span>
       </div>
       <!-- End Current path -->
       <section class="invoices-container padding">
@@ -363,5 +416,6 @@
     <script>
       feather.replace();
     </script>
+    <script src="./main.js"></script>
   </body>
 </html>

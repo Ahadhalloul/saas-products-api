@@ -1258,10 +1258,9 @@ nav .nav-list .nav-link {
 }
 
 .trusted-clients-container .trusted-clients-left-arrow,
-  .trusted-clients-container .trusted-clients-right-arrow{
-    display: none;
-    
-  }
+.trusted-clients-container .trusted-clients-right-arrow {
+  display: none;
+}
 
 @media screen and (max-width: 1300px) {
   .trusted-clients-container .trusted-clients {
@@ -1327,12 +1326,11 @@ nav .nav-list .nav-link {
   gap: 25px;
 }
 
-
-.faq.pricing .faq-heading h3{
+.faq.pricing .faq-heading h3 {
   font-weight: 500;
 }
 
-.faq.pricing.toggle .faq-heading h3{
+.faq.pricing.toggle .faq-heading h3 {
   color: var(--accent-text-color);
 }
 
@@ -2302,6 +2300,50 @@ label span {
 /* ---------End design for tablet---------- */
 /* ------------ Start mobile design ------------- */
 @media screen and (max-width: 744px) {
+  /* Invoice page */
+  .invoices-heading,
+  .invoices-filters {
+    display: flex;
+    flex-flow: column;
+    /* justify-content: center; */
+  }
+
+  .invoices-heading {
+    align-items: center;
+    gap: 25px;
+  }
+
+  .invoices-heading button {
+    padding: 10px 32px !important;
+  }
+
+  .invoices-filters {
+    align-items: flex-start;
+    gap: 25px;
+  }
+
+  /* .table-container tr,
+  .table-container thead {
+    border-bottom: 1px solid #e0e7ed;
+    display: flex;
+    align-items: center;
+  } */
+
+  .table-container{
+    min-width: 100%;
+    overflow: scroll !important;
+  }
+
+  .pagination{
+    flex-flow: column nowrap;
+    align-items: flex-start !important;
+  }
+
+  .user-area{
+    display: none;
+  }
+
+  /* Search bar */
 
   .search-wrapper {
     gap: 10px;
@@ -2309,7 +2351,7 @@ label span {
   .search-wrapper h2 {
     font-size: 20px;
   }
- 
+
   .search-wrapper .search-bar {
     width: 300px;
     height: 50px;
@@ -2521,9 +2563,9 @@ label span {
   .footer-sec-row p {
     text-align: center;
   }
-  .footer-sec-row img {
+  /* .footer-sec-row img {
     width: 150px;
-  }
+  } */
   .price-plan-cards-container h4 {
     font-size: 20px;
   }
@@ -2672,15 +2714,14 @@ label span {
     min-width: 100%;
   }
 
-  .trusted-clients-heading h1{
+  .trusted-clients-heading h1 {
     font-size: 20px !important;
   }
 
-  .trusted-clients-heading p{
+  .trusted-clients-heading p {
     font-size: 14px !important;
     width: 100% !important;
   }
-
 
   /* HQ */
   .hq-title {
@@ -2709,7 +2750,7 @@ label span {
   }
 
   .social-list {
-    min-width : 100% !important;
+    min-width: 100% !important;
     min-height: 100%;
     position: relative;
     justify-content: start;
@@ -2717,13 +2758,13 @@ label span {
     grid-auto-flow: column;
     grid-auto-columns: 100%;
   }
-/* 
+  /* 
   .social-item {
     max-width: 200px;
   } 
   */
 
-  .social-item > a > .column{
+  .social-item > a > .column {
     font-size: 16px;
   }
 
@@ -2736,7 +2777,7 @@ label span {
     overscroll-behavior: contain;
   }
 
-  .social-container::-webkit-scrollbar{
+  .social-container::-webkit-scrollbar {
     width: 0;
   }
 
@@ -2763,7 +2804,7 @@ label span {
   }
 
   /* login */
-  .login-container{
+  .login-container {
     min-width: 90% !important;
     min-height: fit-content !important;
     padding: 20px !important;
@@ -2773,7 +2814,7 @@ label span {
     height: 70px !important;
   }
 
-  .login-form > span{
+  .login-form > span {
     font-size: 14px;
   }
 
@@ -2781,17 +2822,15 @@ label span {
     font-size: 14px;
   }
 
-  
-  .options-container .toggle-container{
+  .options-container .toggle-container {
     width: 40px !important;
   }
 
-  .options-container .toggle{
+  .options-container .toggle {
     width: 10px !important;
     height: 10px !important;
   }
 }
-
 
 @media screen and (max-width: 450px) {
   .plan-card td {
