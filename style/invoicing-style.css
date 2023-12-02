@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Suez+One&display=swap");
 :root {
   /* Font */
   --primary-font: "Poppins", sans-serif;
@@ -1994,11 +1995,12 @@ label span {
   gap: 15px;
   align-items: center;
 }
-.sign-up-form .agree-check p {
-  font-family: "Source Sans 3", sans-serif !important;
+.sign-up-form .agree-check span {
+  font-family: "Source Sans 3", sans-serif;
 }
 .sign-up-form .agree-check a {
   color: var(--accent-text-color);
+  font-family: "Source Sans 3", sans-serif;
 }
 .sign-up-form .input-container {
   display: flex;
@@ -2013,14 +2015,17 @@ label span {
 }
 .sign-up-form button {
   padding: 15px 0px;
+  font-size: 18px;
 }
 .sign-up-container > span {
   font-weight: 600;
   font-size: 14px;
+  font-family: "Source Sans 3", sans-serif;
 }
 .sign-up-container > span a {
   color: var(--primary-color);
   text-decoration: none;
+  font-family: "Source Sans 3", sans-serif;
 }
 .sign-up-footer {
   width: 100%;
@@ -2033,7 +2038,7 @@ label span {
   flex-direction: column;
   gap: 20px;
 }
-.sign-up-container .captcha div:first-child {
+.sign-up-container .captcha .error-msg {
   background-color: #f446461a;
   padding: 10px 20px;
   border-radius: 10px;
@@ -2043,18 +2048,122 @@ label span {
   gap: 10px;
   color: #f44646;
   font-size: 15px;
+  font-family: "Source Sans 3", sans-serif;
 }
-.sign-up-container .captcha div:first-child img {
+.sign-up-container .captcha .error-msg img {
   width: 24px;
 }
-.sign-up-container .captcha .captcha-code {
-  font-size: 24px;
-  font-weight: 700;
-  color: #14c97a;
+
+.sign-up-container .captcha .captcha-code h4 {
+  font-family: "Suez One", serif;
   padding-left: 30px;
+  color: #14c97a;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+/* ---- start code verify  --- */
+.verify-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+}
+.verify-box p {
+  padding-bottom: 10px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.verify-box .e-mail {
+  font-weight: 500;
+}
+
+.verify-box a {
+  color: var(--accent-text-color);
+  font-size: 18px;
+  font-weight: 500;
+  padding-left: 05px;
+}
+.verify-box .code-input-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+.verify-box .code-input-container .code-input {
+  padding: 15px 35px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  font-size: 18px;
+}
+.verify-box .code-timer p span {
+  font-weight: 500;
+  color: var(--accent-text-color);
+}
+.verify-box .code-timer a {
+  text-decoration: none;
+}
+.verify-box button {
+  padding: 10px;
+  width: 80%;
+  font-size: 18px;
+}
+/* ---- end code verify  --- */
+/* tablet & mobile screen */
+@media screen and (max-width: 774px) {
+  .sign-up-page .sign-up-container {
+    max-width: 100%;
+  }
+  .sign-up-page .logo-container img {
+    width: 80px;
+  }
+  .sign-up-page {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .sign-up-container .captcha .error-msg p {
+    font-size: 13px;
+  }
+  .sign-up-container input::placeholder {
+    font-size: 12px;
+  }
+  .sign-up-form .input-container .input img {
+    width: 20px;
+  }
+  .verify-box p,
+  .verify-box .e-mail,
+  .verify-box a,
+  .verify-box .code-timer p span {
+    font-size: 14px;
+  }
+  .sign-up-footer {
+    font-size: 12px;
+  }
+  .verify-box .code-input-container {
+    gap: 7px;
+  }
+  .verify-box .code-input-container .code-input {
+    padding: 15px 25px;
+  }
+  .sign-up-form button,
+  .verify-box button {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .sign-up-container .input {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .verify-box button {
+    width: 100%;
+  }
 }
 /* -------------- End sign up ( registration )------------------ */
 /* ---------------------------------------------------- */
+
 /* ---------Start design for tablet---------- */
 @media screen and (max-width: 1023px) {
   .price-plan-cards-container {

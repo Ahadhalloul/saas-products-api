@@ -12,7 +12,7 @@
         <div class="logo-container">
           <img src="./images/logo.svg" />
         </div>
-        <form class="sign-up-form" action="">
+        <form class="sign-up-form" action="" id="sign-up-form">
           <div class="input-container">
             <label>Email <span>*</span></label>
             <div class="input">
@@ -36,11 +36,19 @@
           </div>
           <!------- captcha block  -------->
           <div class="captcha">
-            <div>
+            <div class="input">
+              <input
+                type="text"
+                placeholder="Enter the word seen in the below image*"
+              />
+            </div>
+            <div class="error-msg">
               <img src="./icons/error.svg" alt="" />
               <p>Please Enter the CAPTCHA</p>
             </div>
-            <div class="captcha-code">e8xmn8</div>
+            <div class="captcha-code">
+              <h4>e8xmn8</h4>
+            </div>
           </div>
           <!-- -------------------------- -->
           <div class="agree-check">
@@ -50,8 +58,29 @@
               <a href="#">Privacy Policy</a>
             </span>
           </div>
-          <button type="submit">Sign Up</button>
+          <button type="button" onclick="showVerify()">Sign Up</button>
         </form>
+
+        <!----- START code verify screen ----->
+        <div class="verify-box hide" id="verify-box">
+          <div>
+            <p>Enter the verification code sent to</p>
+            <span class="e-mail">name@company.com</span><a href="">Change</a>
+          </div>
+          <div class="code-input-container">
+            <div class="code-input">4</div>
+            <div class="code-input">6</div>
+            <div class="code-input">-</div>
+            <div class="code-input">-</div>
+          </div>
+          <div class="code-timer">
+            <p>OTP code will expire in <span>60</span> seconds</p>
+            <a href="">Resend OTP</a>
+          </div>
+          <button type="submit">Verify</button>
+        </div>
+        <!----- END code verify screen ----->
+
         <span>Have a EIM account? <a href="./login.html">Sign In</a></span>
       </section>
       <div class="sign-up-footer">
@@ -69,6 +98,13 @@
           passwordInput.type = "password";
         }
       };
+
+      let form = document.querySelector("#sign-up-form");
+      let verify = document.querySelector("#verify-box");
+      function showVerify() {
+        form.classList.add("hide");
+        verify.classList.remove("hide");
+      }
     </script>
   </body>
 </html>
