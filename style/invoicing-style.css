@@ -1960,7 +1960,9 @@ label span {
   position: relative;
   padding: 40px 0px;
 }
-
+.sign-up-page form {
+  width: 100%;
+}
 .sign-up-container .logo-container {
   width: 100%;
   text-align: center;
@@ -2105,10 +2107,17 @@ label span {
 .verify-box .code-timer a {
   text-decoration: none;
 }
-.verify-box button {
+.verify-box .submit-btn {
   padding: 10px;
   width: 80%;
   font-size: 18px;
+  background: var(--primary-color);
+  color: var(--third-text-color);
+  text-transform: capitalize;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer !important;
 }
 /* ---- end code verify  --- */
 /* tablet & mobile screen */
@@ -2148,7 +2157,7 @@ label span {
     padding: 15px 25px;
   }
   .sign-up-form button,
-  .verify-box button {
+  .verify-box .submit-btn {
     font-size: 14px;
   }
 }
@@ -2157,7 +2166,7 @@ label span {
     padding-left: 5px;
     padding-right: 5px;
   }
-  .verify-box button {
+  .verify-box .submit-btn {
     width: 100%;
   }
 }
