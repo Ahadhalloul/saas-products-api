@@ -2141,6 +2141,7 @@ label span {
   gap: 20px;
 }
 .signup-sidebar .logo {
+  margin-left: 0;
   width: 100px;
   border-bottom: 1px solid #fff;
 }
