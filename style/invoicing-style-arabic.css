@@ -2010,6 +2010,8 @@ nav .nav-list .nav-link {
   /* for swiper design  */
   .guidlines-cards-swiper .guide-card {
     display: flex;
+    flex-direction: row-reverse;
+    text-align: right;
     align-items: start;
     gap: 20px;
     padding: 20px;
