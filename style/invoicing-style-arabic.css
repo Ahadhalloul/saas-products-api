@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Suez+One&display=swap");
 :root {
   /* Font */
   --primary-font: "Poppins", sans-serif;
@@ -30,12 +31,12 @@ html,
 body {
   overflow-x: hidden;
   height: 100%;
-  /* direction: rtl; */
+  overflow-x: hidden;
 }
 
 body {
   background: var(--secondary-color);
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 /* ----------------------[ Start Global Of Styling ]--------------------- */
@@ -141,6 +142,34 @@ nav .nav-list .nav-link {
   direction: rtl;
 }
 
+.current-path {
+  min-width: 100%;
+  min-height: auto;
+  padding: 15px 120px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: var(--third-color);
+  direction: rtl;
+}
+
+.current-path span {
+  display: flex;
+  color: var(--secondary-text-color);
+  gap: 15px;
+  font-size: 14px;
+  align-items: center;
+}
+
+.current-path span a {
+  text-decoration: none;
+  color: var(--secondary-text-color);
+}
+
+.current-path span .current {
+  font-weight: 600;
+  color: var(--accent-text-color);
+}
 /* ----------------------[ End Of Header ]--------------------- */
 /* * --------------------------------------------------- */
 /* --------------start side bar---------------------------*/
@@ -201,7 +230,8 @@ nav .nav-list .nav-link {
 .side-bar-user-menu-list .user-menu-button {
   margin-top: 20px;
 }
-/*--------------------------------------------------- */
+/*----------------------end side bar------------------------------- */
+/* --------------------------------------------------- */
 /* ----------------------[ Start Of Hero ]--------------------- */
 
 .hero {
@@ -338,7 +368,6 @@ nav .nav-list .nav-link {
 .hero .hero-img #shape img {
   min-width: auto;
   position: absolute;
-
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
   height: 971px;
@@ -1353,6 +1382,7 @@ nav .nav-list .nav-link {
   justify-content: space-between;
   margin-top: 20px;
   margin-bottom: 30px;
+  direction: rtl;
 }
 .guidlines-head button {
   padding: 10px 25px;
@@ -1374,12 +1404,14 @@ nav .nav-list .nav-link {
 }
 .guidlines-cards .guide-card {
   display: flex;
+  flex-direction: row-reverse;
   align-items: start;
   gap: 20px;
   padding: 20px;
 
   border: 1px solid var(--accent-color);
   border-radius: 10px;
+  text-align: right;
 }
 .guidlines-cards .guide-card img {
   width: 100%;
@@ -1479,7 +1511,6 @@ nav .nav-list .nav-link {
     position: absolute;
     top: 60px;
     right: 60px;
-    width: 30px;
     height: 30px;
     cursor: pointer;
   }
@@ -1665,8 +1696,8 @@ nav .nav-list .nav-link {
     height: 500px;
   }
   .hero.product .hero-img #shape img {
-    left: -528px !important;
     max-height: 486px !important;
+    left: -950px;
   }
   .guidlines-cards {
     grid-template-rows: 1fr 1fr 1fr;
@@ -1941,7 +1972,7 @@ nav .nav-list .nav-link {
   }
   .hero.product .hero-img #shape img {
     max-height: 300px !important;
-    left: -314px !important;
+    left: -730px;
   }
   .current-path {
     margin-top: 30px;
@@ -2038,9 +2069,14 @@ nav .nav-list .nav-link {
     height: 423px !important;
     right: -170px;
   }
+
   /* ------- product page---------------------- */
   .hero.product {
     max-height: 400px;
+  }
+  .hero.product .hero-img #shape img {
+    max-height: 300px !important;
+    left: -630px;
   }
 }
 
