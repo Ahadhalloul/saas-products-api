@@ -3295,6 +3295,29 @@ label span {
     width: 10px !important;
     height: 10px !important;
   }
+
+  /* pricing */
+  .faq-container h1 {
+    font-size: 20px;
+  }
+
+  .faq.pricing .faq-heading h3 {
+    font-size: 16px;
+  }
+
+  .faq-content p {
+    font-size: 14px;
+  }
+
+  .arrow-container{
+    min-width: 26px;
+    min-height: 26px;
+  }
+
+  .arrow-container .arrow{
+    width: 20px;
+    height: 20px;
+  }
 }
 
 @media screen and (max-width: 450px) {
