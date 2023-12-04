@@ -2273,11 +2273,13 @@ label span {
   height: 50px;
   color: var(--secondary-text-color);
 }
+/* --------this relative position removed in angular-------------- */
 .signup-setup-container .signup-card form .inputs-container div {
   /* position: relative; */
 }
+/* ----------- */
 .signup-setup-container .signup-card form .inputs-container .select img {
-  position: absolute;
+  /* position: absolute; */
   right: 20px;
   top: 15px;
 }
@@ -3309,12 +3311,12 @@ label span {
     font-size: 14px;
   }
 
-  .arrow-container{
+  .arrow-container {
     min-width: 26px;
     min-height: 26px;
   }
 
-  .arrow-container .arrow{
+  .arrow-container .arrow {
     width: 20px;
     height: 20px;
   }
