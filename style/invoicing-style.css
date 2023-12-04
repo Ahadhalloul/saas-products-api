@@ -2245,6 +2245,9 @@ label span {
 }
 .signup-setup-container .signup-card form .btns-container {
   float: right;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .clear-fix {
   clear: both;
@@ -2257,7 +2260,7 @@ label span {
   border: 1px solid #000;
 }
 .signup-setup-container .signup-card form .btns-container input {
-  padding: 10px 35px;
+  padding: 9px 35px;
   color: #fff;
   border: none;
   background-color: var(--primary-color);
@@ -2273,11 +2276,13 @@ label span {
   height: 50px;
   color: var(--secondary-text-color);
 }
+/* --------this relative position removed in angular-------------- */
 .signup-setup-container .signup-card form .inputs-container div {
   /* position: relative; */
 }
+/* ----------- */
 .signup-setup-container .signup-card form .inputs-container .select img {
-  position: absolute;
+  /* position: absolute; */
   right: 20px;
   top: 15px;
 }
