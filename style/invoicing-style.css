@@ -3309,12 +3309,12 @@ label span {
     font-size: 14px;
   }
 
-  .arrow-container{
+  .arrow-container {
     min-width: 26px;
     min-height: 26px;
   }
 
-  .arrow-container .arrow{
+  .arrow-container .arrow {
     width: 20px;
     height: 20px;
   }
@@ -3395,7 +3395,7 @@ label span {
 .login-page::after {
   content: "";
   width: 100%;
-  height: 100dvh;
+  min-height: 100dvh;
   background: url("/images/bk.png") center no-repeat;
   background-size: cover;
   position: fixed;
@@ -3403,7 +3403,7 @@ label span {
 
 .login-container {
   min-width: 578px;
-  min-height: 614px;
+  max-height: fit-content;
   padding: 40px;
   border-radius: 26px;
   display: flex;
@@ -3426,6 +3426,27 @@ label span {
 .login-container .logo-container > img {
   width: 100%;
   height: 100px;
+}
+
+.login-container .login-form .password-container ul {
+  list-style: none;
+  padding: 10px 0;
+}
+
+.login-container .login-form .password-container ul li{
+  font-size: 14px;
+  line-height: 2em;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.login-container .login-form .password-container ul li.valid{
+  color: #7ed321;
+}
+
+.login-container .login-form .password-container ul li.invalid{
+  color: #d0021b;
 }
 
 .input-container {
