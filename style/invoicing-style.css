@@ -2234,6 +2234,7 @@ label span {
 }
 .signup-setup-container .signup-card form .inputs-container .input {
   margin-top: 6px;
+  overflow: visible;
 }
 .signup-setup-container .signup-card form > h4 {
   font-size: 24px;
@@ -2862,6 +2863,24 @@ label span {
   .hero .hero-rating {
     padding: 5px;
   }
+
+  /* ------rate box for mobile screen--- */
+  .hero .hero-rating .rating-content h1 {
+    font-size: 16px;
+  }
+  .hero .hero-rating {
+    max-width: 289px;
+  }
+  .hero .hero-rating .rating-content span {
+    font-size: 12px;
+  }
+  .hero .hero-rating .rating-content span img {
+    width: 12px;
+  }
+  .hero .hero-rating .business span {
+    height: 26px;
+  }
+
   .statistics-container {
     width: 367px !important;
     overflow-x: scroll;
