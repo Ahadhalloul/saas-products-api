@@ -2245,6 +2245,9 @@ label span {
 }
 .signup-setup-container .signup-card form .btns-container {
   float: right;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .clear-fix {
   clear: both;
@@ -2257,7 +2260,7 @@ label span {
   border: 1px solid #000;
 }
 .signup-setup-container .signup-card form .btns-container input {
-  padding: 10px 35px;
+  padding: 9px 35px;
   color: #fff;
   border: none;
   background-color: var(--primary-color);
