@@ -2214,6 +2214,7 @@ label span {
 .signup-setup-container .signup-card {
   padding: 40px;
   box-shadow: 0px 4px 60px 0px #2726381f;
+  min-height: 550px;
 }
 .signup-setup-container .signup-card form .inputs-container {
   display: grid;
