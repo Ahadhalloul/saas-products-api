@@ -2212,9 +2212,12 @@ label span {
   color: var(--accent-text-color);
 }
 .signup-setup-container .signup-card {
+  min-height: 550px;
   padding: 40px;
   box-shadow: 0px 4px 60px 0px #2726381f;
-  min-height: 550px;
+}
+.signup-setup-container .signup-card .input-content {
+  height: 82px;
 }
 .signup-setup-container .signup-card form .inputs-container {
   display: grid;
@@ -2271,7 +2274,7 @@ label span {
   color: var(--secondary-text-color);
 }
 .signup-setup-container .signup-card form .inputs-container div {
-  position: relative;
+  /* position: relative; */
 }
 .signup-setup-container .signup-card form .inputs-container .select img {
   position: absolute;
