@@ -2093,7 +2093,7 @@ label span {
 }
 
 .verify-box a {
-  color: var(--accent-text-color);
+  color: var(--accent-text-color) !important;
   font-size: 18px;
   font-weight: 500;
   padding-left: 05px;
@@ -2105,6 +2105,8 @@ label span {
   gap: 30px;
 }
 .verify-box .code-input-container .code-input {
+  color: #000;
+  width: 84px;
   padding: 15px 35px;
   background-color: #f8f8f8;
   border-radius: 8px;
@@ -2128,6 +2130,23 @@ label span {
   border: none;
   outline: none;
   cursor: pointer !important;
+  margin-top: 30px;
+}
+
+/* verify screen*/
+.verify-box .code-input-container .code-input input {
+  font-weight: 600;
+  color: #000;
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  outline: none;
+}
+.verify-box .code-input-container .code-input input:focus {
+  border: none;
+  outline: none;
 }
 /* ---- end code verify  --- */
 
@@ -2381,6 +2400,7 @@ label span {
     gap: 7px;
   }
   .verify-box .code-input-container .code-input {
+    width: 65px;
     padding: 15px 25px;
   }
   .sign-up-form button,
@@ -3457,7 +3477,7 @@ label span {
   padding: 10px 0;
 }
 
-.login-container .login-form .password-container ul li{
+.login-container .login-form .password-container ul li {
   font-size: 14px;
   line-height: 2em;
   display: flex;
@@ -3465,11 +3485,11 @@ label span {
   gap: 0.5em;
 }
 
-.login-container .login-form .password-container ul li.valid{
+.login-container .login-form .password-container ul li.valid {
   color: #7ed321;
 }
 
-.login-container .login-form .password-container ul li.invalid{
+.login-container .login-form .password-container ul li.invalid {
   color: #d0021b;
 }
 
