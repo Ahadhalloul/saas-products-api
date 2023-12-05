@@ -2029,7 +2029,7 @@ label span {
   padding: 15px 0px;
   font-size: 18px;
 }
-.sign-up-container > span {
+.sign-up-container .form-footer {
   font-weight: 600;
   font-size: 14px;
   font-family: "Source Sans 3", sans-serif;
@@ -2103,11 +2103,11 @@ label span {
   flex-direction: row;
   align-items: center;
   gap: 30px;
+  width: 80%;
+  margin: 0 auto;
 }
 .verify-box .code-input-container .code-input {
-  color: #000;
-  width: 84px;
-  padding: 15px 35px;
+  padding: 15px 23px;
   background-color: #f8f8f8;
   border-radius: 8px;
   font-size: 18px;
@@ -2400,7 +2400,6 @@ label span {
     gap: 7px;
   }
   .verify-box .code-input-container .code-input {
-    width: 65px;
     padding: 15px 25px;
   }
   .sign-up-form button,
@@ -2409,6 +2408,12 @@ label span {
   }
 }
 @media screen and (max-width: 450px) {
+  .verify-box .code-input-container {
+    width: 100%;
+  }
+  .verify-box .code-input-container .code-input {
+    padding: 15px 15px;
+  }
   .sign-up-container .input {
     padding-left: 5px;
     padding-right: 5px;
