@@ -596,7 +596,7 @@ nav .nav-list .nav-link {
 }
 
 .service-cards {
-  width: 50%;
+  width: 560px;
   height: 300px;
   /* background-color: #4aaf05; */
   position: relative;
@@ -615,7 +615,7 @@ nav .nav-list .nav-link {
 }
 @media screen and (max-width: 1352px) {
   .service-cards {
-    width: 50%;
+    /* width: 50%; */
     height: 370px;
   }
 }
@@ -2570,7 +2570,7 @@ label span {
     text-align: left;
   }
   .service-cards {
-    width: 75%;
+    /* width: 75%; */
     height: 350px;
   }
   /* -----------features section-------------------- */
