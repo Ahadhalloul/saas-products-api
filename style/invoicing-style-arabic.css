@@ -1707,6 +1707,8 @@ nav .nav-list .nav-link {
   .guidlines-cards .guide-card img {
     width: 50px;
   }
+  /* --------------end product page---------------------------- */
+
   .current-path {
     padding: 15px 63px;
   }
@@ -1966,7 +1968,7 @@ nav .nav-list .nav-link {
     height: 26px;
   }
 
-  /* ------- product page---------------------- */
+  /* ------- start product page---------------------- */
   .hero.product {
     max-height: 360px;
   }
@@ -2046,7 +2048,7 @@ nav .nav-list .nav-link {
     right: 35px;
     top: 60%;
   }
-  /* -------------------- */
+  /* --------------end product page---------------------------- */
 }
 
 @media screen and (max-width: 450px) {
@@ -2072,7 +2074,7 @@ nav .nav-list .nav-link {
     right: -170px;
   }
 
-  /* ------- product page---------------------- */
+  /* ------- start product page---------------------- */
   .hero.product {
     max-height: 400px;
   }
@@ -2080,6 +2082,7 @@ nav .nav-list .nav-link {
     max-height: 300px !important;
     left: -630px;
   }
+  /* --------------end product page---------------------------- */
 }
 
 /* ------------ End mobile design ------------- */
