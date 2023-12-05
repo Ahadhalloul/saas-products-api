@@ -2104,6 +2104,7 @@ label span {
   background-color: #f8f8f8;
   border-radius: 8px;
   font-size: 18px;
+  border: 1px solid transparent;
 }
 .verify-box .code-timer p span {
   font-weight: 500;
