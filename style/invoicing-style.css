@@ -250,6 +250,7 @@ nav .nav-list .nav-link {
   gap: 50px;
   position: relative;
   z-index: 2;
+  margin-top: 40px;
 }
 
 .hero .hero-content .hero-heading h1 {
@@ -3094,6 +3095,9 @@ label span {
   .hero.product .hero-img #shape img {
     max-height: 300px !important;
     left: -314px !important;
+  }
+  .hero .hero-content {
+    margin-top: 0px;
   }
   .current-path {
     margin-top: 30px;
