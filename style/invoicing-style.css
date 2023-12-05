@@ -1881,6 +1881,12 @@ label span {
 .product.features-container .new-row div img {
   width: 100%;
 }
+
+@media screen and (min-width: 1470px) {
+  .product.features-container .new-row {
+    gap: 131px;
+  }
+}
 /* ---------------------------- */
 
 .detailed-guildlines-container {
