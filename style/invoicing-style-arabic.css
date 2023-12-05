@@ -1375,7 +1375,7 @@ nav .nav-list .nav-link {
 }
 /* ----------------- */
 .product.features-container .new-row {
-  gap: 50px;
+  gap: 100px;
 }
 .product.features-container .new-row h4 {
   width: 90%;
@@ -1386,6 +1386,7 @@ nav .nav-list .nav-link {
 .product.features-container .new-row div img {
   width: 100%;
 }
+
 @media screen and (min-width: 1470px) {
   .product.features-container .new-row {
     gap: 131px;
