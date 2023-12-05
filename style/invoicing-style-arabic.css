@@ -55,7 +55,7 @@ button {
   padding: 40px 120px;
 }
 
-/* .input {
+.input {
   min-width: 100%;
   min-height: auto;
   padding: 12px, 16px, 12px, 16px;
@@ -74,7 +74,7 @@ button {
   outline: none;
   border: none;
   min-height: 50px;
-} */
+}
 
 /* ----------------------[ End Global Of Styling ]--------------------- */
 
@@ -2126,6 +2126,7 @@ nav .nav-list .nav-link {
 }
 
 .sign-up-page form {
+  direction: rtl;
   width: 100%;
 }
 .sign-up-container .logo-container {
@@ -2188,6 +2189,9 @@ nav .nav-list .nav-link {
   font-weight: 600;
   font-size: 14px;
   font-family: "Source Sans 3", sans-serif;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 5px;
 }
 .sign-up-container > span a {
   color: var(--primary-color);
@@ -2223,7 +2227,7 @@ nav .nav-list .nav-link {
 
 .sign-up-container .captcha .captcha-code h4 {
   font-family: "Suez One", serif;
-  padding-left: 30px;
+  padding-right: 30px;
   color: #14c97a;
   font-weight: 400;
   font-size: 24px;
@@ -2237,6 +2241,10 @@ nav .nav-list .nav-link {
   align-items: center;
   text-align: center;
   gap: 30px;
+}
+.verify-box > div > div {
+  display: flex;
+  gap: 10px;
 }
 .verify-box p {
   padding-bottom: 10px;
@@ -2255,7 +2263,7 @@ nav .nav-list .nav-link {
 }
 .verify-box .code-input-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   align-items: center;
   gap: 30px;
 }
