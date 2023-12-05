@@ -1950,14 +1950,6 @@ label span {
   }
 }
 
-.login-footer {
-  width: 100%;
-  text-align: center;
-  font-size: 14px;
-  color: #fff;
-  z-index: 3;
-  margin-bottom: 30px;
-}
 /* ------------------------------------------------ */
 /* -------------- Start sign up ( registration )------------------ */
 .sign-up-page {
@@ -3448,6 +3440,7 @@ label span {
   background: url("/images/bk.png") center no-repeat;
   background-size: cover;
   position: fixed;
+  top: 0;
 }
 
 .login-container {
@@ -3577,6 +3570,16 @@ label span {
 
 .options-container .toggle-container.active {
   background: #4535f6;
+}
+
+.login-footer {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  z-index: 3;
+  margin-bottom: 30px;
 }
 
 /* ------------------ Start Invoices pages----------------- */
