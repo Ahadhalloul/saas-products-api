@@ -1889,7 +1889,7 @@ label span {
 /* ---------------------------- */
 
 .detailed-guildlines-container {
-  background-color: var(--primary-color);
+  background-color: #000;
   color: var(--accent-color);
 }
 
@@ -1907,8 +1907,9 @@ label span {
   padding: 10px 25px;
   border-radius: 5px;
   width: 180px;
-  border: 1px solid var(--accent-color);
-  background-color: var(--primary-color);
+  border: 1px solid #0ef2a0;
+  color: #0ef2a0;
+  background-color: #000;
 }
 .guidlines-head h4 {
   font-size: 36px;
@@ -1931,7 +1932,9 @@ label span {
   border-radius: 10px;
 }
 .guidlines-cards .guide-card img {
-  width: 100%;
+  width: 64px;
+  filter: brightness(0) saturate(100%) invert(85%) sepia(40%) saturate(1387%)
+    hue-rotate(88deg) brightness(101%) contrast(90%);
 }
 .guidlines-cards .guide-card div h5 {
   font-size: 24px;
@@ -3172,6 +3175,10 @@ label span {
     border-radius: 10px;
     max-width: 300px;
     margin: 0 auto;
+  }
+  .guidlines-cards-swiper .guide-card img {
+    filter: brightness(0) saturate(100%) invert(85%) sepia(40%) saturate(1387%)
+      hue-rotate(88deg) brightness(101%) contrast(90%);
   }
   /* hide guides grid from small screen and show swipper*/
   .guidlines-cards {
