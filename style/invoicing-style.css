@@ -76,7 +76,9 @@ header {
   width: 100px;
   /* height: 50px; */
 }
-
+.mobile-logo {
+  display: none;
+}
 .nav-menu-icon {
   display: none;
 }
@@ -2177,6 +2179,8 @@ label span {
 .signup-sidebar .logo {
   margin-left: 0;
   width: 200px;
+  margin-top: 30px;
+  margin-bottom: 20px;
   /* border-bottom: 1px solid #fff; */
 }
 .signup-sidebar .logo img {
@@ -2380,7 +2384,7 @@ label span {
     max-width: 100%;
   }
   .sign-up-page .logo-container img {
-    width: 80px;
+    /* width: 80px; */
   }
   .sign-up-page {
     padding-left: 15px;
@@ -2799,6 +2803,13 @@ label span {
 /* ---------End design for tablet---------- */
 /* ------------ Start mobile design ------------- */
 @media screen and (max-width: 744px) {
+  .logo {
+    display: none;
+  }
+  .mobile-logo {
+    margin-left: 30px;
+    display: block;
+  }
   /* About page hero */
   .hero.about::before {
     top: -30%;
