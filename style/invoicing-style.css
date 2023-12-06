@@ -2100,12 +2100,12 @@ label span {
   font-weight: 500;
 }
 
-.verify-box a {
+/* .verify-box a {
   color: var(--accent-text-color) !important;
   font-size: 18px;
   font-weight: 500;
   padding-left: 05px;
-}
+} */
 
 .otp-resend {
   color: var(--accent-text-color) !important;
