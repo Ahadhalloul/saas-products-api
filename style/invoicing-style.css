@@ -1815,7 +1815,7 @@ label span {
   min-height: 692px;
   display: flex;
   flex-flow: row nowrap;
-  background-color: var(--primary-text-color);
+  background-color: var(--primary-color);
 }
 
 .hero.product .hero-heading h1,
