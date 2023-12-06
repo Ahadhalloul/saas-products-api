@@ -2106,6 +2106,14 @@ label span {
   font-weight: 500;
   padding-left: 05px;
 }
+
+.otp-resend {
+  color: var(--accent-text-color) !important;
+  font-size: 18px;
+  font-weight: 500;
+  padding-left: 05px;
+}
+
 .verify-box .code-input-container {
   display: flex;
   flex-direction: row;
