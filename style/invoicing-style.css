@@ -1962,11 +1962,13 @@ label span {
 .sign-up-page {
   background-image: url(/images/bk-signup.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #fff;
+  /* background-size: cover; */
+  background-position: center center;
+  background-color: var(--primary-color);
   min-height: 100%;
   position: relative;
   padding: 40px 0px;
+  /* margin: auto; */
 }
 
 .sign-up-page form {
@@ -1978,11 +1980,12 @@ label span {
   height: auto;
 }
 .sign-up-container .logo-container img {
-  width: 105px;
+  width: 120px;
 }
 .sign-up-page .sign-up-container {
-  margin: 0 auto;
+  margin: 60px auto;
   width: 578px;
+  min-height: 670px;
   padding: 35px;
   border-radius: 26px;
   display: flex;
@@ -1991,6 +1994,7 @@ label span {
   gap: 50px;
   background: var(--secondary-color);
   box-shadow: 0px 4px 60px 0px #2726381f;
+  /* margin-top: 40px; */
 }
 .sign-up-form {
   min-width: 100%;
@@ -2170,12 +2174,12 @@ label span {
 }
 .signup-sidebar .logo {
   margin-left: 0;
-  width: 100px;
-  border-bottom: 1px solid #fff;
+  width: 200px;
+  /* border-bottom: 1px solid #fff; */
 }
 .signup-sidebar .logo img {
   width: 100%;
-  filter: brightness(0) invert(1);
+  /* filter: brightness(0) invert(1); */
 }
 .signup-sidebar > p {
   max-width: 300px;
@@ -2189,9 +2193,9 @@ label span {
 .signup-sidebar > img {
   position: absolute;
   bottom: 0;
-  left: -30px;
+  left: -10px;
   width: 100%;
-  height: 400px;
+  /* height: 400px; */
 }
 .signup-setup-container {
   grid-area: "setup-main";
@@ -2256,7 +2260,8 @@ label span {
   margin-top: 6px;
   overflow: visible;
 }
-.signup-setup-container .signup-card form > h4 {
+.signup-setup-container .signup-card form > h4,
+.form-sub-title {
   font-size: 24px;
   font-weight: 500;
   color: var(--primary-color);
