@@ -2513,6 +2513,7 @@ label span {
   /* -------edit hero shape------  */
   #shape img {
     height: 700px !important;
+    right: -435px !important;
   }
   /* ----------- */
 
@@ -2689,7 +2690,7 @@ label span {
     height: 500px;
   }
   .hero.product .hero-img #shape img {
-    left: -528px !important;
+    left: -428px !important;
     max-height: 486px !important;
   }
   .guidlines-cards {
@@ -3077,6 +3078,7 @@ label span {
   }
   .hero .hero-img #shape img {
     height: 560px !important;
+    right: -444px !important;
   }
   .footer-sec-row p {
     text-align: center;
@@ -3103,7 +3105,7 @@ label span {
   }
   .hero.product .hero-img #shape img {
     max-height: 300px !important;
-    left: -314px !important;
+    left: -194px !important;
   }
   .hero .hero-content {
     margin-top: 0px;
@@ -3414,6 +3416,10 @@ label span {
     max-height: 400px;
   }
 
+  .hero.product .hero-img #shape img {
+    max-height: 300px !important;
+    left: -144px !important;
+  }
   /* HQ */
   .hq-title h1 {
     font-size: 24px;
