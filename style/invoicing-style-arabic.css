@@ -55,7 +55,7 @@ button {
   padding: 40px 120px;
 }
 
-/* .input {
+.input {
   min-width: 100%;
   min-height: auto;
   padding: 12px, 16px, 12px, 16px;
@@ -74,7 +74,7 @@ button {
   outline: none;
   border: none;
   min-height: 50px;
-} */
+}
 
 /* ----------------------[ End Global Of Styling ]--------------------- */
 
@@ -276,6 +276,7 @@ nav .nav-list .nav-link {
   position: relative;
   z-index: 2;
   align-items: end;
+  margin-top: 40px;
 }
 .hero .hero-content .hero-heading {
   text-align: right;
@@ -394,114 +395,6 @@ nav .nav-list .nav-link {
   height: 971px;
   top: -219px;
   right: -116px;
-}
-
-/* ! [ABOUT-PAGE HERO] */
-.hero.about {
-  min-width: 100%;
-  min-height: auto;
-  display: flex;
-  overflow: hidden;
-  position: relative;
-  align-items: center;
-  flex-flow: row nowrap;
-  direction: rtl;
-  background-color: var(--primary-color);
-}
-
-.hero.about .hero-heading h1,
-.hero.about .hero-heading p {
-  color: var(--secondary-color);
-}
-
-.hero.about .hero-buttons button {
-  background-color: var(--secondary-color);
-  color: var(--accent-text-color);
-}
-
-.hero.about .hero-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 0;
-}
-
-.hero.about .hero-img #shape {
-  height: 620px;
-  width: 100%;
-  float: right;
-  top: 0px;
-  left: 500px;
-}
-
-.hero.about .hero-img #shape img {
-  position: absolute;
-  top: -60px;
-  max-height: 771px;
-  left: -629px;
-}
-
-.hero.about .hero-buttons{
-  min-width: 100%;
-  flex-flow: row nowrap;
-  direction: rtl;
-}
-
-/* ! PRICING PAGE HERO  */
-.hero.pricing {
-  min-height: auto;
-  display: block;
-}
-
-.hero.pricing .hero-content {
-  width: 100%;
-  text-align: center;
-  gap: 50px;
-  justify-content: center;
-}
-
-.hero.pricing .hero-content .hero-heading {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
-  flex-flow: column nowrap;
-}
-
-.hero.pricing .hero-content .hero-heading .plan {
-  width: 634px;
-  border-radius: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border: 1px solid rgba(17, 17, 17, 0.3);
-  overflow: hidden;
-  height: 60px;
-}
-
-.hero.pricing .hero-content .hero-heading .plan p {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 35px;
-  letter-spacing: 0em;
-  text-align: center;
-  color: var(--primary-text-color);
-}
-
-.hero.pricing .hero-content .hero-heading .plan p:nth-child(2) {
-  width: 226px;
-  background-color: var(--primary-color);
-  height: 100%;
-  color: var(--third-text-color);
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 35px;
-  border-radius: inherit;
-  letter-spacing: 0em;
-  text-align: center;
 }
 
 /* ----------------------[ End Of Hero ]--------------------- */
@@ -644,7 +537,7 @@ nav .nav-list .nav-link {
 }
 
 .service-cards {
-  width: 50%;
+  width: 560px;
   height: 300px;
   /* background-color: #4aaf05; */
   position: relative;
@@ -663,7 +556,7 @@ nav .nav-list .nav-link {
 }
 @media screen and (max-width: 1352px) {
   .service-cards {
-    width: 50%;
+    /* width: 50%; */
     height: 370px;
   }
 }
@@ -1112,9 +1005,7 @@ nav .nav-list .nav-link {
   text-align: center;
   margin-bottom: 30px;
 }
-.price-plan-cards-container {
-  /* direction: rtl; */
-}
+
 .plan-card .plan-cards-table {
   width: 80%;
   padding-top: 30px;
@@ -1431,7 +1322,7 @@ nav .nav-list .nav-link {
   min-width: 100%;
   min-height: 692px;
   display: flex;
-  flex-flow: row nowrap;
+  flex-direction: row-reverse;
   background-color: var(--primary-text-color);
 }
 
@@ -1484,7 +1375,7 @@ nav .nav-list .nav-link {
 }
 /* ----------------- */
 .product.features-container .new-row {
-  gap: 50px;
+  gap: 100px;
 }
 .product.features-container .new-row h4 {
   width: 90%;
@@ -1494,6 +1385,12 @@ nav .nav-list .nav-link {
 }
 .product.features-container .new-row div img {
   width: 100%;
+}
+
+@media screen and (min-width: 1470px) {
+  .product.features-container .new-row {
+    gap: 131px;
+  }
 }
 /* ---------------------------- */
 
@@ -1714,7 +1611,7 @@ nav .nav-list .nav-link {
     text-align: left;
   }
   .service-cards {
-    width: 75%;
+    /* width: 75%; */
     height: 350px;
   }
   /* -----------features section-------------------- */
@@ -1826,7 +1723,7 @@ nav .nav-list .nav-link {
   }
   .hero.product .hero-img #shape img {
     max-height: 486px !important;
-    left: -950px;
+    left: -250px;
   }
   .guidlines-cards {
     grid-template-rows: 1fr 1fr 1fr;
@@ -2103,11 +2000,14 @@ nav .nav-list .nav-link {
   }
   .hero.product .hero-img #shape img {
     max-height: 300px !important;
-    left: -730px;
+    left: -150px;
   }
   .current-path {
     margin-top: 30px;
     padding: 15px 29px;
+  }
+  .hero .hero-content {
+    margin-top: 0px;
   }
   .current-path span:not(:last-child) {
     display: none;
@@ -2209,7 +2109,7 @@ nav .nav-list .nav-link {
   }
   .hero.product .hero-img #shape img {
     max-height: 300px !important;
-    left: -630px;
+    left: -190px;
   }
   /* --------------end product page---------------------------- */
 }
@@ -2221,7 +2121,6 @@ nav .nav-list .nav-link {
     overflow: auto !important;
   }
 }
-
 /* -------------- Start sign up ( registration )------------------ */
 .sign-up-page {
   background-image: url(/images/bk-signup.png);
@@ -2293,14 +2192,17 @@ nav .nav-list .nav-link {
   padding: 15px 0px;
   font-size: 18px;
 }
-.sign-up-container > span {
+
+.sign-up-container .form-footer {
   font-weight: 600;
   font-size: 14px;
+  text-align: center;
   font-family: "Source Sans 3", sans-serif;
   display: flex;
   flex-direction: row-reverse;
   gap: 5px;
 }
+
 .sign-up-container > span a {
   color: var(--primary-color);
   text-decoration: none;
@@ -2352,6 +2254,7 @@ nav .nav-list .nav-link {
 }
 .verify-box > div > div {
   display: flex;
+  align-items: center;
   gap: 10px;
 }
 .verify-box p {
@@ -2373,15 +2276,17 @@ nav .nav-list .nav-link {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
+  justify-content: center;
   gap: 30px;
+  width: 80%;
+  margin: 0 auto;
 }
 .verify-box .code-input-container .code-input {
-  color: #000;
-  width: 84px;
-  padding: 15px 35px;
+  padding: 15px 23px;
   background-color: #f8f8f8;
   border-radius: 8px;
   font-size: 18px;
+  border: 1px solid transparent;
 }
 .verify-box .code-timer p span {
   font-weight: 500;
@@ -2426,6 +2331,7 @@ nav .nav-list .nav-link {
   display: grid;
   grid-template-areas: "setup-sidebar setup-main";
   grid-template-columns: 30% auto;
+  direction: rtl;
 }
 .signup-sidebar {
   grid-area: "setup-sidebar";
@@ -2459,9 +2365,11 @@ nav .nav-list .nav-link {
 .signup-sidebar > img {
   position: absolute;
   bottom: 0;
-  left: -30px;
+  right: -30px;
   width: 100%;
   height: 400px;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 .signup-setup-container {
   grid-area: "setup-main";
@@ -2486,6 +2394,10 @@ nav .nav-list .nav-link {
   font-size: 16px;
   font-weight: 400;
 }
+.signup-setup-container .signup-head > div:first-child img {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
 .signup-setup-container .signup-head > div:last-child {
   display: flex;
   flex-direction: column;
@@ -2495,6 +2407,9 @@ nav .nav-list .nav-link {
   font-size: 14px;
   font-weight: 500;
   color: var(--secondary-text-color);
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
 }
 .signup-setup-container .signup-head > div:last-child h4 {
   font-size: 16px;
@@ -2539,6 +2454,7 @@ nav .nav-list .nav-link {
   display: flex;
   flex-direction: row;
   align-items: center;
+  gap: 20px;
 }
 .clear-fix {
   clear: both;
@@ -2680,6 +2596,12 @@ nav .nav-list .nav-link {
   }
 }
 @media screen and (max-width: 450px) {
+  .verify-box .code-input-container {
+    width: 100%;
+  }
+  .verify-box .code-input-container .code-input {
+    padding: 15px 15px;
+  }
   .sign-up-container .input {
     padding-left: 5px;
     padding-right: 5px;
