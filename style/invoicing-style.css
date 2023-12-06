@@ -18,6 +18,8 @@
   /* SVG Filters */
   --primary-hover-svg-filter: brightness(0) saturate(100%) invert(100%)
     sepia(100%) saturate(1%) hue-rotate(127deg) brightness(102%) contrast(101%);
+  --primary-color-svg-filter: brightness(0) saturate(100%) invert(38%)
+    sepia(98%) saturate(7342%) hue-rotate(246deg) brightness(96%) contrast(100%);
 }
 
 * {
@@ -382,25 +384,25 @@ nav .nav-list .nav-link {
 }
 
 .hero.about .hero-img {
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   flex: 0;
+  z-index: 2;
+  position: relative;
 }
 
-.hero.about .hero-img #shape {
-  height: 620px;
-  width: 100%;
-  float: right;
-  top: 0px;
-  right: 0px;
-}
-
-.hero.about .hero-img #shape img {
+.hero.about::before {
+  content: "";
+  min-width: 800px;
+  height: 100%;
+  background: url("../images/bk-signup.png") center no-repeat;
+  background-size: contain;
+  bottom: 0;
+  right: -10px;
+  z-index: 1;
   position: absolute;
-  top: -60px;
-  max-height: 771px;
-  left: -629px;
 }
 
 /* ! PRICING PAGE HERO  */
@@ -1451,7 +1453,7 @@ nav .nav-list .nav-link {
 
 .social-item > a {
   text-decoration: none;
-  color: var(--primary-text-color);
+  color: var(--accent-text-color);
 }
 
 .social-item > a > .column {
@@ -1463,6 +1465,7 @@ nav .nav-list .nav-link {
 
 .social-item > a > .column img {
   width: 64px;
+  filter: var(--primary-color-svg-filter);
 }
 
 .socials-right-arrow,
@@ -1616,8 +1619,7 @@ label span {
 }
 .footer-container {
   padding: 60px 120px 0px;
-
-  background-color: #111111;
+  background-color: var(--primary-color);
   color: #fff;
 }
 .footer-container ul li {
@@ -1637,7 +1639,7 @@ label span {
   align-items: start;
   justify-content: space-between;
   padding: 20px 0px 40px;
-  border-bottom: 1px solid #2a2a2a;
+  border-bottom: 1px solid rgb(255, 255, 255, 30%);
 }
 .footer-content h4 {
   font-weight: 300;
@@ -1671,7 +1673,7 @@ label span {
   padding: 20px 0px;
   justify-content: space-between;
   font-weight: 300;
-  border-bottom: 1px solid #2a2a2a;
+  border-bottom: 1px solid rgb(255, 255, 255, 30%);
 }
 .footer-sec-row p {
   font-size: 0.84rem;
@@ -2430,6 +2432,18 @@ label span {
 
 /* ---------Start design for tablet---------- */
 @media screen and (max-width: 1023px) {
+  /* About page hero */
+
+  .hero.about::before {
+    min-width: 0 !important;
+    max-width: 100% !important;
+    background: url("../images/half-circle.svg") center no-repeat;
+    background-size: contain;
+    right: 0;
+    left: 0;
+    top: 0;
+  }
+
   .price-plan-cards-container {
     display: block;
   }
@@ -2782,6 +2796,11 @@ label span {
 /* ---------End design for tablet---------- */
 /* ------------ Start mobile design ------------- */
 @media screen and (max-width: 744px) {
+  /* About page hero */
+  .hero.about::before {
+    top: -30%;
+  }
+
   /* Invoice page */
   .invoices-heading,
   .invoices-filters {
@@ -3447,7 +3466,7 @@ label span {
 .login-page {
   min-width: 100%;
   min-height: 100%;
-  background-color: #111;
+  background-color: var(--primary-color);
   position: relative;
   display: grid;
   place-items: center;
@@ -3456,10 +3475,10 @@ label span {
 
 .login-page::after {
   content: "";
-  width: 100%;
+  min-width: 100%;
   min-height: 100dvh;
-  background: url("/images/bk.png") center no-repeat;
-  background-size: cover;
+  background: url("/images/bk-signup.png") center no-repeat;
+  background-size: contain;
   position: fixed;
   top: 0;
 }
@@ -3487,14 +3506,20 @@ label span {
   gap: 25px;
 }
 
+.login-container > .logo-container {
+  max-width: 120px;
+}
+
 .login-container .logo-container > img {
   width: 100%;
-  height: 100px;
 }
+
+/* Validation */
 
 .login-container .login-form .password-container ul {
   list-style: none;
   padding: 10px 0;
+  display: none; /* use display 'block' when needed */
 }
 
 .login-container .login-form .password-container ul li {
