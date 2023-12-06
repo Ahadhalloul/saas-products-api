@@ -79,9 +79,6 @@ header {
   display: none;
 }
 
-.nav-menu-icon {
-  display: none;
-}
 nav {
   display: flex;
   justify-content: space-between;
@@ -2507,7 +2504,7 @@ label span {
   .nav-menu-icon {
     display: block;
     position: absolute;
-    top: 60px;
+    top: 50px;
     left: 60px;
     width: 30px;
     height: 30px;
@@ -2842,7 +2839,7 @@ label span {
   }
 
   .user-area {
-    display: none;
+    /* display: none; */
   }
 
   /* Search bar */
@@ -2873,6 +2870,7 @@ label span {
   }
   .nav-menu-icon {
     left: 20px;
+    top: 45px;
   }
 
   .hero .hero-content .hero-heading h1 {
