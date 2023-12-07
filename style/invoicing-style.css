@@ -2193,6 +2193,76 @@ label span {
 /* ---- end code verify  --- */
 
 /* ----------start setup ------------- */
+
+.signup-cancel-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: #111111e5;
+  z-index: 1;
+}
+.signup-cancel-box .card {
+  margin: 150px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  max-width: 567px;
+  border-radius: 10px;
+  min-height: 276px;
+  gap: 50px;
+  padding-top: 90px;
+  position: relative;
+}
+.signup-cancel-box .card .confirm-msg {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.signup-cancel-box .card .confirm-msg img {
+  width: 25px;
+}
+
+.signup-cancel-box .card > img {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+}
+.signup-cancel-box .card .btn-container {
+  display: flex;
+  gap: 10px;
+}
+.signup-cancel-box .card button {
+  width: 200px;
+  height: 40px;
+}
+.signup-cancel-box .card button.btn-sec {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+  width: 150px;
+}
+.signup-setup-container .error-msg {
+  background-color: #f446461a;
+  color: #da1414;
+  font-family: "Source Sans 3", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.signup-setup-container .error-msg div {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+}
+.signup-setup-container .error-msg div img {
+  width: 25px;
+}
 .signup-setup-page {
   display: grid;
   grid-template-areas: "setup-sidebar setup-main";
@@ -2442,6 +2512,16 @@ label span {
   .signup-sidebar > img {
     display: none;
   }
+  .signup-setup-container {
+    position: relative;
+  }
+  .signup-setup-container .error-msg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 0;
+  }
 }
 @media screen and (max-width: 774px) {
   .sign-up-page .sign-up-container {
@@ -2557,6 +2637,23 @@ label span {
   }
   .signup-setup-container .signup-card .check-icon.red-color::before {
     font-size: 60px;
+  }
+  .signup-cancel-box .card {
+    padding: 60px 0;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .signup-cancel-box .card .confirm-msg img {
+    width: 35px;
+  }
+  .signup-cancel-box .card button,
+  .signup-cancel-box .card button.btn-sec {
+    width: 130px;
+  }
+  .signup-cancel-box .card .confirm-msg {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
   }
 }
 @media screen and (max-width: 450px) {

@@ -10,6 +10,24 @@
     <!-- <link rel="stylesheet" href="style/invoicing-style-arabic.css" /> -->
   </head>
   <body>
+    <!-- start signup cancel box  -->
+    <div class="signup-cancel-box hide">
+      <div class="card">
+        <img onclick="hideCancleBox()" src="./icons/close.svg" alt="" />
+        <div class="confirm-msg">
+          <img src="./icons/error.svg" alt="" />
+          <span class="red-text"
+            >Are you sure you want to cancel your registration?</span
+          >
+        </div>
+        <div class="btn-container">
+          <button class="btn-sec">Cancel</button>
+          <button>Yes</button>
+        </div>
+      </div>
+    </div>
+    <!-- end signup cancel box  -->
+
     <main class="signup-setup-page">
       <div class="signup-sidebar">
         <div class="logo">
@@ -19,6 +37,15 @@
         <img src="./images/Layer_1.svg" alt="" />
       </div>
       <div class="signup-setup-container">
+        <!---- Alert messege box  ---->
+        <div class="error-msg">
+          <div>
+            <img src="./icons/alert.svg" alt="" />
+            <p>Toast Alert Message.</p>
+          </div>
+          <img src="./icons/close-red.svg" alt="" />
+        </div>
+        <!-- ------------------ ---->
         <div class="signup-head">
           <div>
             <a href="./signup.html"
@@ -108,7 +135,7 @@
               </div>
             </div>
             <div class="btns-container">
-              <button type="button">Cancel</button>
+              <button onclick="cancelSignup()" type="button">Cancel</button>
               <input type="submit" value="Save & Continue" />
             </div>
             <div class="clear-fix"></div>
@@ -121,6 +148,16 @@
     </main>
 
     <!-- javaScript code  -->
-    <script></script>
+    <script>
+      // ----show and hide cancel box------
+      let cancelbox = document.querySelector(".signup-cancel-box");
+      function cancelSignup() {
+        cancelbox.classList.remove("hide");
+      }
+
+      function hideCancleBox() {
+        cancelbox.classList.add("hide");
+      }
+    </script>
   </body>
 </html>
