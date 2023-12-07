@@ -2275,9 +2275,10 @@ label span {
   color: var(--accent-text-color);
 }
 .signup-setup-container .signup-card {
-  min-height: 550px;
+  /* min-height: 550px; */
   padding: 40px;
   box-shadow: 0px 4px 60px 0px #2726381f;
+  border-radius: 20px;
 }
 .signup-setup-container .signup-card .input-content {
   height: 82px;
@@ -2484,6 +2485,72 @@ label span {
   .sign-up-form button,
   .verify-box .submit-btn {
     font-size: 14px;
+  }
+  .signup-sidebar {
+    min-height: auto;
+    flex-direction: column;
+  }
+  .signup-sidebar .logo {
+    width: 120px;
+    margin-top: 0;
+  }
+  .signup-sidebar > p {
+    font-size: 24px;
+  }
+  .signup-setup-container .signup-card form .inputs-container {
+    grid-template-columns: 1fr;
+  }
+  .signup-setup-container .signup-card form .btns-container {
+    flex-direction: column-reverse;
+    gap: 20px;
+    float: none;
+  }
+  .signup-setup-container .signup-card form .btns-container button {
+    width: 100%;
+  }
+  .signup-setup-container .signup-card form .btns-container input {
+    width: 100%;
+    margin-left: 0;
+  }
+  .signup-sidebar {
+    padding: 40px;
+  }
+  .signup-setup-container .signup-card form > h4,
+  .form-sub-title {
+    font-size: 20px;
+  }
+  .signup-setup-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .signup-setup-container .signup-card {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .signup-setup-container .signup-card .check-icon {
+    width: 80px;
+    height: 80px;
+    margin: 20px 0px;
+    border: 7px solid var(--accent-text-color);
+  }
+  .signup-setup-container .signup-card .check-icon::before {
+    font-size: 50px;
+  }
+  .signup-setup-container .signup-card h2 {
+    font-size: 30px;
+  }
+  .signup-setup-container .signup-card p {
+    font-size: 16px;
+  }
+  .signup-setup-container .signup-card button.check-mail {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .signup-setup-container .signup-card .check-icon.red-color {
+    border-width: 7px;
+  }
+  .signup-setup-container .signup-card .check-icon.red-color::before {
+    font-size: 60px;
   }
 }
 @media screen and (max-width: 450px) {
@@ -2877,6 +2944,9 @@ label span {
     display: none;
   }
   .signup-setup-page .logo {
+    display: block;
+  }
+  .sidebar .logo {
     display: block;
   }
   .mobile-logo {
