@@ -2409,10 +2409,14 @@ label span {
   content: "!";
   color: #f44646;
   font-size: 100px;
-}
+} 
 /* ----------end setup ------------- */
 /* tablet & mobile screens */
 @media screen and (max-width: 1023px) {
+  .login-page {
+    background-image: url("../images/small-signup-bg.svg") !important;
+  }
+
   .sign-up-page {
     background-image: url(/images/small-signup-bg.svg);
   }
@@ -3625,8 +3629,11 @@ label span {
 
 /* -------------------[ login page ]--------------------- */
 .login-page {
-  min-width: 100%;
   min-height: 100%;
+  background-image: url("/images/bk-signup.png");
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  background-position: center center;
   background-color: var(--primary-color);
   position: relative;
   display: grid;
@@ -3634,7 +3641,7 @@ label span {
   z-index: 1;
 }
 
-.login-page::after {
+/* .login-page::after {
   content: "";
   min-width: 100%;
   min-height: 100dvh;
@@ -3642,7 +3649,7 @@ label span {
   background-size: contain;
   position: fixed;
   top: 0;
-}
+} */
 
 .login-container {
   min-width: 578px;
@@ -3778,6 +3785,23 @@ label span {
 
 .options-container .toggle-container.active {
   background: #4535f6;
+}
+
+.options-container .agree-check {
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+}
+
+.options-container .agree-check a {
+  text-decoration: underline;
+}
+
+.options-container .agree-check input[type="checkbox"] {
+  outline: none;
+  accent-color: var(--primary-color);
+  width: 15px;
+  height: 15px;
 }
 
 .login-footer {
