@@ -3511,8 +3511,10 @@ label span {
 
 /* -------------------[ login page ]--------------------- */
 .login-page {
-  min-width: 100%;
   min-height: 100%;
+  background-image: url('/images/bk-signup.png') center no-repeat;
+  background-size: cover;
+  background-position: center center;
   background-color: var(--primary-color);
   position: relative;
   display: grid;
@@ -3520,7 +3522,7 @@ label span {
   z-index: 1;
 }
 
-.login-page::after {
+/* .login-page::after {
   content: "";
   min-width: 100%;
   min-height: 100dvh;
@@ -3528,7 +3530,7 @@ label span {
   background-size: contain;
   position: fixed;
   top: 0;
-}
+} */
 
 .login-container {
   min-width: 578px;
