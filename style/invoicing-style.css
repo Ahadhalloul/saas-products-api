@@ -449,6 +449,7 @@ nav .nav-list .nav-link {
   letter-spacing: 0em;
   text-align: center;
   color: var(--primary-text-color);
+  margin-bottom: 0;
 }
 
 .hero.pricing .hero-content .hero-heading .plan p:nth-child(2) {
