@@ -31,14 +31,12 @@
 
 html,
 body {
-  overflow-x: hidden;
   height: 100%;
   overflow-x: hidden;
 }
 
 body {
   background: var(--secondary-color);
-  overflow-x: hidden;
 }
 
 /* ----------------------[ Start Global Of Styling ]--------------------- */
