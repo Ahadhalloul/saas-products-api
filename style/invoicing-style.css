@@ -768,6 +768,11 @@ nav .nav-list .nav-link {
 .features-container .text {
   max-width: 530px;
 }
+@media screen and (min-width: 1440px) {
+  .features-container .text {
+    max-width: 700px;
+  }
+}
 .features-container h4 {
   width: 335px;
   font-size: 34px;
@@ -820,6 +825,7 @@ nav .nav-list .nav-link {
   top: -40px;
   left: -5px;
   /* border: 1px solid #f1ecff; */
+  border: none;
   box-shadow: -60px 60px 120px 0px #a08ed733;
 }
 .first-row .cards-container .card2 {
@@ -828,6 +834,7 @@ nav .nav-list .nav-link {
   right: 0;
   box-shadow: -60px 60px 120px 0px #a08ed733;
   /* border: 1px solid #f1ecff; */
+  border: none;
 }
 .blue-text {
   text-decoration: none;
@@ -835,7 +842,7 @@ nav .nav-list .nav-link {
   color: var(--accent-text-color);
 }
 .second-row .cards-container .card {
-  max-width: 275px;
+  max-width: 265px;
   height: 150px;
 }
 
@@ -845,6 +852,7 @@ nav .nav-list .nav-link {
   left: 0;
   box-shadow: 0px 30px 40px 0px #a08ed71a;
   display: flex;
+  flex-direction: row;
 }
 .second-row .cards-container .card1 h6:first-child {
   color: #8a8a8a;
@@ -914,15 +922,24 @@ nav .nav-list .nav-link {
   background-color: #fd4c5c;
   top: -20px;
 }
+
+.second-row .cards-container .card1,
+.second-row .cards-container .card2,
+.second-row .cards-container .card3 {
+  border: none;
+}
+
 .third-row .card {
-  box-shadow: -8px 30px 80px -25px #5252521a;
+  box-shadow: -16px 30px 80px -25px rgba(142, 145, 215, 0.18);
   max-width: 400px;
   height: auto;
   padding: 40px;
   text-align: center;
+  border: none;
 }
 .third-row .card img {
   width: 70%;
+  margin: auto;
 }
 .third-row .card img:not(:last-child) {
   margin-bottom: 25px;
@@ -934,7 +951,9 @@ nav .nav-list .nav-link {
   color: #7c89a9;
   font-size: 0.8rem;
 }
-
+.gap-row {
+  gap: 40px;
+}
 @media screen and (max-width: 1287px) {
   .first-row .cards-container .card1 {
     top: -10px;
@@ -1665,7 +1684,9 @@ label span {
 .footer-content .e-mail {
   font-weight: 300;
 }
-
+.footer-content .e-mail {
+  font-size: 14px;
+}
 .footer-content .social-links {
   padding-top: 15px;
 }
@@ -1825,6 +1846,7 @@ label span {
 
 .hero.product .hero-heading h1,
 .hero.product .hero-heading p {
+  max-width: 600px;
   color: var(--secondary-color);
 }
 
