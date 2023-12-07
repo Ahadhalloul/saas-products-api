@@ -2010,7 +2010,7 @@ label span {
 .sign-up-page .sign-up-container {
   margin: 60px auto;
   width: 578px;
-  min-height: 670px;
+  min-height: 610px;
   padding: 35px;
   border-radius: 26px;
   display: flex;
@@ -2073,6 +2073,10 @@ label span {
   margin-top: 40px;
   text-align: center;
   font-size: 14px;
+  color: var(--accent-color);
+}
+.sign-up-footer.black-text {
+  color: #000;
 }
 .sign-up-container .captcha {
   display: flex;
@@ -2110,7 +2114,7 @@ label span {
   width: 100%;
   align-items: center;
   text-align: center;
-  gap: 30px;
+  gap: 39px;
 }
 .verify-box p {
   padding-bottom: 10px;
@@ -2168,7 +2172,7 @@ label span {
   border: none;
   outline: none;
   cursor: pointer !important;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 /* verify screen*/
@@ -2406,14 +2410,48 @@ label span {
   font-size: 100px;
 }
 /* ----------end setup ------------- */
-
 /* tablet & mobile screens */
+@media screen and (max-width: 1023px) {
+  .sign-up-page {
+    background-image: url(/images/small-signup-bg.svg);
+  }
+  .sign-up-page .sign-up-container {
+    margin: 120px auto;
+  }
+
+  .signup-setup-page {
+    grid-template-areas: "setup-sidebar" "setup-main";
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: 1fr;
+  }
+  .signup-sidebar {
+    min-height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .signup-sidebar > p {
+    font-size: 32px;
+  }
+  .signup-sidebar > img {
+    display: none;
+  }
+}
 @media screen and (max-width: 774px) {
   .sign-up-page .sign-up-container {
-    max-width: 100%;
+    max-width: 85%;
+    margin: 10px auto;
+    padding: 18px;
+    gap: 20px;
+    min-height: 530px;
   }
-  .sign-up-page .logo-container img {
-    /* width: 80px; */
+  .sign-up-container .form-footer {
+    font-size: 12px;
+  }
+  .sign-up-form .agree-check span {
+    font-size: 12px;
+  }
+  .sign-up-page .logo-container {
+    margin-top: 20px;
   }
   .sign-up-page {
     padding-left: 15px;
@@ -2423,7 +2461,7 @@ label span {
     font-size: 13px;
   }
   .sign-up-container input::placeholder {
-    font-size: 12px;
+    font-size: 13px;
   }
   .sign-up-form .input-container .input img {
     width: 20px;
@@ -2449,6 +2487,9 @@ label span {
   }
 }
 @media screen and (max-width: 450px) {
+  .sign-up-page .sign-up-container {
+    max-width: 94%;
+  }
   .verify-box .code-input-container {
     width: 100%;
   }
@@ -2834,6 +2875,9 @@ label span {
 @media screen and (max-width: 744px) {
   .logo {
     display: none;
+  }
+  .signup-setup-page .logo {
+    display: block;
   }
   .mobile-logo {
     margin-left: 30px;
