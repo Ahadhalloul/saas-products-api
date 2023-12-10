@@ -1471,6 +1471,13 @@ nav .nav-list .nav-link {
   list-style: none;
 }
 
+/* .social-item {
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
 .social-item > a {
   text-decoration: none;
   color: var(--accent-text-color);
@@ -3024,7 +3031,7 @@ label span {
   }
 
   .social-list {
-    gap: 35px;
+    gap: 0;
     justify-content: space-around;
     width: 100%;
   }
@@ -3561,6 +3568,7 @@ label span {
     position: relative;
     justify-content: start;
     display: grid;
+    padding: 25px 0;
     grid-auto-flow: column;
     grid-auto-columns: 100%;
   }
@@ -3599,7 +3607,7 @@ label span {
   .socials-left-arrow {
     display: block;
     position: absolute;
-    top: 90px;
+    /* top: 90px; */
     z-index: 1;
   }
   .socials-left-arrow {

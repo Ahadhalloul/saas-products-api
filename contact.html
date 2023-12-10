@@ -192,44 +192,43 @@
       <section class="socials">
         <img
           src="./icons/arrow back_ios.svg"
-          alt=""
+          id="prev"
           class="socials-left-arrow"
-          onclick="socialsClientsBack()"
         />
         <img
           src="./icons/arrow forward_ios.svg"
-          alt=""
+          id="next"
           class="socials-right-arrow"
-          onclick="socialsClientsForward()"
         />
-        <div class="social-container">
-          <ul class="social-list">
-            <li class="social-item">
-              <a href="#" class="socials-link">
-                <div class="column">
-                  <img src="/icons/facebook.svg" />
-                  <p>FaceBook</p>
-                </div>
-              </a>
-            </li>
-            <li class="social-item">
-              <a href="#" class="socials-link">
-                <div class="column">
-                  <img src="/icons/linkedin.svg" />
-                  <p>LinkedIn</p>
-                </div>
-              </a>
-            </li>
-            <li class="social-item">
-              <a href="#" class="socials-link">
-                <div class="column">
-                  <img src="/icons/twitter.svg" />
-                  <p>Twitter X</p>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </div>
+        <!-- <div class="social-container">
+       
+        </div> -->
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="#" class="socials-link">
+              <div class="column">
+                <img src="/icons/facebook.svg" />
+                <p>FaceBook</p>
+              </div>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#" class="socials-link">
+              <div class="column">
+                <img src="/icons/linkedin.svg" />
+                <p>LinkedIn</p>
+              </div>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#" class="socials-link">
+              <div class="column">
+                <img src="/icons/twitter.svg" />
+                <p>Twitter X</p>
+              </div>
+            </a>
+          </li>
+        </ul>
       </section>
 
       <section class="contact-container padding">
@@ -346,28 +345,8 @@
     </footer>
     <!-- End Footer Section -->
     <!------------- End Footer -------------->
-    <script>
-      // ----socials nav in mobile screen variables decleration
-      const socials = document.querySelector(".social-container");
-      const distance4 = socials.clientWidth * 1.2;
-
-      // --------------------------------------------------
-      // ----socials nav in mobile screen (variables decleration to the top)
-
-      function socialsClientsForward() {
-        socials.scrollBy({
-          left: distance4,
-          behavior: "smooth",
-        });
-      }
-
-      function socialsClientsBack() {
-        socials.scrollBy({
-          left: -distance4,
-          behavior: "smooth",
-        });
-      }
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+    <script src="./animation.js"></script>
     <script src="./main.js"></script>
   </body>
 </html>
