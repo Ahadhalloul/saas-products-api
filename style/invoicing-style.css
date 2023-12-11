@@ -2579,7 +2579,7 @@ label span {
     border-radius: 0;
   }
 }
-@media screen and (max-width: 774px) {
+@media screen and (max-width: 744px) {
   .sign-up-page .sign-up-container {
     max-width: 85%;
     margin: 10px auto;
