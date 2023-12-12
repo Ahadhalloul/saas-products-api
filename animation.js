@@ -1,6 +1,10 @@
 // Constants
 const prevButton = document.getElementById("prev");
 const nextButton = document.getElementById("next");
+const breakpoints = {
+  mobile: 744,
+  tablet: 1023,
+};
 
 // Global variables
 let currentIndex = 0;
@@ -24,7 +28,7 @@ function container(selectorContainer, elements) {
     // Only animate if screen size is less than 768px
     let mediaQuery = gsap.matchMedia();
 
-    mediaQuery.add("(max-width: 744px)", () => {
+    mediaQuery.add(`(max-width: ${breakpoints.mobile})`, () => {
       gsap.to(container, {
         duration: 0.8,
         x: -centeredScrollPosition,
