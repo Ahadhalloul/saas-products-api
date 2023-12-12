@@ -514,9 +514,6 @@ nav .nav-list .nav-link {
   gap: 25px;
 }
 
-@media screen and (max-width: 1131px) {
-}
-
 .about-content h1 {
   font-size: 34px;
   font-weight: 300;
@@ -1769,6 +1766,22 @@ label span {
   } */
 }
 
+@media screen and (max-width: 1200px) {
+  .about-container {
+    gap: 40px;
+  }
+  .about-images > img {
+    max-width: 250px;
+  }
+  .about-content h1,
+  .about-content p {
+    width: 100%;
+  }
+  .about-images {
+    margin-top: 30px;
+  }
+}
+
 .hide-from-invoicing {
   display: none;
 }
@@ -1990,6 +2003,59 @@ label span {
 }
 
 /* ------------------------------------------------ */
+/* ---------error/success messeges blocks--------------------- */
+.error-msg {
+  background-color: #f446461a;
+  color: #da1414;
+  font-family: "Source Sans 3", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.success-msg {
+  background-color: #cef8d6;
+  color: #3da864;
+  font-family: "Source Sans 3", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.error-msg div,
+.success-msg div {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+}
+
+.error-msg div img {
+  width: 25px;
+}
+
+.success-msg div img {
+  width: 20px;
+}
+
+.success-msg div img,
+.success-msg img {
+  filter: brightness(0) saturate(100%) invert(49%) sepia(85%) saturate(295%)
+    hue-rotate(89deg) brightness(94%) contrast(96%);
+}
+
+.error-msg div p,
+.success-msg div p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+/* ---------------------------------------- */
 /* -------------- Start sign up ( registration )------------------ */
 .sign-up-page {
   background-image: url(/images/bk-signup.png);
@@ -2090,7 +2156,9 @@ label span {
   flex-direction: column;
   gap: 20px;
 }
+
 .sign-up-container .captcha .error-msg {
+  justify-content: flex-start;
   background-color: #f446461a;
   padding: 10px 20px;
   border-radius: 10px;
@@ -2232,11 +2300,23 @@ label span {
   width: 25px;
 }
 
+/* ----Edit error msg design for signup setup page --- */
+/* .signup-setup-container .error-msg,
+.signup-setup-container .success-msg {
+  padding: 0;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 15px;
+} */
+/* ----------------- */
 .signup-cancel-box .card > img {
   position: absolute;
   top: 30px;
   right: 40px;
+  cursor: pointer;
 }
+
 .signup-cancel-box .card .btn-container {
   display: flex;
   gap: 10px;
@@ -2251,25 +2331,7 @@ label span {
   border: 1px solid #000;
   width: 150px;
 }
-.signup-setup-container .error-msg {
-  background-color: #f446461a;
-  color: #da1414;
-  font-family: "Source Sans 3", sans-serif;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 15px;
-  border-radius: 10px;
-  margin-bottom: 30px;
-}
-.signup-setup-container .error-msg div {
-  display: flex;
-  gap: 7px;
-  align-items: center;
-}
-.signup-setup-container .error-msg div img {
-  width: 25px;
-}
+
 .signup-setup-page {
   display: grid;
   grid-template-areas: "setup-sidebar setup-main";
@@ -2277,7 +2339,7 @@ label span {
 }
 .signup-sidebar {
   grid-area: "setup-sidebar";
-  background-color: #4535f6;
+  background-color: var(--accent-text-color);
   min-height: 900px;
   display: flex;
   flex-direction: column;
@@ -2352,7 +2414,7 @@ label span {
   color: var(--accent-text-color);
 }
 .signup-setup-container .signup-card {
-  /* min-height: 550px; */
+  min-height: 630px;
   padding: 40px;
   box-shadow: 0px 4px 60px 0px #2726381f;
   border-radius: 20px;
@@ -2530,7 +2592,7 @@ label span {
     border-radius: 0;
   }
 }
-@media screen and (max-width: 774px) {
+@media screen and (max-width: 744px) {
   .sign-up-page .sign-up-container {
     max-width: 85%;
     margin: 10px auto;
