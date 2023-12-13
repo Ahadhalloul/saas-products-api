@@ -28,7 +28,7 @@ function container(selectorContainer, elements) {
     // Only animate if screen size is less than 768px
     let mediaQuery = gsap.matchMedia();
 
-    mediaQuery.add(`(max-width: ${breakpoints.mobile})`, () => {
+    mediaQuery.add(`(max-width: ${breakpoints.mobile}px)`, () => {
       gsap.to(container, {
         duration: 0.8,
         x: -centeredScrollPosition,
