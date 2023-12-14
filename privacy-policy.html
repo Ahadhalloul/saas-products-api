@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejada EIM / E-invoicing Middleware</title>
+    <!----- invoicing style ------------->
+    <link rel="stylesheet" href="style/invoicing-style.css" />
+    <!----- ARABIC style ------------->
+    <!-- <link rel="stylesheet" href="style/e-invoice-ar.css" /> -->
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!------------- Search  bar -------------->
+    <div id="searchWrapper" class="search-wrapper">
+      <h2>Type your search keyword</h2>
+      <div id="searchBar" class="search-bar">
+        <input type="text" />
+        <img src="/icons/search.svg" width="32" height="32" />
+      </div>
+    </div>
+
+    <!-- ------this div add background to body when nav sidebar open for small screen---------------------- -->
+    <div class="body-bg hide"></div>
+    <!-- ------------------------------ -->
+    <!-- small screen side bar -->
+    <div id="side-bar" class="sidebar hide">
+      <div>
+        <img class="logo" src="./images/logo.svg" alt="" />
+        <div class="user-informatin new-row">
+          <img src="./images/Image-user.png" alt="" />
+          <div>
+            <h4>Ikramy Ismail</h4>
+            <p>Ikramy@company.com</p>
+          </div>
+        </div>
+        <ul class="side-bar-nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="./products.html">products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pricing.html">pricing </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">about</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./resources.html">resources</a>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <ul class="side-bar-user-menu-list">
+          <li class="user-menu-item" id="searchButton">
+            <a href="#" class="user-menu-link search-text">Search</a>
+          </li>
+          <li class="user-menu-item">
+            <a href="./contact.html" class="user-menu-link">contact</a>
+          </li>
+          <li class="user-menu-item">
+            <select class="language">
+              <option value="english">English</option>
+              <option value="arabic">Arabic</option>
+            </select>
+          </li>
+          <li class="user-menu-item">
+            <a href="./login.html" class="user-menu-link">login</a>
+          </li>
+          <li class="user-menu-item">
+            <a href="./signup.html">
+              <button class="user-menu-button">get started</button>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- end small screen side bar -->
+
+    <!------------- Start  Header -------------->
+    <header class="padding">
+      <nav>
+        <div class="nav-menu-icon">
+          <img src="./icons/menu.svg" alt="" />
+        </div>
+        <div class="logo-container">
+          <!--  invoicing logo -->
+          <a href="./invoice-index.html">
+            <img
+              src="./images/logo.svg"
+              alt="e-invoicing logo"
+              class="logo hide-from-hr"
+            />
+          </a>
+          <a href="./invoice-index.html"
+            ><img src="./images/mobile-logo.svg" alt="" class="mobile-logo"
+          /></a>
+        </div>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="/products.html">products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pricing.html">pricing </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html">about</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/resources.html">resources</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="user-area">
+        <ul class="user-menu-list">
+          <li class="user-menu-item" id="searchButton">
+            <img src="./icons/search.svg" alt="search icon" />
+          </li>
+          <li class="user-menu-item">
+            <a href="./contact.html" class="user-menu-link">contact</a>
+          </li>
+          <li class="user-menu-item">
+            <a href="./login.html" class="user-menu-link">login</a>
+          </li>
+          <li class="user-menu-item">
+            <a href="./signup.html">
+              <button class="user-menu-button">get started</button>
+            </a>
+          </li>
+          <li class="user-menu-item">
+            <select class="language">
+              <option value="english">EN</option>
+              <option value="arabic">AR</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!------------- End Header -------------->
+    <!------------- Start Main -------------->
+    <main>
+      <div class="current-path">
+        <a href="./invoice-index.html"
+          ><img src="./icons/arrow back_ios.svg" alt="" class="back-arrow"
+        /></a>
+        <span>
+          <img src="./icons/home.svg" width="16" height="16" />
+          <a href="./invoice-index.html"> Home</a>
+        </span>
+        <span> / </span>
+        <span
+          ><a class="current" href="/privacy-policy.html"
+            >Privacy Policy</a
+          ></span
+        >
+      </div>
+      <!-- Start privacy & policy section -->
+      <section class="privacy-policy-container padding">
+        <h3 class="title">Privacy Policy</h3>
+        <div class="privacy-policy-content">
+          <ol>
+            <li>
+              <h4>Introduction</h4>
+              <p>
+                This Privacy Policy ("Policy") describes how [Your Company Name]
+                ("we", "us" or "our") collects, uses, and discloses your
+                information in connection with your use of our e-invoice SaaS
+                solution ("Solution").
+              </p>
+            </li>
+            <li>
+              <h4>Information We Collect</h4>
+              <p>We collect the following categories of information:</p>
+              <ul>
+                <li>
+                  Personal Information: This includes information that can be
+                  used to identify you directly or indirectly, such as your
+                  name, email address, phone number, company name, and billing
+                  address.
+                </li>
+                <li>
+                  Business Information: This includes information about your
+                  business, such as your industry, size, and location.
+                </li>
+                <li>
+                  Financial Information: This includes information related to
+                  your invoices and payments, such as invoice amounts, due
+                  dates, and payment methods.
+                </li>
+                <li>
+                  Technical Data: This includes information about your use of
+                  the Solution, such as your IP address, device type, browser
+                  type, and access logs.
+                </li>
+                <li>
+                  Usage Data: This includes information about how you interact
+                  with the Solution, such as the features you use, the pages you
+                  visit, and the actions you take.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h4>How We Use Your Information</h4>
+              <p>We use your information for the following purposes:</p>
+              <ul>
+                <li>To provide and operate the Solution;</li>
+                <li>To improve and personalize the Solution;</li>
+                <li>
+                  To send you important information about the Solution, such as
+                  updates, security alerts, and support messages;
+                </li>
+                <li>To comply with legal and regulatory requirements;</li>
+                <li>To enforce our Terms of Service;</li>
+                <li>To analyze and understand how you use the Solution;</li>
+                <li>To develop new products and services;</li>
+                <li>To market and advertise our products and services</li>
+              </ul>
+            </li>
+            <li>
+              <h4>Sharing Your Information</h4>
+              <p>
+                We may share your information with the following third-party
+                service providers:
+              </p>
+              <ul>
+                <li>Payment processors: To process your payments.</li>
+                <li>Cloud storage providers: To store your data.</li>
+                <li>
+                  Marketing and advertising partners: To provide you with
+                  relevant marketing and advertising materials.
+                </li>
+                <li>
+                  Analytics providers: To help us understand how you use the
+                  Solution.
+                </li>
+                <li>
+                  Other third-party service providers: To provide you with other
+                  services that you have requested.
+                </li>
+              </ul>
+              <p>
+                We will only share your information with third-party service
+                providers that have agreed to protect your information in
+                accordance with our privacy standards.
+              </p>
+            </li>
+            <li>
+              <h4>Data Retention</h4>
+              <p>
+                We will retain your information for as long as necessary to
+                provide you with the Solution and fulfill the purposes described
+                in this Policy. We may also retain your information for legal
+                and record-keeping purposes.
+              </p>
+            </li>
+            <li>
+              <h4>Your Rights</h4>
+              <p>
+                You have the following rights with respect to your information:
+              </p>
+              <ul>
+                <li>To access your information;</li>
+                <li>To correct your information;</li>
+                <li>To delete your information;</li>
+                <li>To object to the processing of your information;</li>
+                <li>
+                  To withdraw your consent to the processing of your
+                  information;
+                </li>
+                <li>To restrict the processing of your information;</li>
+                <li>To lodge a complaint with a supervisory authority.</li>
+              </ul>
+            </li>
+            <li>
+              <h4>Security</h4>
+              <p>
+                We take reasonable measures to protect your information from
+                unauthorized access, disclosure, alteration, or destruction.
+                However, no security measures are perfect, and we cannot
+                guarantee the security of your information.
+              </p>
+            </li>
+            <li>
+              <h4>Children's Privacy</h4>
+              <p>
+                Our Solution is not intended for children under the age of 13.
+                We do not knowingly collect information from children under the
+                age of 13. If you are a parent or guardian and you believe your
+                child has provided us with information, please contact us.
+              </p>
+            </li>
+            <li>
+              <h4>International Transfers</h4>
+              <p>
+                Your information may be transferred to, processed in, and stored
+                on servers located outside of your country. The laws of these
+                other countries may be different from the laws of your country.
+              </p>
+            </li>
+            <li>
+              <h4>Changes to this Policy</h4>
+              <p>
+                We may update this Policy from time to time. We will notify you
+                of any changes by posting the new Policy on our website.
+              </p>
+            </li>
+            <li>
+              <h4>Contact Us</h4>
+              <p>
+                If you have any questions about this Policy, please contact us
+                at [your email address] or [your phone number].
+              </p>
+            </li>
+            <li>
+              <h4>Additional Information</h4>
+              <p>
+                This Policy should be read in conjunction with our Terms of
+                Service.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <!-- End privacy & condition section -->
+    </main>
+    <!------------- End Main -------------->
+    <!-- --------------------start footer ---------------- -->
+    <footer class="footer-container">
+      <div class="footer-content footer-row">
+        <div class="">
+          <div class="logo-text">
+            <!-- <h2>MLE</h2>
+            <h6>e-Invoicing</h6> -->
+            <img src="./icons/footer-logo.svg" />
+          </div>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa.
+          </p>
+        </div>
+        <div>
+          <h4>Information</h4>
+          <ul>
+            <li>
+              <a href="#">About<span>EML</span></a>
+            </li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Pricing</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Reasources</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact Us</h4>
+          <h5 class="e-mail">E.support@eml.com</h5>
+          <div class="social-links">
+            <a href=""
+              ><img src="./icons/akar-icons_facebook-fill.svg" alt=""
+            /></a>
+            <a href=""><img src="./icons/logos_twitter.svg" alt="" /></a>
+            <a href=""><img src="./icons/logos_linkedin-icon.svg" alt="" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-sec-row footer-row">
+        <div class="footer-row gap-row">
+          <a href="./terms-conditions.html"><h6>Terms & Condition</h6></a>
+          <a href="./privacy-policy.html"><h6>Privacy & Policy</h6></a>
+        </div>
+        <div class="footer-row company-row">
+          <img src="./images/ejada-logo.svg" alt="" />
+          <p>
+            EML is a subsidiary Solution Developed and owned by Ejada Systems
+            LTD.
+          </p>
+        </div>
+      </div>
+      <div class="footer-copy-right">© 2023 EML. All Rights Reserved</div>
+    </footer>
+    <!-- End Footer Section -->
+    <!------------- End Footer -------------->
+    <!-- choose one -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+      feather.replace();
+    </script>
+    <script src="./main.js"></script>
+  </body>
+</html>

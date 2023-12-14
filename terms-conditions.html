@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejada EIM / E-invoicing Middleware</title>
+    <!----- invoicing style ------------->
+    <link rel="stylesheet" href="style/invoicing-style.css" />
+    <!----- ARABIC style ------------->
+    <!-- <link rel="stylesheet" href="style/e-invoice-ar.css" /> -->
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!------------- Search  bar -------------->
+    <div id="searchWrapper" class="search-wrapper">
+      <h2>Type your search keyword</h2>
+      <div id="searchBar" class="search-bar">
+        <input type="text" />
+        <img src="/icons/search.svg" width="32" height="32" />
+      </div>
+    </div>
+
+    <!-- ------this div add background to body when nav sidebar open for small screen---------------------- -->
+    <div class="body-bg hide"></div>
+    <!-- ------------------------------ -->
+    <!-- small screen side bar -->
+    <div id="side-bar" class="sidebar hide">
+      <div>
+        <img class="logo" src="./images/logo.svg" alt="" />
+        <div class="user-informatin new-row">
+          <img src="./images/Image-user.png" alt="" />
+          <div>
+            <h4>Ikramy Ismail</h4>
+            <p>Ikramy@company.com</p>
+          </div>
+        </div>
+        <ul class="side-bar-nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="./products.html">products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pricing.html">pricing </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">about</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./resources.html">resources</a>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <ul class="side-bar-user-menu-list">
+          <li class="user-menu-item" id="searchButton">
+            <a href="#" class="user-menu-link search-text">Search</a>
+          </li>
+          <li class="user-menu-item">
+            <a href="./contact.html" class="user-menu-link">contact</a>
+          </li>
+          <li class="user-menu-item">
+            <select class="language">
+              <option value="english">English</option>
+              <option value="arabic">Arabic</option>
+            </select>
+          </li>
+          <li class="user-menu-item">
+            <a href="./login.html" class="user-menu-link">login</a>
+          </li>
+          <li class="user-menu-item">
+            <a href="./signup.html">
+              <button class="user-menu-button">get started</button>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- end small screen side bar -->
+
+    <!------------- Start  Header -------------->
+    <header class="padding">
+      <nav>
+        <div class="nav-menu-icon">
+          <img src="./icons/menu.svg" alt="" />
+        </div>
+        <div class="logo-container">
+          <!--  invoicing logo -->
+          <a href="./invoice-index.html">
+            <img
+              src="./images/logo.svg"
+              alt="e-invoicing logo"
+              class="logo hide-from-hr"
+            />
+          </a>
+          <a href="./invoice-index.html"
+            ><img src="./images/mobile-logo.svg" alt="" class="mobile-logo"
+          /></a>
+        </div>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="/products.html">products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pricing.html">pricing </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html">about</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/resources.html">resources</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="user-area">
+        <ul class="user-menu-list">
+          <li class="user-menu-item" id="searchButton">
+            <img src="./icons/search.svg" alt="search icon" />
+          </li>
+          <li class="user-menu-item">
+            <a href="./contact.html" class="user-menu-link">contact</a>
+          </li>
+          <li class="user-menu-item">
+            <a href="./login.html" class="user-menu-link">login</a>
+          </li>
+          <li class="user-menu-item">
+            <a href="./signup.html">
+              <button class="user-menu-button">get started</button>
+            </a>
+          </li>
+          <li class="user-menu-item">
+            <select class="language">
+              <option value="english">EN</option>
+              <option value="arabic">AR</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!------------- End Header -------------->
+    <!------------- Start Main -------------->
+    <main>
+      <div class="current-path">
+        <a href="./invoice-index.html"
+          ><img src="./icons/arrow back_ios.svg" alt="" class="back-arrow"
+        /></a>
+        <span>
+          <img src="./icons/home.svg" width="16" height="16" />
+          <a href="./invoice-index.html"> Home</a>
+        </span>
+        <span> / </span>
+        <span
+          ><a class="current" href="/terms-conditions.html"
+            >Terms & Conditions</a
+          ></span
+        >
+      </div>
+      <!-- Start terms & condition section -->
+      <section class="term-condition-container padding">
+        <h3 class="title">Terms & Conditions</h3>
+        <div class="term-condition-content">
+          <ol>
+            <li>
+              <h4>Introduction</h4>
+              <p>
+                These Terms and Conditions ("Terms") govern your use of [Your
+                E-invoice SaaS Solution Name] ("Solution") provided by [Your
+                Company Name] ("we", "us" or "our"). Please read these Terms
+                carefully before using the Solution. By accessing or using the
+                Solution, you agree to be bound by these Terms. If you do not
+                agree to these Terms, you may not use the Solution.
+              </p>
+            </li>
+
+            <li>
+              <h4>Access and Use</h4>
+              <ul>
+                <li>
+                  2.1 To access and use the Solution, you must be of legal age
+                  and have the requisite authority to enter into these Terms.
+                </li>
+                <li>
+                  2.2 You are responsible for maintaining the confidentiality of
+                  your account information and password and for restricting
+                  access to your computer and devices. You agree to accept
+                  responsibility for all activities that occur under your
+                  account.
+                </li>
+                <li>
+                  2.3 You agree to use the Solution only for its intended
+                  purposes and in accordance with applicable laws and
+                  regulations. You may not use the Solution for any illegal or
+                  unauthorized purpose, including, but not limited to, spamming,
+                  hacking, or transmitting any unlawful or harmful content.
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <h4>Fees and Payment</h4>
+              <ul>
+                <li>
+                  3.1 The Solution is offered on a subscription basis. You agree
+                  to pay the applicable fees for the Solution in accordance with
+                  our pricing plans.
+                </li>
+                <li>3.2 All fees are non-refundable and non-transferable.</li>
+                <li>
+                  3.3 We reserve the right to change our pricing plans at any
+                  time. We will provide you with reasonable notice of any
+                  changes to our pricing plans.
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <h4>Intellectual Property</h4>
+
+              <ul>
+                <li>
+                  4.1 The Solution and its content are protected by copyright,
+                  trademark, and other intellectual property laws. You may not
+                  modify, copy, distribute, transmit, display, perform,
+                  reproduce, publish, license, sell, or create derivative works
+                  from the Solution or its content without our prior written
+                  permission.
+                </li>
+                <li>
+                  4.2 You agree to grant us a non-exclusive, royalty-free,
+                  worldwide license to use, reproduce, modify, adapt, publish,
+                  translate, distribute, and create derivative works of any
+                  content you submit to the Solution.
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <h4>Data Privacy</h4>
+              <ul>
+                <li>
+                  5.1 We are committed to protecting your privacy. Our Privacy
+                  Policy explains how we collect, use, and disclose your
+                  information when you use the Solution. Please read our Privacy
+                  Policy carefully before using the Solution.
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <h4>Disclaimer of Warranties</h4>
+              <ul>
+                <li>
+                  6.1 THE SOLUTION IS PROVIDED "AS IS" AND WITHOUT ANY
+                  WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING, BUT NOT
+                  LIMITED TO, WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+                  PARTICULAR PURPOSE, AND NON-INFRINGEMENT. WE DO NOT WARRANT
+                  THAT THE SOLUTION WILL BE UNINTERRUPTED, ERROR-FREE, OR
+                  VIRUS-FREE.
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <h4>Limitation of Liability</h4>
+              <ul>
+                <li>
+                  7.1 TO THE FULLEST EXTENT PERMISSIBLE BY LAW, WE WILL NOT BE
+                  LIABLE FOR ANY DAMAGES ARISING OUT OF OR IN CONNECTION WITH
+                  YOUR USE OF THE SOLUTION, INCLUDING, BUT NOT LIMITED TO,
+                  DIRECT, INDIRECT, INCIDENTAL, CONSEQUENTIAL, SPECIAL, AND
+                  PUNITIVE DAMAGES.
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <h4>Termination</h4>
+              <ul>
+                <li>
+                  8.1 We may terminate your access to the Solution at any time
+                  for any reason, with or without notice. You may also terminate
+                  your access to the Solution at any time.
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <h4>Governing Law and Jurisdictions</h4>
+              <p>
+                These Terms shall be governed by and construed in accordance
+                with the laws of [Your Country/State], without regard to its
+                conflict of laws provisions. Any dispute arising out of or
+                relating to these Terms shall be subject to the exclusive
+                jurisdiction of the courts of [Your Country/State].
+              </p>
+            </li>
+
+            <li>
+              <h4>Entire Agreement</h4>
+              <p>
+                These Terms constitute the entire agreement between you and us
+                with respect to your use of the Solution.
+              </p>
+            </li>
+
+            <li>
+              <h4>Notices</h4>
+              <p>
+                All notices and other communications hereunder shall be in
+                writing and shall be deemed to have been duly given when
+                delivered personally, sent by certified or registered mail,
+                postage prepaid, return receipt requested, sent by a recognized
+                overnight courier service, or sent by email to the addresses set
+                forth below.
+              </p>
+              <p class="bold-text">Your Address: [Your Mailing Address]</p>
+              <p class="bold-text">Our Address: [Our Mailing Address]</p>
+            </li>
+
+            <li>
+              <h4>Severability</h4>
+              <p>
+                If any provision of these Terms is held to be invalid or
+                unenforceable, such provision shall be struck and the remaining
+                provisions shall remain in full force and effect.
+              </p>
+            </li>
+
+            <li>
+              <h4>Waiver</h4>
+              <p>
+                No waiver of any provision of these Terms shall be deemed a
+                further or continuing waiver of such provision or any other
+                provision.
+              </p>
+            </li>
+
+            <li>
+              <h4>Force Majeure</h4>
+              <p>
+                We shall not be liable for any delay or failure to perform our
+                obligations under these Terms due to causes beyond our
+                reasonable control, including, but not limited to, acts of God,
+                war, terrorism, riots, strikes, or natural disasters.
+              </p>
+            </li>
+
+            <li>
+              <h4>Contact Us</h4>
+              <p>
+                If any provision of these Terms is held to be invalid or
+                unenforceable, such provision shall be struck and the remaining
+                provisions shall remain in full force and effect.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <!-- End privacy & condition section -->
+    </main>
+    <!------------- End Main -------------->
+    <!-- --------------------start footer ---------------- -->
+    <footer class="footer-container">
+      <div class="footer-content footer-row">
+        <div class="">
+          <div class="logo-text">
+            <!-- <h2>MLE</h2>
+            <h6>e-Invoicing</h6> -->
+            <img src="./icons/footer-logo.svg" />
+          </div>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa.
+          </p>
+        </div>
+        <div>
+          <h4>Information</h4>
+          <ul>
+            <li>
+              <a href="#">About<span>EML</span></a>
+            </li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Pricing</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Reasources</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact Us</h4>
+          <h5 class="e-mail">E.support@eml.com</h5>
+          <div class="social-links">
+            <a href=""
+              ><img src="./icons/akar-icons_facebook-fill.svg" alt=""
+            /></a>
+            <a href=""><img src="./icons/logos_twitter.svg" alt="" /></a>
+            <a href=""><img src="./icons/logos_linkedin-icon.svg" alt="" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-sec-row footer-row">
+        <div class="footer-row gap-row">
+          <a href="./terms-conditions.html"><h6>Terms & Condition</h6></a>
+          <a href="./privacy-policy.html"><h6>Privacy & Policy</h6></a>
+        </div>
+        <div class="footer-row company-row">
+          <img src="./images/ejada-logo.svg" alt="" />
+          <p>
+            EML is a subsidiary Solution Developed and owned by Ejada Systems
+            LTD.
+          </p>
+        </div>
+      </div>
+      <div class="footer-copy-right">© 2023 EML. All Rights Reserved</div>
+    </footer>
+    <!-- End Footer Section -->
+    <!------------- End Footer -------------->
+    <!-- choose one -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+      feather.replace();
+    </script>
+    <script src="./main.js"></script>
+  </body>
+</html>
