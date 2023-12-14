@@ -257,7 +257,7 @@ nav .nav-list .nav-link {
   gap: 50px;
   position: relative;
   z-index: 2;
-  align-items: start;
+  align-items: end;
   margin-top: 40px;
 }
 .hero .hero-content .hero-heading {
@@ -440,7 +440,7 @@ nav .nav-list .nav-link {
 
 .hero.pricing .hero-content .hero-heading {
   display: flex;
-
+  width: 100%;
   align-items: center;
   justify-content: center;
   gap: 40px;
@@ -470,6 +470,7 @@ nav .nav-list .nav-link {
   text-align: center;
   color: var(--primary-text-color);
   margin-bottom: 0;
+  padding-right: 20px;
 }
 
 .hero.pricing .hero-content .hero-heading .plan p:nth-child(2) {
@@ -483,6 +484,7 @@ nav .nav-list .nav-link {
   border-radius: inherit;
   letter-spacing: 0em;
   text-align: center;
+  padding-right: 0;
 }
 
 /* ----------------------[ End Of Hero ]--------------------- */
@@ -757,11 +759,9 @@ nav .nav-list .nav-link {
 .service-feature h3 {
   font-weight: 300;
   font-size: 21px;
-  text-align: left;
 }
 
 .service-feature p {
-  text-align: left;
   font-weight: 300;
   font-size: 14px;
   color: var(--secondary-text-color);
@@ -1237,6 +1237,7 @@ nav .nav-list .nav-link {
 }
 
 .trusted-clients-container .trusted-clients-heading {
+  margin-bottom: 40px;
   text-align: center;
   display: grid;
   gap: 25px;
@@ -1527,6 +1528,7 @@ nav .nav-list .nav-link {
 
 .social-item > a > .column {
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;
   gap: 25px;
   font-size: 24px;
@@ -1536,7 +1538,9 @@ nav .nav-list .nav-link {
   width: 64px;
   filter: var(--primary-color-svg-filter);
 }
-
+.social-item > a > .column p{
+  margin-bottom: 0 !important;
+}
 .socials-right-arrow,
 .socials-left-arrow {
   display: none;
@@ -2136,7 +2140,7 @@ label span {
   text-align: center;
   font-family: "Source Sans 3", sans-serif;
   display: flex;
-  flex-direction: row-reverse;
+  direction: rtl;
   gap: 5px;
 }
 .sign-up-container > span a {
@@ -2150,7 +2154,9 @@ label span {
   text-align: center;
   font-size: 14px;
   color: var(--accent-color);
+  direction: ltr;
 }
+
 .sign-up-footer.black-text {
   color: #000;
 }
@@ -2266,7 +2272,7 @@ label span {
 
 .verify-box .code-input-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   align-items: center;
   gap: 30px;
   width: 80%;
@@ -2280,6 +2286,7 @@ label span {
   border: 1px solid transparent;
 }
 .verify-box .code-timer p span {
+  margin: 5px;
   font-weight: 500;
   color: var(--accent-text-color);
 }
@@ -2406,11 +2413,15 @@ label span {
 }
 .signup-sidebar > p span {
   font-weight: 400;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  gap: 10px;
 }
 .signup-sidebar > img {
   position: absolute;
   bottom: 0;
-  left: -10px;
+  left: 0px;
   width: 100%;
   /* height: 400px; */
 }
@@ -2453,7 +2464,7 @@ label span {
   color: var(--accent-text-color);
 }
 .signup-setup-container .signup-card {
-  min-height: 63px;
+  min-height: 690px;
   padding: 40px;
   box-shadow: 0px 4px 60px 0px #2726381f;
   border-radius: 20px;
@@ -2488,6 +2499,7 @@ label span {
   width: 20px;
 }
 .signup-setup-container .signup-card form .btns-container {
+  margin-top: 50px;
   float: right;
   display: flex;
   flex-direction: row-reverse;
@@ -3311,6 +3323,7 @@ label span {
     overflow-x: scroll;
     justify-content: start;
     margin: 0 auto;
+    display: none;
     /* background-color: #4535f6; */
   }
   .statistics-container::-webkit-scrollbar {
@@ -3332,7 +3345,7 @@ label span {
     display: block;
     position: absolute;
     top: 90px;
-    z-index: 1;
+    z-index: 20;
   }
   .statistics-left-arrow {
     left: 20px;
@@ -3341,9 +3354,10 @@ label span {
     right: 20px;
   }
   .statistics {
+    flex-direction: column;
     align-items: center;
     min-width: 240px;
-    margin: 0px 40px;
+    margin: 20px 40px;
   }
   .about-images div {
     width: 140px;
@@ -3604,6 +3618,7 @@ label span {
   }
 
   .trusted-clients-container {
+    display: block;
     position: relative;
     min-height: auto;
   }
@@ -3612,8 +3627,8 @@ label span {
   .trusted-clients-container .trusted-clients-right-arrow {
     display: block;
     position: absolute;
-    bottom: 150px;
-    z-index: 1;
+    bottom: 87px;
+    z-index: 20;
   }
   .trusted-clients-container .trusted-clients-left-arrow {
     left: 20px;
@@ -3622,10 +3637,14 @@ label span {
     right: 20px;
   }
   .trusted-clients-container .trusted-clients {
-    display: flex;
+    display: none;
     overflow: scroll;
     position: relative;
     max-width: 200px;
+  }
+  .client {
+    display: flex;
+    justify-content: center;
   }
 
   .trusted-clients-container .trusted-clients::-webkit-scrollbar {
@@ -3667,8 +3686,10 @@ label span {
   }
 
   .socials {
-    margin: 0 auto;
+    margin: 0 auto ;
+    padding-top: 50px;
     position: relative;
+    display: block;
   }
 
   .social-list {
@@ -3677,7 +3698,7 @@ label span {
     min-height: 100%;
     position: relative;
     justify-content: start;
-    display: grid;
+    display: none;
     grid-auto-flow: column;
     grid-auto-columns: 100%;
   }
@@ -3716,8 +3737,8 @@ label span {
   .socials-left-arrow {
     display: block;
     position: absolute;
-    top: 90px;
-    z-index: 1;
+    top: 40%;
+    z-index: 20;
   }
   .socials-left-arrow {
     left: 20px;
@@ -3903,6 +3924,10 @@ label span {
 
 .pass-valid-list {
   margin-top: 15px;
+  margin-right: 20px;
+}
+.pass-valid-list li svg{
+  margin-right: 20px;
 }
 .password-area {
   grid-row-start: 3;

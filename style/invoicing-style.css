@@ -1647,7 +1647,7 @@ label span {
   color: #fff;
 }
 .footer-container ul li {
-  list-style: url(../icons/list-style.svg);
+  list-style: url(../icons/list-style-en.svg);
 }
 .footer-container ul {
   margin-left: 15px;
@@ -3113,8 +3113,7 @@ label span {
 /* ------------ Start mobile design ------------- */
 @media screen and (max-width: 744px) {
   /* Account table fix */
-  
-  
+
   .logo {
     display: none;
   }
