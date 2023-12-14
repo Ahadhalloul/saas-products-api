@@ -3999,7 +3999,7 @@ label span {
 }
 
 /* Account avatar */
-
+/* & new filter design */
 .invoices-container {
   min-width: 100%;
   display: flex;
@@ -4036,14 +4036,40 @@ label span {
   border-radius: 8px;
   border: 1px solid #e0e7ed;
 }
-
+.filter-bar select {
+  width: 95px;
+  padding: 0 7px;
+  margin-right: 5px;
+}
+.filter-bar input {
+  height: 36px;
+  outline: none;
+  padding: 0 10px;
+  border-radius: 8px;
+  border: 1px solid #e0e7ed;
+  width: 70px;
+  margin-right: 5px;
+}
+.filter-bar input.date {
+  width: 115px;
+}
+.filter-bar {
+  gap: 5px;
+  justify-content: end;
+}
+.filter-bar img {
+  width: 20px;
+  cursor: pointer;
+  filter: brightness(0) saturate(100%) invert(63%) sepia(2%) saturate(1532%)
+    hue-rotate(173deg) brightness(88%) contrast(83%);
+}
 .invoices-select-filter span {
   font-size: 12px;
   font-weight: 400;
 }
 
 .invoices-search-filter {
-  min-width: 250px;
+  width: 260px;
   min-height: 35px;
   display: flex;
   align-items: center;
@@ -4051,6 +4077,7 @@ label span {
   border-radius: 10px;
   padding: 0 10px;
   gap: 5px;
+  margin-right: 5px;
 }
 
 .invoices-search-filter input {
@@ -4064,6 +4091,22 @@ label span {
 .invoices-search-filter img {
   max-width: 100%;
   height: 20px;
+}
+
+@media screen and (max-width: 1300px) {
+  .invoices-filters {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .invoices-search-filter {
+    width: 245px;
+  }
+}
+@media screen and (max-width: 969px) {
+  .filter-bar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .table-container {
@@ -4138,6 +4181,11 @@ label span {
 
 .table-container tr:hover {
   background-color: #f5f5f5;
+}
+@media screen and (max-width: 598px) {
+  .table-container tr > td:nth-child(1) {
+    gap: 4px;
+  }
 }
 
 /* Hide the default checkbox */

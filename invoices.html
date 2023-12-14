@@ -157,11 +157,40 @@
             </select>
             <span>entries</span>
           </div>
-          <div class="invoices-search-filter">
-            <img src="./icons/search.svg" />
-            <input type="text" placeholder="Search Invoice #, date, or etc." />
+
+          <!-- ---- Start new filter design------ -->
+          <div class="filter-bar invoices-select-filter">
+            <!-- this search bar -->
+            <div class="invoices-search-filter">
+              <img src="./icons/search.svg" />
+              <input type="text" placeholder="Search Invoice #, date, etc." />
+            </div>
+            <!-- -------- -->
+            <div>
+              <span>Status</span>
+              <select name="" id="status">
+                <option value="Any">Any</option>
+                <option value="Active">Active</option>
+                <option value="Inactive">Inactive</option>
+                <option value="Pending">Pending</option>
+              </select>
+            </div>
+            <div>
+              <span>Invoice #</span>
+              <input type="" />
+            </div>
+            <div>
+              <span>From</span>
+              <input class="date" type="date" />
+            </div>
+            <div>
+              <span>To</span>
+              <input class="date" type="date" />
+            </div>
           </div>
+          <!-- ---- End new filter design------ -->
         </div>
+
         <div class="table-container">
           <table>
             <thead>
