@@ -3112,6 +3112,11 @@ label span {
 /* ---------End design for tablet---------- */
 /* ------------ Start mobile design ------------- */
 @media screen and (max-width: 744px) {
+  /* Account table fix */
+  .table-container table{
+    width: 200% !important;
+  }
+  
   .logo {
     display: none;
   }
