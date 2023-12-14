@@ -1538,7 +1538,7 @@ nav .nav-list .nav-link {
   width: 64px;
   filter: var(--primary-color-svg-filter);
 }
-.social-item > a > .column p{
+.social-item > a > .column p {
   margin-bottom: 0 !important;
 }
 .socials-right-arrow,
@@ -3323,7 +3323,7 @@ label span {
     overflow-x: scroll;
     justify-content: start;
     margin: 0 auto;
-    display: none;
+    /* display: none; */
     /* background-color: #4535f6; */
   }
   .statistics-container::-webkit-scrollbar {
@@ -3345,7 +3345,7 @@ label span {
     display: block;
     position: absolute;
     top: 90px;
-    z-index: 20;
+    z-index: 2;
   }
   .statistics-left-arrow {
     left: 20px;
@@ -3638,6 +3638,7 @@ label span {
   }
   .trusted-clients-container .trusted-clients {
     display: none;
+    /* display: flex; */
     overflow: scroll;
     position: relative;
     max-width: 200px;
@@ -3686,7 +3687,7 @@ label span {
   }
 
   .socials {
-    margin: 0 auto ;
+    margin: 0 auto;
     padding-top: 50px;
     position: relative;
     display: block;
@@ -3926,7 +3927,7 @@ label span {
   margin-top: 15px;
   margin-right: 20px;
 }
-.pass-valid-list li svg{
+.pass-valid-list li svg {
   margin-right: 20px;
 }
 .password-area {
