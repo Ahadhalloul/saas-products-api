@@ -3113,9 +3113,7 @@ label span {
 /* ------------ Start mobile design ------------- */
 @media screen and (max-width: 744px) {
   /* Account table fix */
-  .table-container table{
-    width: 200% !important;
-  }
+  
   
   .logo {
     display: none;
@@ -4138,6 +4136,8 @@ label span {
 .table-container tr > th:nth-child(1) {
   display: flex;
   gap: 20px;
+  height: 100px;
+  align-items: center;
 }
 
 .table-container tr > td:nth-child(1) p {
