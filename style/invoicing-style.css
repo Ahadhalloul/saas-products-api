@@ -4182,11 +4182,6 @@ label span {
 .table-container tr:hover {
   background-color: #f5f5f5;
 }
-@media screen and (max-width: 598px) {
-  .table-container tr > td:nth-child(1) {
-    gap: 4px;
-  }
-}
 
 /* Hide the default checkbox */
 .custom-checkbox input[type="checkbox"] {
