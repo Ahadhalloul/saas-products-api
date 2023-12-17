@@ -763,11 +763,11 @@ nav .nav-list .nav-link {
 .features-container .text {
   max-width: 530px;
 }
-@media screen and (min-width: 1440px) {
+/* @media screen and (min-width: 1440px) {
   .features-container .text {
     max-width: 700px;
   }
-}
+} */
 .features-container h4 {
   width: 335px;
   font-size: 34px;
@@ -2301,14 +2301,14 @@ label span {
 }
 
 /* ----Edit error msg design for signup setup page --- */
-/* .signup-setup-container .error-msg,
+.signup-setup-container .error-msg,
 .signup-setup-container .success-msg {
   padding: 0;
   border-radius: 10px;
   padding-left: 10px;
   padding-right: 10px;
   margin-bottom: 15px;
-} */
+}
 /* ----------------- */
 .signup-cancel-box .card > img {
   position: absolute;
@@ -4496,3 +4496,29 @@ label span {
   right: 5%;
 }
 /* ------------------------End Loader ---------------------- */
+.padding {
+  padding: 40px 120px;
+}
+@media screen and (min-width: 1650px) {
+  .padding,
+  .current-path,
+  .footer-container,
+  .features-container,
+  .our-parnters,
+  .price-plan-container {
+    padding: 40px 180px;
+  }
+  .features-container .text {
+    max-width: 600px;
+  }
+}
+@media screen and (min-width: 1750px) {
+  .padding,
+  .current-path,
+  .footer-container,
+  .features-container,
+  .our-parnters,
+  .price-plan-container {
+    padding: 40px 250px;
+  }
+}
