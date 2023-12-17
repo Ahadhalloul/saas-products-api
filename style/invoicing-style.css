@@ -3287,7 +3287,7 @@ label span {
   } */
 
   .table-container {
-    min-width: 100%;
+    min-width: 200%;
     overflow: scroll !important;
   }
 
@@ -4145,10 +4145,29 @@ label span {
   border-radius: 8px;
   border: 1px solid #e0e7ed;
 }
+.search-box {
+  border-bottom: 1px solid rgb(236, 236, 236);
+  border-top: 1px solid rgb(236, 236, 236);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 30px 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.filter-bar {
+  gap: 5px;
+  justify-content: end;
+}
 .filter-bar select {
-  width: 95px;
+  width: 140px;
+  max-width: 140px;
   padding: 0 7px;
   margin-right: 5px;
+  text-align: center;
 }
 .filter-bar input {
   height: 36px;
@@ -4156,21 +4175,27 @@ label span {
   padding: 0 10px;
   border-radius: 8px;
   border: 1px solid #e0e7ed;
-  width: 70px;
+  max-width: 140px;
   margin-right: 5px;
 }
-.filter-bar input.date {
-  width: 115px;
+.search-box .btns-container {
+  display: flex;
+  gap: 15px;
 }
-.filter-bar {
-  gap: 5px;
-  justify-content: end;
-}
-.filter-bar img {
-  width: 20px;
+.search-box button {
+  padding: 7px 15px;
+  border-radius: 15px;
   cursor: pointer;
-  filter: brightness(0) saturate(100%) invert(63%) sepia(2%) saturate(1532%)
-    hue-rotate(173deg) brightness(88%) contrast(83%);
+}
+.search-box button.reset-btn {
+  background-color: var(--third-color);
+  color: #000;
+}
+.search-box button.reset-btn img {
+  width: 20px;
+  margin-right: 3px;
+  vertical-align: bottom;
+  filter: var(--primary-color-svg-filter);
 }
 .invoices-select-filter span {
   font-size: 12px;
@@ -4240,9 +4265,9 @@ label span {
 
 .table-container tr > td:nth-child(1),
 .table-container tr > th:nth-child(1) {
+  /* height: 100px; */
   display: flex;
   gap: 20px;
-  height: 100px;
   align-items: center;
 }
 
