@@ -4451,3 +4451,28 @@ label span {
   color: #fff;
 }
 /* ------------------ End Invoices pages----------------- */
+/* ---very big screen---  */
+@media screen and (min-width: 1650px) {
+  .padding,
+  .current-path,
+  .footer-container,
+  .features-container,
+  .our-parnters,
+  .price-plan-container {
+    padding: 40px 180px;
+  }
+  .features-container .text {
+    max-width: 600px;
+  }
+}
+@media screen and (min-width: 1750px) {
+  .padding,
+  .current-path,
+  .footer-container,
+  .features-container,
+  .our-parnters,
+  .price-plan-container {
+    padding: 40px 250px;
+  }
+}
+/* --------------------------- */
