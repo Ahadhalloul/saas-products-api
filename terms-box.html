@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejada EIM / E-invoicing Middleware</title>
+    <!----- invoicing style ------------->
+    <link rel="stylesheet" href="style/invoicing-style.css" />
+    <!----- ARABIC style ------------->
+    <!-- <link rel="stylesheet" href="style/e-invoice-ar.css" /> -->
+  </head>
+  <body>
+    <!-- start terms box  -->
+    <div class="terms-condition-box">
+      <div class="card">
+        <img onclick="hideCancleBox()" src="./icons/close.svg" alt="" />
+        <h3>Terms & Conditions</h3>
+        <div class="conditions-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quae
+          accusantium esse alias ad libero ipsum atque nesciunt, quod sed
+          similique rerum quibusdam ea neque sint quaerat sunt dolorum
+          laudantium? Ex nam fugit praesentium ad doloremque quam sed itaque
+          ratione totam officiis quaerat, ab est magnam nemo magni blanditiis
+          dicta fuga reiciendis saepe consequuntur provident nostrum veritatis
+          ipsa officia! Nulla, nostrum ipsam ipsum odit deleniti in dolores,
+          temporibus tempora aspernatur ratione aliquid esse qui dignissimos
+          debitis cumque voluptates corporis quisquam pariatur tenetur rem
+          mollitia at. Recusandae laboriosam iusto architecto iure repellendus
+          ad inventore expedita itaque, nihil debitis ducimus id praesentium?
+          <p class="checkbox-text">
+            <input
+              onchange="checkBoxClicked()"
+              type="checkbox"
+              name=""
+              id="conditions-checkbox"
+            />
+            Accept Terms and Conditions
+          </p>
+        </div>
+        <div class="btn-container">
+          <button disabled id="conditions-btn">Submit</button>
+          <!-- <button class="btn-sec">Cancel</button> -->
+        </div>
+      </div>
+    </div>
+    <!-- end terms box  -->
+
+    <!-- javaScript code  -->
+    <script>
+      let conditionsCheckbox = document.querySelector("#conditions-checkbox");
+      let conditionsBtn = document.querySelector("#conditions-btn");
+      function checkBoxClicked() {
+        if (conditionsCheckbox.checked) {
+          conditionsBtn.classList.add("active-btn");
+          conditionsBtn.removeAttribute("disabled");
+        } else {
+          conditionsBtn.classList.remove("active-btn");
+          conditionsBtn.setAttribute("disabled");
+        }
+      }
+    </script>
+  </body>
+</html>

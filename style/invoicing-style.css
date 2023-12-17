@@ -4546,3 +4546,75 @@ label span {
   }
 }
 /* --------------------------- */
+
+/* --------- Start conditions box ------------ */
+.terms-condition-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: #111111e5;
+  z-index: 1;
+  padding: 0px 25px;
+}
+.terms-condition-box .card {
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  max-width: 567px;
+  border-radius: 10px;
+  min-height: 276px;
+  gap: 30px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  position: relative;
+}
+.terms-condition-box .card .conditions-text {
+  margin: 0px 40px;
+  padding-right: 10px;
+  height: 250px;
+  overflow-y: scroll;
+  color: var(--secondary-text-color);
+}
+.terms-condition-box .card .conditions-text .checkbox-text {
+  color: #000;
+  margin-top: 15px;
+  font-weight: 500;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.terms-condition-box .card .conditions-text::-webkit-scrollbar {
+  width: 5px;
+  background-color: rgb(231, 231, 231);
+}
+.terms-condition-box .card .conditions-text::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 5px;
+}
+.terms-condition-box .card > img {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  cursor: pointer;
+}
+
+.terms-condition-box .card .btn-container {
+  display: flex;
+  gap: 10px;
+}
+.terms-condition-box .card button {
+  width: 200px;
+  height: 40px;
+  opacity: 0.6;
+}
+.terms-condition-box .card button.active-btn {
+  opacity: 1;
+}
+/* --------- End conditions box ------------ */
+/* ---------------------------- */
