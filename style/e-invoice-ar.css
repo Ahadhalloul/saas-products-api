@@ -2800,7 +2800,113 @@ label span {
 }
 /* -------------- End sign up ( registration )------------------ */
 /* ---------------------------------------------------- */
+/* ------------------------------------------------------- */
+/* ---------------- Start (Privacy & policy) AND (terms & condition) pages ------------ */
+.privacy-policy-container .privacy-policy-content ol,
+.term-condition-container .term-condition-content ol {
+  direction: rtl;
+  margin-left: 40px;
+}
+.privacy-policy-container .privacy-policy-content ol > li,
+.term-condition-container .term-condition-content ol > li {
+  font-size: 36px;
+  margin-top: 50px;
+  list-style: decimal;
+  font-weight: 300;
+}
+.privacy-policy-container .privacy-policy-content ol > li ul li {
+  margin-left: 30px;
+  list-style: disc;
+}
+.privacy-policy-container .title,
+.term-condition-container .title {
+  font-size: 48px;
+  text-align: center;
+  font-weight: 300;
+}
+.privacy-policy-container .privacy-policy-content ol h4,
+.term-condition-container .term-condition-content ol h4 {
+  font-weight: 300;
+}
+.privacy-policy-container .privacy-policy-content ol p,
+.privacy-policy-container .privacy-policy-content ol li ul {
+  font-size: 16px;
+  color: #8a8a8a;
+}
 
+.term-condition-container .term-condition-content ol p,
+.term-condition-container .term-condition-content ol li ul {
+  font-size: 16px;
+  color: #8a8a8a;
+}
+
+.privacy-policy-container .privacy-policy-content ol p,
+.term-condition-container .term-condition-content ol p {
+  margin: 10px 0px;
+}
+.term-condition-container .term-condition-content .bold-text {
+  font-weight: 600;
+}
+.term-condition-container .term-condition-content ol > li ul li {
+  margin-left: 10px;
+  list-style-type: none;
+}
+/* doing subtitle list numbers  */
+/* .term-condition-container .term-condition-content ol {
+  counter-reset: item;
+}
+.term-condition-container .term-condition-content ol > li {
+  counter-increment: item;
+} */
+/* .term-condition-container .term-condition-content ol ul li {
+  display: block;
+} */
+/* .term-condition-container .term-condition-content ol ul > li::before {
+  margin-left: -30px;
+  content: counters(item, ".") ". ";
+  float: left;
+} */
+
+/* tablet & mobile size  */
+@media screen and (max-width: 1023px) {
+  .privacy-policy-container .title,
+  .term-condition-container .title {
+    font-size: 40px;
+  }
+  .privacy-policy-container .privacy-policy-content ol > li,
+  .term-condition-container .term-condition-content ol > li {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 744px) {
+  .privacy-policy-container .privacy-policy-content ol,
+  .term-condition-container .term-condition-content ol {
+    margin-left: 20px;
+  }
+  .privacy-policy-container .title,
+  .term-condition-container .title {
+    font-size: 32px;
+  }
+  .privacy-policy-container .privacy-policy-content ol > li,
+  .term-condition-container .term-condition-content ol > li {
+    font-size: 20px;
+  }
+  .privacy-policy-container .privacy-policy-content ol p,
+  .privacy-policy-container .privacy-policy-content ol li ul {
+    font-size: 14px;
+  }
+  .term-condition-container .term-condition-content ol p,
+  .term-condition-container .term-condition-content ol li ul {
+    font-size: 14px;
+  }
+  /* .term-condition-container .term-condition-content ol ul > li:before {
+    margin-left: -25px;
+  } */
+}
+
+/* ---------------- End (Privacy & policy) AND (terms & condition) pages ------------ */
+/* ------------------------------------------------------- */
 /* ---------Start design for tablet---------- */
 @media screen and (max-width: 1023px) {
   /* About page hero */
