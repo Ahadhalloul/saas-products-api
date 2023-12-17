@@ -4496,9 +4496,7 @@ label span {
   right: 5%;
 }
 /* ------------------------End Loader ---------------------- */
-.padding {
-  padding: 40px 120px;
-}
+
 @media screen and (min-width: 1650px) {
   .padding,
   .current-path,
