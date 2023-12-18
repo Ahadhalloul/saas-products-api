@@ -3285,12 +3285,36 @@ label span {
     display: flex;
     align-items: center;
   } */
-
-  .table-container {
-    min-width: 200%;
-    overflow: scroll !important;
+  .search-box {
+    text-align: center;
+  }
+  .filter-bar input[type="date"] {
+    width: 120px;
   }
 
+  .table-container {
+    min-width: 100%;
+    overflow-x: scroll !important;
+  }
+  .table-container::-webkit-scrollbar {
+    height: 5px;
+    background-color: rgb(231, 231, 231);
+  }
+
+  .table-container::-webkit-scrollbar-thumb {
+    background-color: var(--accent-text-color);
+    border-radius: 3px;
+  }
+  .table-container tr > th:nth-child(1) {
+    height: 75px;
+    min-width: 200px !important;
+  }
+  .table-container tr > th {
+    min-width: 130px !important;
+  }
+  .table-container tr:last-of-type {
+    background-color: #f9f9f9;
+  }
   .pagination {
     flex-flow: column nowrap;
     align-items: flex-start !important;
