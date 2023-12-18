@@ -3933,6 +3933,18 @@ label span {
     width: 20px;
     height: 20px;
   }
+  /*---- invoice header ---- */
+  .user-menu-list .user-menu-item select {
+    display: none;
+  }
+  .user-menu-list {
+    gap: 0;
+  }
+  .user-menu-item > span {
+    height: 30px;
+  }
+
+  /* -------------------- */
 }
 
 @media screen and (max-width: 450px) {

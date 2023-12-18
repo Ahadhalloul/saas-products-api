@@ -3869,6 +3869,18 @@ label span {
     width: 20px;
     height: 20px;
   }
+  /*---- invoice header ---- */
+  .user-menu-list .user-menu-item select {
+    display: none;
+  }
+  .user-menu-list {
+    gap: 0;
+  }
+  .user-menu-item > span {
+    height: 30px;
+  }
+
+  /* -------------------- */
 }
 
 @media screen and (max-width: 450px) {
@@ -3917,19 +3929,6 @@ label span {
   .hq-title h1 {
     font-size: 24px;
   }
-
-  /*---- invoice header ---- */
-  .user-menu-list .user-menu-item select {
-    display: none;
-  }
-  .user-menu-list {
-    gap: 0;
-  }
-  .user-menu-item > span {
-    height: 30px;
-  }
-
-  /* -------------------- */
 }
 
 /* ------------ End mobile design ------------- */
