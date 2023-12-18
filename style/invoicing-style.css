@@ -65,7 +65,6 @@ header {
   min-height: 50px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   z-index: 2;
   position: relative;
 }
@@ -3219,6 +3218,12 @@ label span {
 /* ---------End design for tablet---------- */
 /* ------------ Start mobile design ------------- */
 @media screen and (max-width: 744px) {
+  header {
+    align-items: start;
+  }
+  .user-menu-list .user-menu-item select {
+    padding: 0;
+  }
   /* Account table fix */
 
   .logo {
@@ -3233,6 +3238,7 @@ label span {
   .mobile-logo {
     margin-left: 30px;
     display: block;
+    /* margin-top: -20px; */
   }
   /* About page hero */
   .hero.about::before {
@@ -3911,6 +3917,19 @@ label span {
   .hq-title h1 {
     font-size: 24px;
   }
+
+  /*---- invoice header ---- */
+  .user-menu-list .user-menu-item select {
+    display: none;
+  }
+  .user-menu-list {
+    gap: 0;
+  }
+  .user-menu-item > span {
+    height: 30px;
+  }
+
+  /* -------------------- */
 }
 
 /* ------------ End mobile design ------------- */
@@ -4127,8 +4146,8 @@ label span {
 }
 
 .user-menu-item > span > img {
+  height: 46px !important;
   width: 100%;
-  height: 50px !important;
 }
 
 /* Account avatar */

@@ -3276,6 +3276,12 @@ label span {
 /* ---------End design for tablet---------- */
 /* ------------ Start mobile design ------------- */
 @media screen and (max-width: 744px) {
+  header {
+    align-items: start;
+  }
+  .user-menu-list .user-menu-item select {
+    padding: 0;
+  }
   .logo {
     display: none;
   }
@@ -3975,6 +3981,19 @@ label span {
   .hq-title h1 {
     font-size: 24px;
   }
+
+  /*---- invoice header ---- */
+  .user-menu-list .user-menu-item select {
+    display: none;
+  }
+  .user-menu-list {
+    gap: 0;
+  }
+  .user-menu-item > span {
+    height: 30px;
+  }
+
+  /* -------------------- */
 }
 
 /* ------------ End mobile design ------------- */
@@ -4206,7 +4225,7 @@ label span {
 
 .user-menu-item > span > img {
   width: 100%;
-  height: 50px !important;
+  height: 46px !important;
 }
 
 /* Account avatar */
