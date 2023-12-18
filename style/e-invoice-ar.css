@@ -4302,6 +4302,12 @@ label span {
   vertical-align: bottom;
   filter: var(--primary-color-svg-filter);
 }
+@media screen and (max-width: 969px) {
+  .filter-bar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 .invoices-select-filter span {
   font-size: 12px;
   font-weight: 400;
@@ -4521,6 +4527,7 @@ label span {
 .pagination-pages li:first-of-type a,
 .pagination-pages li:last-of-type a {
   color: #828282;
+  transform: rotatey(180deg);
 }
 
 .pagination-pages a.active {
