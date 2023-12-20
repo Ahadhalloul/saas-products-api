@@ -2554,6 +2554,11 @@ label span {
 /* ----------end setup ------------- */
 /* tablet & mobile screens */
 @media screen and (max-width: 1023px) {
+  /* Account table fix */
+  .table-container table{
+    width: 200%;
+  }
+
   .login-page {
     background-image: url("../images/small-signup-bg.svg") !important;
   }
