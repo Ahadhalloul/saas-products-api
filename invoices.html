@@ -7,7 +7,7 @@
     <!----- invoicing style ------------->
     <link rel="stylesheet" href="style/invoicing-style.css" />
     <!----- ARABIC style ------------->
-    <!-- <link rel="stylesheet" href="style/invoicing-style-arabic.css" /> -->
+    <!-- <link rel="stylesheet" href="style/e-invoice-ar.css" /> -->
   </head>
   <body>
     <!------------- Search  bar -------------->
@@ -146,6 +146,36 @@
           <h2>My Invoices</h2>
           <button>View All Invoices</button>
         </div>
+        <!-- ---- Start new search design------ -->
+        <div class="search-box">
+          <div class="filter-bar invoices-select-filter">
+            <div>
+              <span>Invoice Number</span>
+              <input type="" placeholder="#1234" />
+            </div>
+            <div>
+              <span>Status</span>
+              <select name="" id="status">
+                <option value="Any">Any</option>
+                <option value="Active">Active</option>
+                <option value="Inactive">Inactive</option>
+                <option value="Pending">Pending</option>
+              </select>
+            </div>
+            <div>
+              <span>Date</span>
+              <input class="date" type="date" />
+              <input class="date" type="date" />
+            </div>
+          </div>
+          <div class="btns-container">
+            <button class="reset-btn">
+              <img src="./icons/refresh-348.svg" alt="" />Reset
+            </button>
+            <button>Search</button>
+          </div>
+        </div>
+        <!-- ---- End new search design------ -->
         <div class="invoices-filters">
           <div class="invoices-select-filter">
             <span>Show</span>
@@ -157,38 +187,11 @@
             </select>
             <span>entries</span>
           </div>
-
-          <!-- ---- Start new filter design------ -->
-          <div class="filter-bar invoices-select-filter">
-            <!-- this search bar -->
-            <div class="invoices-search-filter">
-              <img src="./icons/search.svg" />
-              <input type="text" placeholder="Search Invoice #, date, etc." />
-            </div>
-            <!-- -------- -->
-            <div>
-              <span>Status</span>
-              <select name="" id="status">
-                <option value="Any">Any</option>
-                <option value="Active">Active</option>
-                <option value="Inactive">Inactive</option>
-                <option value="Pending">Pending</option>
-              </select>
-            </div>
-            <div>
-              <span>Invoice #</span>
-              <input type="" />
-            </div>
-            <div>
-              <span>From</span>
-              <input class="date" type="date" />
-            </div>
-            <div>
-              <span>To</span>
-              <input class="date" type="date" />
-            </div>
+          <!-- this search bar -->
+          <div class="invoices-search-filter">
+            <img src="./icons/search.svg" />
+            <input type="text" placeholder="Search Invoice #, date, etc." />
           </div>
-          <!-- ---- End new filter design------ -->
         </div>
 
         <div class="table-container">

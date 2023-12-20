@@ -257,7 +257,7 @@ nav .nav-list .nav-link {
   gap: 50px;
   position: relative;
   z-index: 2;
-  align-items: start;
+  align-items: end;
   margin-top: 40px;
 }
 .hero .hero-content .hero-heading {
@@ -440,7 +440,7 @@ nav .nav-list .nav-link {
 
 .hero.pricing .hero-content .hero-heading {
   display: flex;
-
+  width: 100%;
   align-items: center;
   justify-content: center;
   gap: 40px;
@@ -470,6 +470,7 @@ nav .nav-list .nav-link {
   text-align: center;
   color: var(--primary-text-color);
   margin-bottom: 0;
+  padding-right: 20px;
 }
 
 .hero.pricing .hero-content .hero-heading .plan p:nth-child(2) {
@@ -483,6 +484,7 @@ nav .nav-list .nav-link {
   border-radius: inherit;
   letter-spacing: 0em;
   text-align: center;
+  padding-right: 0;
 }
 
 /* ----------------------[ End Of Hero ]--------------------- */
@@ -757,11 +759,9 @@ nav .nav-list .nav-link {
 .service-feature h3 {
   font-weight: 300;
   font-size: 21px;
-  text-align: left;
 }
 
 .service-feature p {
-  text-align: left;
   font-weight: 300;
   font-size: 14px;
   color: var(--secondary-text-color);
@@ -1237,6 +1237,7 @@ nav .nav-list .nav-link {
 }
 
 .trusted-clients-container .trusted-clients-heading {
+  margin-bottom: 40px;
   text-align: center;
   display: grid;
   gap: 25px;
@@ -1527,6 +1528,7 @@ nav .nav-list .nav-link {
 
 .social-item > a > .column {
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;
   gap: 25px;
   font-size: 24px;
@@ -1536,7 +1538,9 @@ nav .nav-list .nav-link {
   width: 64px;
   filter: var(--primary-color-svg-filter);
 }
-
+.social-item > a > .column p {
+  margin-bottom: 0 !important;
+}
 .socials-right-arrow,
 .socials-left-arrow {
   display: none;
@@ -2136,7 +2140,7 @@ label span {
   text-align: center;
   font-family: "Source Sans 3", sans-serif;
   display: flex;
-  flex-direction: row-reverse;
+  direction: rtl;
   gap: 5px;
 }
 .sign-up-container > span a {
@@ -2150,7 +2154,9 @@ label span {
   text-align: center;
   font-size: 14px;
   color: var(--accent-color);
+  direction: ltr;
 }
+
 .sign-up-footer.black-text {
   color: #000;
 }
@@ -2266,7 +2272,7 @@ label span {
 
 .verify-box .code-input-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   align-items: center;
   gap: 30px;
   width: 80%;
@@ -2280,6 +2286,7 @@ label span {
   border: 1px solid transparent;
 }
 .verify-box .code-timer p span {
+  margin: 5px;
   font-weight: 500;
   color: var(--accent-text-color);
 }
@@ -2406,11 +2413,15 @@ label span {
 }
 .signup-sidebar > p span {
   font-weight: 400;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  gap: 10px;
 }
 .signup-sidebar > img {
   position: absolute;
   bottom: 0;
-  left: -10px;
+  left: 0px;
   width: 100%;
   /* height: 400px; */
 }
@@ -2453,7 +2464,7 @@ label span {
   color: var(--accent-text-color);
 }
 .signup-setup-container .signup-card {
-  min-height: 63px;
+  min-height: 690px;
   padding: 40px;
   box-shadow: 0px 4px 60px 0px #2726381f;
   border-radius: 20px;
@@ -2488,6 +2499,7 @@ label span {
   width: 20px;
 }
 .signup-setup-container .signup-card form .btns-container {
+  margin-top: 50px;
   float: right;
   display: flex;
   flex-direction: row-reverse;
@@ -2788,7 +2800,113 @@ label span {
 }
 /* -------------- End sign up ( registration )------------------ */
 /* ---------------------------------------------------- */
+/* ------------------------------------------------------- */
+/* ---------------- Start (Privacy & policy) AND (terms & condition) pages ------------ */
+.privacy-policy-container .privacy-policy-content ol,
+.term-condition-container .term-condition-content ol {
+  direction: rtl;
+  margin-left: 40px;
+}
+.privacy-policy-container .privacy-policy-content ol > li,
+.term-condition-container .term-condition-content ol > li {
+  font-size: 36px;
+  margin-top: 50px;
+  list-style: decimal;
+  font-weight: 300;
+}
+.privacy-policy-container .privacy-policy-content ol > li ul li {
+  margin-left: 30px;
+  list-style: disc;
+}
+.privacy-policy-container .title,
+.term-condition-container .title {
+  font-size: 48px;
+  text-align: center;
+  font-weight: 300;
+}
+.privacy-policy-container .privacy-policy-content ol h4,
+.term-condition-container .term-condition-content ol h4 {
+  font-weight: 300;
+}
+.privacy-policy-container .privacy-policy-content ol p,
+.privacy-policy-container .privacy-policy-content ol li ul {
+  font-size: 16px;
+  color: #8a8a8a;
+}
 
+.term-condition-container .term-condition-content ol p,
+.term-condition-container .term-condition-content ol li ul {
+  font-size: 16px;
+  color: #8a8a8a;
+}
+
+.privacy-policy-container .privacy-policy-content ol p,
+.term-condition-container .term-condition-content ol p {
+  margin: 10px 0px;
+}
+.term-condition-container .term-condition-content .bold-text {
+  font-weight: 600;
+}
+.term-condition-container .term-condition-content ol > li ul li {
+  margin-left: 10px;
+  list-style-type: none;
+}
+/* doing subtitle list numbers  */
+/* .term-condition-container .term-condition-content ol {
+  counter-reset: item;
+}
+.term-condition-container .term-condition-content ol > li {
+  counter-increment: item;
+} */
+/* .term-condition-container .term-condition-content ol ul li {
+  display: block;
+} */
+/* .term-condition-container .term-condition-content ol ul > li::before {
+  margin-left: -30px;
+  content: counters(item, ".") ". ";
+  float: left;
+} */
+
+/* tablet & mobile size  */
+@media screen and (max-width: 1023px) {
+  .privacy-policy-container .title,
+  .term-condition-container .title {
+    font-size: 40px;
+  }
+  .privacy-policy-container .privacy-policy-content ol > li,
+  .term-condition-container .term-condition-content ol > li {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 744px) {
+  .privacy-policy-container .privacy-policy-content ol,
+  .term-condition-container .term-condition-content ol {
+    margin-left: 20px;
+  }
+  .privacy-policy-container .title,
+  .term-condition-container .title {
+    font-size: 32px;
+  }
+  .privacy-policy-container .privacy-policy-content ol > li,
+  .term-condition-container .term-condition-content ol > li {
+    font-size: 20px;
+  }
+  .privacy-policy-container .privacy-policy-content ol p,
+  .privacy-policy-container .privacy-policy-content ol li ul {
+    font-size: 14px;
+  }
+  .term-condition-container .term-condition-content ol p,
+  .term-condition-container .term-condition-content ol li ul {
+    font-size: 14px;
+  }
+  /* .term-condition-container .term-condition-content ol ul > li:before {
+    margin-left: -25px;
+  } */
+}
+
+/* ---------------- End (Privacy & policy) AND (terms & condition) pages ------------ */
+/* ------------------------------------------------------- */
 /* ---------Start design for tablet---------- */
 @media screen and (max-width: 1023px) {
   /* About page hero */
@@ -3158,6 +3276,12 @@ label span {
 /* ---------End design for tablet---------- */
 /* ------------ Start mobile design ------------- */
 @media screen and (max-width: 744px) {
+  header {
+    align-items: start;
+  }
+  .user-menu-list .user-menu-item select {
+    padding: 0;
+  }
   .logo {
     display: none;
   }
@@ -3223,12 +3347,35 @@ label span {
     display: flex;
     align-items: center;
   } */
-
+  .search-box {
+    text-align: center;
+  }
+  .filter-bar input[type="date"] {
+    width: 120px;
+  }
   .table-container {
     min-width: 100%;
-    overflow: scroll !important;
+    overflow-x: scroll !important;
+  }
+  .table-container::-webkit-scrollbar {
+    height: 5px;
+    background-color: rgb(231, 231, 231);
   }
 
+  .table-container::-webkit-scrollbar-thumb {
+    background-color: var(--accent-text-color);
+    border-radius: 3px;
+  }
+  .table-container tr > th:nth-child(1) {
+    height: 75px;
+    min-width: 200px !important;
+  }
+  .table-container tr > th {
+    min-width: 130px !important;
+  }
+  .table-container tr:last-of-type {
+    background-color: #f9f9f9;
+  }
   .pagination {
     flex-flow: column nowrap;
     align-items: flex-start !important;
@@ -3311,6 +3458,7 @@ label span {
     overflow-x: scroll;
     justify-content: start;
     margin: 0 auto;
+    /* display: none; */
     /* background-color: #4535f6; */
   }
   .statistics-container::-webkit-scrollbar {
@@ -3332,7 +3480,7 @@ label span {
     display: block;
     position: absolute;
     top: 90px;
-    z-index: 1;
+    z-index: 2;
   }
   .statistics-left-arrow {
     left: 20px;
@@ -3341,9 +3489,10 @@ label span {
     right: 20px;
   }
   .statistics {
+    flex-direction: column;
     align-items: center;
     min-width: 240px;
-    margin: 0px 40px;
+    margin: 20px 40px;
   }
   .about-images div {
     width: 140px;
@@ -3604,6 +3753,7 @@ label span {
   }
 
   .trusted-clients-container {
+    display: block;
     position: relative;
     min-height: auto;
   }
@@ -3612,8 +3762,8 @@ label span {
   .trusted-clients-container .trusted-clients-right-arrow {
     display: block;
     position: absolute;
-    bottom: 150px;
-    z-index: 1;
+    bottom: 87px;
+    z-index: 20;
   }
   .trusted-clients-container .trusted-clients-left-arrow {
     left: 20px;
@@ -3622,10 +3772,15 @@ label span {
     right: 20px;
   }
   .trusted-clients-container .trusted-clients {
-    display: flex;
+    display: none;
+    /* display: flex; */
     overflow: scroll;
     position: relative;
     max-width: 200px;
+  }
+  .client {
+    display: flex;
+    justify-content: center;
   }
 
   .trusted-clients-container .trusted-clients::-webkit-scrollbar {
@@ -3668,7 +3823,9 @@ label span {
 
   .socials {
     margin: 0 auto;
+    padding-top: 50px;
     position: relative;
+    display: block;
   }
 
   .social-list {
@@ -3677,7 +3834,7 @@ label span {
     min-height: 100%;
     position: relative;
     justify-content: start;
-    display: grid;
+    display: none;
     grid-auto-flow: column;
     grid-auto-columns: 100%;
   }
@@ -3716,8 +3873,8 @@ label span {
   .socials-left-arrow {
     display: block;
     position: absolute;
-    top: 90px;
-    z-index: 1;
+    top: 40%;
+    z-index: 20;
   }
   .socials-left-arrow {
     left: 20px;
@@ -3776,6 +3933,18 @@ label span {
     width: 20px;
     height: 20px;
   }
+  /*---- invoice header ---- */
+  .user-menu-list .user-menu-item select {
+    display: none;
+  }
+  .user-menu-list {
+    gap: 0;
+  }
+  .user-menu-item > span {
+    height: 30px;
+  }
+
+  /* -------------------- */
 }
 
 @media screen and (max-width: 450px) {
@@ -3824,6 +3993,19 @@ label span {
   .hq-title h1 {
     font-size: 24px;
   }
+
+  /*---- invoice header ---- */
+  .user-menu-list .user-menu-item select {
+    display: none;
+  }
+  .user-menu-list {
+    gap: 0;
+  }
+  .user-menu-item > span {
+    height: 30px;
+  }
+
+  /* -------------------- */
 }
 
 /* ------------ End mobile design ------------- */
@@ -3903,6 +4085,10 @@ label span {
 
 .pass-valid-list {
   margin-top: 15px;
+  margin-right: 20px;
+}
+.pass-valid-list li svg {
+  margin-right: 20px;
 }
 .password-area {
   grid-row-start: 3;
@@ -4051,12 +4237,13 @@ label span {
 
 .user-menu-item > span > img {
   width: 100%;
-  height: 50px !important;
+  height: 46px !important;
 }
 
 /* Account avatar */
 
 .invoices-container {
+  direction: rtl;
   min-width: 100%;
   display: flex;
   gap: 25px;
@@ -4093,6 +4280,65 @@ label span {
   border: 1px solid #e0e7ed;
 }
 
+.search-box {
+  border-bottom: 1px solid rgb(236, 236, 236);
+  border-top: 1px solid rgb(236, 236, 236);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 30px 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  /* direction: rtl; */
+}
+.filter-bar {
+  gap: 5px;
+  justify-content: end;
+}
+.filter-bar select {
+  width: 140px;
+  max-width: 140px;
+  padding: 0 7px;
+  margin-right: 5px;
+  text-align: center;
+}
+.filter-bar input {
+  height: 36px;
+  outline: none;
+  padding: 0 10px;
+  border-radius: 8px;
+  border: 1px solid #e0e7ed;
+  max-width: 140px;
+  margin-right: 5px;
+}
+.search-box .btns-container {
+  display: flex;
+  gap: 15px;
+}
+.search-box button {
+  padding: 7px 15px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.search-box button.reset-btn {
+  background-color: var(--third-color);
+  color: #000;
+}
+.search-box button.reset-btn img {
+  width: 20px;
+  margin-right: 3px;
+  vertical-align: bottom;
+  filter: var(--primary-color-svg-filter);
+}
+@media screen and (max-width: 969px) {
+  .filter-bar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 .invoices-select-filter span {
   font-size: 12px;
   font-weight: 400;
@@ -4312,6 +4558,7 @@ label span {
 .pagination-pages li:first-of-type a,
 .pagination-pages li:last-of-type a {
   color: #828282;
+  transform: rotatey(180deg);
 }
 
 .pagination-pages a.active {
@@ -4319,3 +4566,101 @@ label span {
   color: #fff;
 }
 /* ------------------ End Invoices pages----------------- */
+/* ---very big screen---  */
+@media screen and (min-width: 1650px) {
+  .padding,
+  .current-path,
+  .footer-container,
+  .features-container,
+  .our-parnters,
+  .price-plan-container {
+    padding: 40px 180px;
+  }
+  .features-container .text {
+    max-width: 600px;
+  }
+}
+@media screen and (min-width: 1750px) {
+  .padding,
+  .current-path,
+  .footer-container,
+  .features-container,
+  .our-parnters,
+  .price-plan-container {
+    padding: 40px 250px;
+  }
+}
+/* --------------------------- */
+
+/* --------- Start conditions box ------------ */
+.terms-condition-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: #111111e5;
+  z-index: 1;
+  padding: 0px 25px;
+}
+.terms-condition-box .card {
+  direction: rtl;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  max-width: 567px;
+  border-radius: 10px;
+  min-height: 276px;
+  gap: 30px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  position: relative;
+}
+.terms-condition-box .card .conditions-text {
+  margin: 0px 40px;
+  padding-right: 10px;
+  height: 250px;
+  overflow-y: scroll;
+  color: var(--secondary-text-color);
+}
+.terms-condition-box .card .conditions-text .checkbox-text {
+  color: #000;
+  margin-top: 15px;
+  font-weight: 500;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.terms-condition-box .card .conditions-text::-webkit-scrollbar {
+  width: 5px;
+  background-color: rgb(231, 231, 231);
+}
+.terms-condition-box .card .conditions-text::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 5px;
+}
+.terms-condition-box .card > img {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  cursor: pointer;
+}
+
+.terms-condition-box .card .btn-container {
+  display: flex;
+  gap: 10px;
+}
+.terms-condition-box .card button {
+  width: 200px;
+  height: 40px;
+  opacity: 0.6;
+}
+.terms-condition-box .card button.active-btn {
+  opacity: 1;
+}
+/* --------- End conditions box ------------ */
+/* ---------------------------- */

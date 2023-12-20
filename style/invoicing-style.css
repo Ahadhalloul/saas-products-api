@@ -65,7 +65,6 @@ header {
   min-height: 50px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   z-index: 2;
   position: relative;
 }
@@ -763,11 +762,11 @@ nav .nav-list .nav-link {
 .features-container .text {
   max-width: 530px;
 }
-@media screen and (min-width: 1440px) {
+/* @media screen and (min-width: 1440px) {
   .features-container .text {
     max-width: 700px;
   }
-}
+} */
 .features-container h4 {
   width: 335px;
   font-size: 34px;
@@ -1647,7 +1646,7 @@ label span {
   color: #fff;
 }
 .footer-container ul li {
-  list-style: url(../icons/list-style.svg);
+  list-style: url(../icons/list-style-en.svg);
 }
 .footer-container ul {
   margin-left: 15px;
@@ -2301,14 +2300,14 @@ label span {
 }
 
 /* ----Edit error msg design for signup setup page --- */
-/* .signup-setup-container .error-msg,
+.signup-setup-container .error-msg,
 .signup-setup-container .success-msg {
   padding: 0;
   border-radius: 10px;
   padding-left: 10px;
   padding-right: 10px;
   margin-bottom: 15px;
-} */
+}
 /* ----------------- */
 .signup-cancel-box .card > img {
   position: absolute;
@@ -2751,6 +2750,113 @@ label span {
 /* -------------- End sign up ( registration )------------------ */
 /* ---------------------------------------------------- */
 
+/* ------------------------------------------------------- */
+/* ---------------- Start (Privacy & policy) AND (terms & condition) pages ------------ */
+.privacy-policy-container .privacy-policy-content ol,
+.term-condition-container .term-condition-content ol {
+  margin-left: 40px;
+}
+.privacy-policy-container .privacy-policy-content ol > li,
+.term-condition-container .term-condition-content ol > li {
+  font-size: 36px;
+  margin-top: 50px;
+  list-style: decimal;
+  font-weight: 300;
+}
+.privacy-policy-container .privacy-policy-content ol > li ul li {
+  margin-left: 30px;
+  list-style: disc;
+}
+.privacy-policy-container .title,
+.term-condition-container .title {
+  font-size: 48px;
+  text-align: center;
+  font-weight: 300;
+}
+.privacy-policy-container .privacy-policy-content ol h4,
+.term-condition-container .term-condition-content ol h4 {
+  font-weight: 300;
+}
+.privacy-policy-container .privacy-policy-content ol p,
+.privacy-policy-container .privacy-policy-content ol li ul {
+  font-size: 16px;
+  color: #8a8a8a;
+}
+
+.term-condition-container .term-condition-content ol p,
+.term-condition-container .term-condition-content ol li ul {
+  font-size: 16px;
+  color: #8a8a8a;
+}
+
+.privacy-policy-container .privacy-policy-content ol p,
+.term-condition-container .term-condition-content ol p {
+  margin: 10px 0px;
+}
+.term-condition-container .term-condition-content .bold-text {
+  font-weight: 600;
+}
+.term-condition-container .term-condition-content ol > li ul li {
+  margin-left: 10px;
+  list-style-type: none;
+}
+/* doing subtitle list numbers  */
+/* .term-condition-container .term-condition-content ol {
+  counter-reset: item;
+}
+.term-condition-container .term-condition-content ol > li {
+  counter-increment: item;
+} */
+/* .term-condition-container .term-condition-content ol ul li {
+  display: block;
+} */
+/* .term-condition-container .term-condition-content ol ul > li::before {
+  margin-left: -30px;
+  content: counters(item, ".") ". ";
+  float: left;
+} */
+
+/* tablet & mobile size  */
+@media screen and (max-width: 1023px) {
+  .privacy-policy-container .title,
+  .term-condition-container .title {
+    font-size: 40px;
+  }
+  .privacy-policy-container .privacy-policy-content ol > li,
+  .term-condition-container .term-condition-content ol > li {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 744px) {
+  .privacy-policy-container .privacy-policy-content ol,
+  .term-condition-container .term-condition-content ol {
+    margin-left: 20px;
+  }
+  .privacy-policy-container .title,
+  .term-condition-container .title {
+    font-size: 32px;
+  }
+  .privacy-policy-container .privacy-policy-content ol > li,
+  .term-condition-container .term-condition-content ol > li {
+    font-size: 20px;
+  }
+  .privacy-policy-container .privacy-policy-content ol p,
+  .privacy-policy-container .privacy-policy-content ol li ul {
+    font-size: 14px;
+  }
+  .term-condition-container .term-condition-content ol p,
+  .term-condition-container .term-condition-content ol li ul {
+    font-size: 14px;
+  }
+  /* .term-condition-container .term-condition-content ol ul > li:before {
+    margin-left: -25px;
+  } */
+}
+
+/* ---------------- End (Privacy & policy) AND (terms & condition) pages ------------ */
+/* ------------------------------------------------------- */
+
 /* ---------Start design for tablet---------- */
 @media screen and (max-width: 1023px) {
   /* About page hero */
@@ -3117,9 +3223,14 @@ label span {
 /* ---------End design for tablet---------- */
 /* ------------ Start mobile design ------------- */
 @media screen and (max-width: 744px) {
+  header {
+    align-items: start;
+  }
+  .user-menu-list .user-menu-item select {
+    padding: 0;
+  }
   /* Account table fix */
-  
-  
+
   .logo {
     display: none;
   }
@@ -3132,6 +3243,7 @@ label span {
   .mobile-logo {
     margin-left: 30px;
     display: block;
+    /* margin-top: -20px; */
   }
   /* About page hero */
   .hero.about::before {
@@ -3184,12 +3296,36 @@ label span {
     display: flex;
     align-items: center;
   } */
+  .search-box {
+    text-align: center;
+  }
+  .filter-bar input[type="date"] {
+    width: 120px;
+  }
 
   .table-container {
     min-width: 100%;
-    overflow: scroll !important;
+    overflow-x: scroll !important;
+  }
+  .table-container::-webkit-scrollbar {
+    height: 5px;
+    background-color: rgb(231, 231, 231);
   }
 
+  .table-container::-webkit-scrollbar-thumb {
+    background-color: var(--accent-text-color);
+    border-radius: 3px;
+  }
+  .table-container tr > th:nth-child(1) {
+    height: 75px;
+    min-width: 200px !important;
+  }
+  .table-container tr > th {
+    min-width: 130px !important;
+  }
+  .table-container tr:last-of-type {
+    background-color: #f9f9f9;
+  }
   .pagination {
     flex-flow: column nowrap;
     align-items: flex-start !important;
@@ -3738,6 +3874,18 @@ label span {
     width: 20px;
     height: 20px;
   }
+  /*---- invoice header ---- */
+  .user-menu-list .user-menu-item select {
+    display: none;
+  }
+  .user-menu-list {
+    gap: 0;
+  }
+  .user-menu-item > span {
+    height: 30px;
+  }
+
+  /* -------------------- */
 }
 
 @media screen and (max-width: 450px) {
@@ -4002,8 +4150,8 @@ label span {
 }
 
 .user-menu-item > span > img {
+  height: 46px !important;
   width: 100%;
-  height: 50px !important;
 }
 
 /* Account avatar */
@@ -4044,10 +4192,29 @@ label span {
   border-radius: 8px;
   border: 1px solid #e0e7ed;
 }
+.search-box {
+  border-bottom: 1px solid rgb(236, 236, 236);
+  border-top: 1px solid rgb(236, 236, 236);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 30px 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.filter-bar {
+  gap: 5px;
+  justify-content: end;
+}
 .filter-bar select {
-  width: 95px;
+  width: 140px;
+  max-width: 140px;
   padding: 0 7px;
   margin-right: 5px;
+  text-align: center;
 }
 .filter-bar input {
   height: 36px;
@@ -4055,21 +4222,27 @@ label span {
   padding: 0 10px;
   border-radius: 8px;
   border: 1px solid #e0e7ed;
-  width: 70px;
+  max-width: 140px;
   margin-right: 5px;
 }
-.filter-bar input.date {
-  width: 115px;
+.search-box .btns-container {
+  display: flex;
+  gap: 15px;
 }
-.filter-bar {
-  gap: 5px;
-  justify-content: end;
-}
-.filter-bar img {
-  width: 20px;
+.search-box button {
+  padding: 7px 15px;
+  border-radius: 15px;
   cursor: pointer;
-  filter: brightness(0) saturate(100%) invert(63%) sepia(2%) saturate(1532%)
-    hue-rotate(173deg) brightness(88%) contrast(83%);
+}
+.search-box button.reset-btn {
+  background-color: var(--third-color);
+  color: #000;
+}
+.search-box button.reset-btn img {
+  width: 20px;
+  margin-right: 3px;
+  vertical-align: bottom;
+  filter: var(--primary-color-svg-filter);
 }
 .invoices-select-filter span {
   font-size: 12px;
@@ -4139,9 +4312,9 @@ label span {
 
 .table-container tr > td:nth-child(1),
 .table-container tr > th:nth-child(1) {
+  /* height: 100px; */
   display: flex;
   gap: 20px;
-  height: 100px;
   align-items: center;
 }
 
@@ -4395,3 +4568,100 @@ label span {
   right: 5%;
 }
 /* ------------------------End Loader ---------------------- */
+/* ---very big screen---  */
+@media screen and (min-width: 1650px) {
+  .padding,
+  .current-path,
+  .footer-container,
+  .features-container,
+  .our-parnters,
+  .price-plan-container {
+    padding: 40px 180px;
+  }
+  .features-container .text {
+    max-width: 600px;
+  }
+}
+@media screen and (min-width: 1750px) {
+  .padding,
+  .current-path,
+  .footer-container,
+  .features-container,
+  .our-parnters,
+  .price-plan-container {
+    padding: 40px 250px;
+  }
+}
+/* --------------------------- */
+
+/* --------- Start conditions box ------------ */
+.terms-condition-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: #111111e5;
+  z-index: 1;
+  padding: 0px 25px;
+}
+.terms-condition-box .card {
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  max-width: 567px;
+  border-radius: 10px;
+  min-height: 276px;
+  gap: 30px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  position: relative;
+}
+.terms-condition-box .card .conditions-text {
+  margin: 0px 40px;
+  padding-right: 10px;
+  height: 250px;
+  overflow-y: scroll;
+  color: var(--secondary-text-color);
+}
+.terms-condition-box .card .conditions-text .checkbox-text {
+  color: #000;
+  margin-top: 15px;
+  font-weight: 500;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.terms-condition-box .card .conditions-text::-webkit-scrollbar {
+  width: 5px;
+  background-color: rgb(231, 231, 231);
+}
+.terms-condition-box .card .conditions-text::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 5px;
+}
+.terms-condition-box .card > img {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  cursor: pointer;
+}
+
+.terms-condition-box .card .btn-container {
+  display: flex;
+  gap: 10px;
+}
+.terms-condition-box .card button {
+  width: 200px;
+  height: 40px;
+  opacity: 0.6;
+}
+.terms-condition-box .card button.active-btn {
+  opacity: 1;
+}
+/* --------- End conditions box ------------ */
+/* ---------------------------- */
