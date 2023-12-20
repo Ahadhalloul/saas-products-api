@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejada EIM / E-invoicing Middleware</title>
+    <!----- invoicing style ------------->
+    <link rel="stylesheet" href="style/invoicing-style.css" />
+    <!----- ARABIC style ------------->
+    <!-- <link rel="stylesheet" href="style/e-invoice-ar.css" /> -->
+  </head>
+  <body>
+    <!------------- Search  bar -------------->
+    <div id="searchWrapper" class="search-wrapper">
+      <h2>Type your search keyword</h2>
+      <div id="searchBar" class="search-bar">
+        <input type="text" />
+        <img src="/icons/search.svg" width="32" height="32" />
+      </div>
+    </div>
+    <div class="body-bg hide"></div>
+    <!-- ------------------------------ -->
+    <!-- small screen side bar -->
+    <div id="side-bar" class="sidebar hide">
+      <div>
+        <img class="logo" src="./images/logo.svg" alt="" />
+        <div class="user-informatin new-row">
+          <img src="./images/Image-user.png" alt="" />
+          <div>
+            <h4>Ikramy Ismail</h4>
+            <p>Ikramy@company.com</p>
+          </div>
+        </div>
+        <ul class="side-bar-nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="./products.html">products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pricing.html">pricing </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">about</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./resources.html">resources</a>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <ul class="side-bar-user-menu-list">
+          <li class="user-menu-item" id="searchButton">
+            <a href="#" class="user-menu-link search-text">Search</a>
+          </li>
+          <li class="user-menu-item">
+            <a href="./contact.html" class="user-menu-link">contact</a>
+          </li>
+          <li class="user-menu-item">
+            <select class="language">
+              <option value="english">English</option>
+              <option value="arabic">Arabic</option>
+            </select>
+          </li>
+          <li class="user-menu-item">
+            <a href="./login.html" class="user-menu-link">login</a>
+          </li>
+          <li class="user-menu-item">
+            <button class="user-menu-button">get started</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!------------- Start  Header -------------->
+    <header class="padding">
+      <nav>
+        <div class="nav-menu-icon">
+          <img src="./icons/menu.svg" alt="" />
+        </div>
+        <div class="logo-container">
+          <!--  invoicing logo -->
+          <a href="./invoice-index.html">
+            <img
+              src="./images/logo.svg"
+              alt="e-invoicing logo"
+              class="logo hide-from-hr"
+            />
+          </a>
+          <a href="./invoice-index.html"
+            ><img src="./images/mobile-logo.svg" alt="" class="mobile-logo"
+          /></a>
+        </div>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="/products.html">products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pricing.html">pricing </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html">about</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/resources.html">resources</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="user-area">
+        <ul class="user-menu-list">
+          <li class="user-menu-item" id="searchButton">
+            <img src="./icons/search.svg" alt="search icon" />
+          </li>
+          <li class="user-menu-item">
+            <a href="/contact.html" class="user-menu-link">contact</a>
+          </li>
+          <li class="user-menu-item">
+            <span><img src="./images/avatar.png" /></span>
+            <span>Ikramy Ismail</span>
+          </li>
+          <li class="user-menu-item">
+            <select class="language">
+              <option value="english">EN</option>
+              <option value="arabic">AR</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!------------- End Header -------------->
+    <!------------- Start Main -------------->
+    <main>
+      <section class="error-container padding">
+        <div class="error-image">
+          <img src="./images/error.svg" />
+        </div>
+        <div class="error-content">
+          <h2>Page Not Found</h2>
+          <p>The page is missing or you assembled the link incorrectly</p>
+          <a href="./invoice-index.html">
+            <button>Go Back Home</button>
+          </a>
+        </div>
+      </section>
+    </main>
+    <!------------- End Main ---------------->
+    <!-- --------------------start footer ---------------- -->
+    <footer class="footer-container">
+      <div class="footer-content footer-row">
+        <div class="">
+          <div class="logo-text">
+            <!-- <h2>MLE</h2>
+            <h6>e-Invoicing</h6> -->
+            <img src="./icons/footer-logo.svg" />
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa.
+          </p>
+        </div>
+        <div>
+          <h4>Information</h4>
+          <ul>
+            <li>
+              <a href="#">About<span>EML</span></a>
+            </li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Pricing</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Reasources</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact Us</h4>
+          <h5 class="e-mail">E.support@eml.com</h5>
+          <div class="social-links">
+            <a href=""
+              ><img src="./icons/akar-icons_facebook-fill.svg" alt=""
+            /></a>
+            <a href=""><img src="./icons/logos_twitter.svg" alt="" /></a>
+            <a href=""><img src="./icons/logos_linkedin-icon.svg" alt="" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-sec-row footer-row">
+        <div class="footer-row gap-row">
+          <h6>Terms & Condition</h6>
+          <h6>Privacy & Policy</h6>
+        </div>
+        <div class="footer-row company-row">
+          <img src="./images/ejada-logo.svg" alt="" />
+          <p>
+            EML is a subsidiary Solution Developed and owned by Ejada Systems
+            LTD.
+          </p>
+        </div>
+      </div>
+      <div class="footer-copy-right">© 2023 EML. All Rights Reserved</div>
+    </footer>
+    <!-- End Footer Section -->
+    <!------------- End Footer -------------->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+      feather.replace();
+    </script>
+    <script src="./main.js"></script>
+  </body>
+</html>
