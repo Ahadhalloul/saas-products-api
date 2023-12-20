@@ -2554,7 +2554,7 @@ label span {
 /* tablet & mobile screens */
 @media screen and (max-width: 1023px) {
   /* Account table fix */
-  .table-container table{
+  .table-container table {
     width: 200%;
   }
 
@@ -3934,6 +3934,11 @@ label span {
   .hq-title h1 {
     font-size: 24px;
   }
+
+  /* Error page  */
+  .error-container .error-content h2{
+    font-size: 28px !important;
+  }
 }
 
 /* ------------ End mobile design ------------- */
@@ -4665,3 +4670,50 @@ label span {
 }
 /* --------- End conditions box ------------ */
 /* ---------------------------- */
+
+/* --------- Start error page ------------ */
+.error-container {
+  max-width: 100%;
+  min-height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  gap: 1rem;
+}
+
+.error-container .error-image img{
+  max-width: 100%;
+  height: auto;
+}
+
+.error-container .error-content {
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 2rem;
+}
+
+.error-container .error-content h2 {
+  font-size: 36px;
+  color: var(--accent-text-color);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.error-container .error-content p {
+  max-width: 306px;
+}
+
+.error-container > .error-content > a > button {
+  padding: 14px 24px;
+  width: 100%;
+}
+
+.error-container > .error-content > a {
+  text-decoration: none;
+  color: var(--third-text-color);
+  font-weight: 600;
+  font-size: 14px;
+}
+/* --------- End error page ------------ */
