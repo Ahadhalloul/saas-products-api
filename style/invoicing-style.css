@@ -4720,23 +4720,53 @@ label span {
 
 /* ----------------- Start popup ------------------- */
 
-.popup {
+.popup-container{
   position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: #111111e5;
+  z-index: 1;
+  padding: 0px 25px;
+  display: none;
+}
+
+.popup-container.show{
+  display: block;
+}
+
+.popup {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 800px;
+  min-width: 80%;
   height: 80%;
-  background-color: #eee;
   border: none;
   border-radius: 10px;
   box-shadow: 0 0 2rem 0 rgba(24, 24, 24, 0.1);
-  z-index: 1;
+  z-index: 2;
   padding: 30px 40px;
 }
 
+.popup:not([open]) {
+  display: none;
+}
+
+/* .popup.show::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: #111111e5;
+  z-index: -1;
+} */
+
 .popup::backdrop {
-  background: rgba(17, 17, 17, 0.3);
+  /* ! Doesn't work with angular */
+  /* background: rgba(17, 17, 17, 0.8); */
 }
 
 .popup div {
@@ -4744,10 +4774,12 @@ label span {
   justify-content: space-between;
   align-items: flex-start;
   gap: 1rem;
+  background-color: #eee;
   height: 80%;
   overflow-y: scroll;
   flex-flow: column nowrap;
-  padding: 20px 0px;
+  border-radius: inherit;
+  padding: 20px 20px;
 }
 
 .customer-popup {
