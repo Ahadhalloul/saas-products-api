@@ -4726,7 +4726,7 @@ label span {
   left: 50%;
   transform: translate(-50%, -50%);
   min-width: 800px;
-  min-height: 300px;
+  height: 80%;
   background-color: #eee;
   border: none;
   border-radius: 10px;
@@ -4735,11 +4735,17 @@ label span {
   padding: 30px 40px;
 }
 
+.popup::backdrop {
+  background: rgba(17, 17, 17, 0.3);
+}
+
 .popup div {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   gap: 1rem;
+  height: 80%;
+  overflow-y: scroll;
   flex-flow: column nowrap;
   padding: 20px 0px;
 }
