@@ -3229,6 +3229,13 @@ label span {
   .user-menu-list .user-menu-item select {
     padding: 0;
   }
+  .user-name {
+    display: none;
+  }
+  .user-menu-list .user-menu-item:nth-child(3) img {
+    margin-top: -3px;
+  }
+
   /* Account table fix */
 
   .logo {
@@ -3879,7 +3886,7 @@ label span {
     display: none;
   }
   .user-menu-list {
-    gap: 0;
+    /* gap: 0; */
   }
   .user-menu-item > span {
     height: 30px;
@@ -4720,7 +4727,7 @@ label span {
 
 /* ----------------- Start popup ------------------- */
 
-.popup-container{
+.popup-container {
   position: fixed;
   top: 0;
   left: 0;
@@ -4732,7 +4739,7 @@ label span {
   display: none;
 }
 
-.popup-container.show{
+.popup-container.show {
   display: block;
 }
 
